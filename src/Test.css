@@ -1,0 +1,40 @@
+.test-count{
+    width: 100%;
+    height: auto;
+    background-color: #FDFBF7;
+    /* position: relative;
+    z-index: 5; */
+
+    
+}
+/* /* .test-count::before{
+    content: "Feed back ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('images/Feedback.png'); 
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: .3 ;
+    z-index:2 ;
+} */
+.test-p1{
+    color: 
+    #FECE3C;
+    margin-top: 20px;
+}
+.test-p2{
+    color:  #FECE3C;
+    font-weight: bold;
+
+}
+.test-p6{
+    color:#B6B6B6 ;
+    margin-bottom: 20px;
+}
+.test-p3{
+    margin-bottom: 25px;
+}

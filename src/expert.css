@@ -1,0 +1,115 @@
+.expert-countf{
+    width: 100%;
+    height: auto;
+    background-color: white;
+  
+}
+.row-btn{
+   
+    justify-content: center;
+    align-content: space-between;
+}
+
+.expert-p1{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 35px;
+    position: relative;
+    /* display: block !important; */
+
+}
+.col1-exp{
+    background-color: #F4BE17;
+
+}
+.col2-exp ,.col3-exp {
+    background-color: gainsboro;
+}
+.expert-count{
+    display: flex;
+    justify-content: center;
+     margin-top: 20px;
+}
+ 
+ .expert-p2{
+           
+            color: black;
+            margin-top: 35px;
+        }
+        .colp1{
+            color: black;
+            
+        }
+        .colp2{
+            color:  #F4BE17;
+           
+        }
+         
+
+            .rowlast{
+                justify-content: center;
+            }
+            .btn{
+                width: 100%;
+                height: 100%;
+           
+            }
+.cardimg1{
+    /* background-color: white; */
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 25px; */
+    /* border-radius: 50%; */
+ 
+}
+.card-colr1{
+    background-color:#F06DEB; 
+    margin-bottom: 20px;
+    justify-content: center;
+    width: auto;
+
+}
+.card-colr2{
+    background-color: grey;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: auto;
+}
+.cardimg{
+    width: 50%; 
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 26px;
+     margin-top: 36px;
+    
+}
+.imgcir{
+    border-radius: 50%;
+    height: 70%;
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    
+
+
+}
+.expert-p1::after{
+    content: " ";
+ position: absolute;
+ width: 50vh;
+ bottom: -10%;
+ left: 50%;
+ transform: translateX(-50%);
+ border-bottom: 3px solid yellow;
+}
+.pclr{
+    color: black;
+
+}
+
+
+

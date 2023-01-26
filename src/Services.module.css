@@ -1,0 +1,38 @@
+.contservice{
+    height: auto;
+    background-image: url("./image/rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+ .firstrow{
+    margin-top: 80px;
+}
+.outerrow{
+    margin-top: 450px;
+}
+.cards{
+    width: 80%;
+    height: 300px;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 14px rgba(136, 152, 189, 0.4);
+    border-radius: 11px;
+    margin-bottom: 30px;
+    /* border: 2px solid blue; */
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+@media only screen and (max-width: 600px) {
+
+    .outerrow{
+        margin-top: 20px;
+    }
+    .firstrow{
+        margin-top: 20px;
+    }
+    
+  }
+  

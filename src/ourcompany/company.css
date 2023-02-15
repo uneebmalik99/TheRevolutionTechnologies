@@ -1,0 +1,201 @@
+#company-countainer{
+    height: 500px;
+    
+    background-image: url("../image/compn1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#company-countainer22{
+    height: 1000px;
+   
+    background-image: url("../image/teambgcir.png");
+    background-repeat: no-repeat;
+    background-size: 900px 900px;
+    background-position: right;
+}
+.circle {
+    position: relative;
+   
+    height: 729px;
+    width: 729px;
+    background-color: none;
+    border-radius: 50%;
+    z-index: -99999999999999999999999999999999999999999999999999;
+    margin-top: 8%;
+  }
+  
+  .circle:before {
+    position: absolute;
+    content: '';
+    height: calc(100% + 10px); 
+    width: calc(100% + 10px); 
+    border: 8px dashed #b0aca4;
+
+    left: -173px;
+    border-radius: inherit;
+    animation: spin 45s linear infinite;
+  }
+  
+  @keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg); 
+    }
+  }
+#company-container33{
+    height: auto;
+
+}
+.company-img22{
+    height: 675px;
+    width: 657px;
+  margin-top: 5%;
+  margin-left: -44%;;
+}
+ .company-row1{
+    margin-top: 5%;
+ }
+
+
+.ourmission {
+    margin-left: 13%;
+}
+
+ .company-h3-img{
+    text-align: justify;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 62px;
+    color: #585858;
+    
+ }
+
+ .company-p3-img {
+    text-align: justify;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 34px;
+    padding-right: 4rem;
+    color: #585858;
+    margin-left: 190px;
+    margin-top: -80px;
+}
+.ourteam {
+    left: 2%;
+    /* margin-left: 65px; */
+    margin-top: 45px;
+ 
+}
+.aboutus_row{
+    margin-top: 29px;
+    margin-bottom: 38px;
+}
+.company-p33-img {
+    text-align: justify;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 34px;
+    padding-right: 4rem;
+    color: #585858;
+    margin-left: 168px;
+    margin-top: -75px;
+}
+
+#company-h1{
+    color:  white;
+    margin-top: 6%;
+}
+.company-p1{
+    color: white !important;
+    margin-top: 12%;
+}
+#company-p2{
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 61px;
+color: #305F76;
+text-align: justify;
+padding-left: 1.5rem;
+padding-bottom: 1.5rem;
+margin-top: 2rem;
+}
+#company-p3{
+ font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 34px;
+color: #305F76;
+text-align: justify;
+padding-left: 1.5rem;
+margin-bottom: 1rem;
+
+}
+
+
+.company-img1{
+    width: 600px;
+    height: 600px;
+    
+}
+.contibm{
+    height: auto;
+    background: rgba(8, 46, 83, 0.03);
+    
+    
+}
+.row1-heading{
+    margin-top: 4%;
+
+}
+#row1-h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 99px;
+    
+    color: #305F76;
+    
+}
+
+#company-countainer2{
+    height: 500px;
+    background-color: antiquewhite;
+}
+.count2-p2{
+    color: black;
+    margin-top: 20px;
+}
+#company-countainer3{
+    height: auto;
+    background:#40596B
+}
+.count3-h3{
+    margin-top: 10px;
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+   
+}
+.count3-p3{
+    color: black;
+    font-weight: bold;
+}
+.count3-center{
+    display: flex;
+    justify-content: center;
+}
+.comp-ibm{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+

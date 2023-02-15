@@ -1,0 +1,107 @@
+*,*::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+li{
+    list-style: none;
+
+
+}
+a{
+    text-decoration: none;
+    color: darkgray;
+  
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    background: white;
+}
+.nav_brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.nav_toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: darkgray;
+    transition: 0.4s ease-in;
+
+
+}
+.nav_toggler{
+    cursor: pointer;
+    display: none;
+    color:white!important;
+}
+@media  screen and (max-width: 768px) {
+    .nav_toggler{
+        display: block;
+        color:white!important;
+    }
+
+    .nav_menu{
+        position: absolute;
+        top: 17vh;
+        right: 0;
+        width:40% ;
+        height: 65vh;
+        background: rgb(231 231 231);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+        color:white!important;
+
+    }
+    
+}
+.contact_heading{
+    width: 100%;
+    FONT-SIZE: 58PX;
+    COLOR: #FFFF;
+    FONT-WEIGHT: 700;
+    FLOAT: LEFT;
+    margin-left:7%;
+
+}
+/* nav active class */
+.nav_active{
+    transform: translateX(0);
+    
+}
+/* toggler icon animation */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px,5px);
+    color:white!important;
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px,-5px);
+    color:white!important;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    /* color: #000000; */
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    color: #082E53;
+    size: 18px;
+    font-weight: 700;
+ 
+}

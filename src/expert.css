@@ -1,0 +1,128 @@
+.expert-countf{
+    
+    height: auto;
+    background-color: white;
+  
+}
+.row-btn{
+   
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 30px;
+    border:none!important;
+    margin-top: 4%!important;
+}
+button{
+    border: none!important;
+}
+.expertbox{
+    height: 118px!important;
+}
+.expert-p1{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 35px;
+    position: relative;
+    
+
+}
+.col1-exp{
+    background-color: #F4BE17;
+
+}
+.col2-exp ,.col3-exp {
+    background-color: gainsboro;
+}
+.expert-count{
+    display: flex;
+    justify-content: center;
+     margin-top: 20px;
+}
+ 
+ .expert-p2{
+           
+            color: black;
+            margin-top: 35px;
+            margin-top: 1%!important;
+        }
+        .colp1{
+            color: black;
+            
+        }
+        .colp2{
+            color:  #F4BE17;
+           
+        }
+         
+
+            .rowlast{
+                justify-content: center;
+                margin-top: 4%!important;
+            }
+            .btn{
+                width: 100%;
+                height: 100%;
+           
+            }
+.cardimg1{
+   
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    
+ 
+}
+.card{
+    margin-bottom: 10px;
+}
+.card-colr1{
+
+    background: rgb(219, 204, 230);
+    margin-bottom: 20px;
+    justify-content: center;
+    width: auto;
+
+}
+.card-colr2{
+    background-color:  #F4F4F4;;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: auto;
+}
+.cardimg{
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+     margin-top: 19px; 
+     
+}
+.imgcir{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: none;
+    margin-left: 33%;
+}
+.expert-p1::after{
+    content: " ";
+ position: absolute;
+ width: 50vh;
+ bottom: -10%;
+ left: 50%;
+ transform: translateX(-50%);
+ border-bottom: 3px solid yellow;
+}
+.pclr{
+    color: black;
+    margin-top: 30px;
+    height: 44px;
+
+}
+
+
+
+

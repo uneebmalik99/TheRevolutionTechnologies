@@ -1,0 +1,62 @@
+.cont2{
+    background: rgba(255, 187, 18, 0.99);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+.leadcountainer{
+    background-color: white;  
+}
+
+.bg{
+    background: url("./image/elips.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.leadsinfo1{
+    color: white;
+    text-align: start;
+    margin-top: 5px;
+}
+.leadsinfo2{
+    color: white;
+     margin-left: 2px;
+}
+.firstrow{
+    margin-top: 5%;
+}
+
+.btn{
+    
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: rgba(255, 187, 18, 0.99);
+    padding: 5px;
+     width: 130px;
+    height: 40px;
+    color: white;
+    
+}
+
+.imag{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 130%;
+    height :500px;
+    margin-top: -50px;
+    margin-right: 2px;   
+}
+
+.lastrow{
+    
+    margin-top: 150px;
+    margin-bottom: 10px;
+}
+
+.outerrow{
+        margin-top: 50px;
+    }

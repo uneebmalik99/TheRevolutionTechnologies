@@ -1,0 +1,74 @@
+#team-container{
+    background-image: url("../image/teamimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+#team-right{
+    width: 50%;
+    height: 100%;
+    background: rgba(231, 204, 124, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -11px !important;
+}
+#team-heading{
+    color:  #0E0E75;
+    font-weight: bold;
+    font-size: 30;
+}
+#team-para{
+    color: white;
+    margin-left: 10px;
+}
+
+#team-container2{
+    background-image: url("../image/teamimg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    margin-top: 30px;
+
+}
+#ourteamclr{
+    color: rgba(254, 206, 60, 0.97);
+
+}
+.teamcard{
+    background: #F1F1F1;
+    height: auto;
+    /* width: 100%; */
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.teamcard1{
+    height: 50%;
+    background: rgba(254, 206, 60, 0.47);
+    margin-top: 100px;
+  
+  
+}
+.team-row-web{
+    /* display: flex; */
+    justify-content: center;
+
+}
+
+
+.teamimag{
+    margin-top: -50px;
+    height: 80%;
+    width: 30%;
+
+}
+.teamwebimg{
+    height: 50px;
+    width: 60px;
+    margin-top: 10px;
+
+}

@@ -1,0 +1,64 @@
+.contservice{
+    height: auto;
+    background-image: url("./image/rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 800px;
+    background-position: center;
+    
+
+}
+ .firstrow{
+    margin-top: 80px;
+    
+}
+.outerrow{
+    margin-top: 50px !important;
+}
+.cards{
+    width: 330px;
+    height: auto;
+    margin-top: 50px;
+    background: #FFFFFF;
+    box-shadow: 3px 4px 14px rgba(136, 152, 189, 0.4);
+    border-radius: 11px;
+     margin-left: 20px !important;
+    margin-right: 10px !important;
+   
+   
+   
+   
+}
+.serh3{
+    margin-top: 17%;
+}
+.serp1{
+    text-align:center;
+    margin-left: 17%;
+    margin-right: 25%;
+    font-size: 18px;
+    margin-top: 3%;
+
+}
+@media only screen and (max-width: 600px) {
+
+    .outerrow{
+        margin-top: 20px !important;
+    }
+    .firstrow{
+        margin-top: 20px !important;
+    }
+    .cards{
+        margin-left: 30px;
+    }
+  }
+  .serimag{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 90%;
+    width: 80%;
+   
+  }
+  .rowcards2{
+    margin-bottom: 45px;
+  }
+  

@@ -90,9 +90,14 @@ const Footer = () => {
 
                         </div>
 
-                    <div className="row col-sm-12 span1">
-                    <span>Copyright © 2021 The Revolution Technologies. All Rights Reserved.</span>
+                    
+                </div>
+
+                <div className="container-fluid">
+                <div className="row  span1">
+                    <span id="span2">Copyright © 2021 The Revolution Technologies. All Rights Reserved.</span>
                     </div>
+
                 </div>
 
 

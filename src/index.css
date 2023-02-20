@@ -83,6 +83,9 @@ justify-content: center;
 }
 .span1{
   margin-top: 20px;
+ 
+  background-color:rgb(149, 149, 15);
+
 }
 .para1:hover{
   color: white;
@@ -121,6 +124,10 @@ justify-content: center;
     padding-top: 40px;
   }
   
+  
+}
+#span2{
+  color: white;
 }
 
 

@@ -69,10 +69,10 @@ const Footer = () => {
                         </div>
                         <div className="fourth col-sm-12 col-md-3 col-lg-3 col-xs-12 media">
                             <h5>  Contact Us</h5>
-                            <p> Give us a call today and see what we can do for you.</p>
-                            <p> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office#09, National Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
-                            <p> <EmailIcon fontSize="small" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
-                            <p> <CallIcon fontSize="small"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
+                            <p className="footer-p1"> Give us a call today and see what we can do for you.</p>
+                            <p className="footer-p1"> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office#09, National Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
+                            <p className="footer-p1"> <EmailIcon fontSize="small" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
+                            <p className="footer-p1"> <CallIcon fontSize="small"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
                             <p>+92-331-7766-777</p>
 
 

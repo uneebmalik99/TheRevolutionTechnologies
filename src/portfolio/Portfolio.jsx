@@ -20,7 +20,7 @@ const Portfolio = () => {
                         inqurie now
                        </div>
 
-                        <button className="btn btn-primary port-btn" onClick={handleButton} > + </button>
+                        <button className="btn  port-btn" onClick={handleButton} > + </button>
 
                         {
                             show == true &&

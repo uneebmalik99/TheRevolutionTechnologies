@@ -18,7 +18,9 @@ a{
     align-items: center;
     justify-content: space-around;
     height: auto;
-    background: white;
+    background: linear-gradient(180.03deg, rgba(8, 46, 83, 0.38) 0.03%, rgba(254, 206, 60, 0) 117.74%);
+    opacity: 0.8;
+    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
 }
 .nav_brand{
     text-transform: uppercase;
@@ -104,4 +106,7 @@ a{
     size: 18px;
     font-weight: 700;
  
+}
+.navbarlogo{
+    height: 85px;
 }

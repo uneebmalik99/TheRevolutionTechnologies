@@ -1,12 +1,13 @@
 import react from 'react'
 import head from './header.module.css'
+import Static from "./Components/Static";
 
 const Header=()=>{
     return(
         <>
         
      
-
+        <Static/>
      <div className={`container-fluid ${head.containerhead}`}>
 
       <div className={`row ${head.headerrow}`}>
@@ -22,11 +23,11 @@ const Header=()=>{
      </div>
      <div className={`container-fluid ${head.contibm } `}>
       <div className="row">
-        <div className="col"><img src="images/ibm.png" alt="pic" /></div>
-        <div className="col"><img src="images/ibm2.png" alt="pic" /></div>
-        <div className="col"><img src="images/ibm3.png" alt="pic" /></div>
-        <div className="col"><img src="images/ibm4.png" alt="pic" /></div>
-        <div className="col"><img src="images/ibm5.png" alt="pic" /></div>
+        <div className= {`col-xs-12 col-sm-12 col-md-2 col-lg-3 ${head.rowibm}`}><img src="images/ibm.png" alt="pic"/></div>
+        <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-2 ${head.rowibm}`}><img src="images/ibm2.png" alt="pic" /></div>
+        <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-2 ${head.rowibm}`}><img src="images/ibm3.png" alt="pic" /></div>
+        <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-2 ${head.rowibm}`}><img src="images/ibm4.png" alt="pic"  /></div>
+        <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-3 ${head.rowibm}`}><img src="images/ibm5.png" alt="pic" /></div>
        
       </div>
      </div>

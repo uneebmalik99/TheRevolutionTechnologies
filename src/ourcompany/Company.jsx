@@ -1,10 +1,12 @@
 import React from 'react';
 import './company.css';
 import Test from '../Test';
+import Static from "../Components/Static";
 
 const Company = () => {
     return (
         <>
+        <Static/>
             <div className="container-fluid" id="company-countainer">
 
                 <div className="row">
@@ -19,7 +21,7 @@ const Company = () => {
             </div>
             <div className="container-fluid contibm">
                 <div className="row  ">
-                    <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm "><img src="images/ibm.png" alt="pic" /></div>
+                    <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm "><img src="images/ibm.png" alt="pic"  /></div>
                     <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm" ><img src="images/ibm2.png" alt="pic" /></div>
                     <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm"><img src="images/ibm3.png" alt="pic" /></div>
                     <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm"><img src="images/ibm4.png" alt="pic" /></div>

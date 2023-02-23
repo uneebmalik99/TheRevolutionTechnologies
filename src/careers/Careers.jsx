@@ -1,8 +1,10 @@
 import React from "react";
 import './career.css';
+import Static from "../Components/Static";
 const Careers = () => {
     return (
         <>
+        <Static/>
             <div>
                 <div className="container-fluid" id="career-container1">
                     <div className="row">
@@ -36,12 +38,12 @@ const Careers = () => {
                     </div>
 
                 </div>
-
-                <div className="container-fluid" id="career-container3">
-
-                    <div className="row" id=" career-container3-row1">
+                <div className="row" id=" career-container3-row1">
                         <p className="container3-p"> OPEN VACANCIES </p>
                     </div>
+                <div className="container-fluid" id="career-container3">
+<div className="row mainrw">
+                    
                     <div className="container-fluid" id=" container3-inner">
                         <div className=" career-container3-section1">
 
@@ -88,7 +90,7 @@ const Careers = () => {
 
                     </div>
 
-                    <div className="row vacancies">
+                    <div className="row vacancies doing">
                         <div className="row inrow">
                             <div className="col-sm-12 col-md-2 col-lg-3 ">
                                 <p className="text">UI/UX</p>
@@ -108,7 +110,7 @@ const Careers = () => {
 
                     </div>
                    
-
+                    </div>
 
                 </div>
 

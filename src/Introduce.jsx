@@ -7,7 +7,7 @@ const Introduce = () => {
         <>
             <div className={`container-fluid ${styles.cont}`} >
                 <div className="row">
-                    <h1> Introduce Our Projects</h1>
+                    <h1 className={styles.introh1}> Introduce Our Projects</h1>
                 </div>
                 <div className="row" >
                     <p className={styles.para}> Software development outsourcing is just a tool to achieve business goals. But there is no way to get worthwhile results without cooperation and trust

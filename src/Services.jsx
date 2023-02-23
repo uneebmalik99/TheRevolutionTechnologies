@@ -7,7 +7,7 @@ const Services = () => {
         <>
             <div className={service.contservice}>
                 <div className={`row ${service.firstrow}`}>
-                    <h2>Services we Offer</h2>
+                    <h2 className={service.sercount1h2}>Services we Offer</h2>
                 </div>
 
                 <div className={`row ${service.outerrow}`} >

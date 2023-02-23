@@ -30,13 +30,24 @@
 }
 .serh3{
     margin-top: 17%;
+    font-weight: 700;
+font-size: 50px;
+line-height: 61px;
+
+color: #082E53;
 }
 .serp1{
     text-align:center;
     margin-left: 17%;
     margin-right: 25%;
-    font-size: 18px;
     margin-top: 3%;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: left;
+    margin-left: 20%;
+
+color: #082E53;  
 
 }
 @media only screen and (max-width: 600px) {
@@ -61,4 +72,16 @@
   .rowcards2{
     margin-bottom: 45px;
   }
+  .sercount1h2{
+    position: relative;
+  }
   
+  .sercount1h2::after{
+ content: " ";
+ position: absolute;
+ width: 30vh;
+ bottom: -10%;
+ left: 50%;
+ transform: translateX(-50%);
+ border-bottom: 3px solid yellow;
+}

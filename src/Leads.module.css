@@ -2,6 +2,7 @@
     background: rgba(255, 187, 18, 0.99);
     margin-top: 40px;
     margin-bottom: 40px;
+    height: auto;
     
 }
 .leadcountainer{
@@ -11,7 +12,7 @@
 .bg{
     background: url("./image/elips.png"); 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     
 }
@@ -29,9 +30,10 @@
     margin-top: 5%;
 }
 
-.btn{
+.leadsbtn{
     
-    border: 2px solid white;
+ 
+    border: 2px solid white !important;
     border-radius: 50px;
     background-color: rgba(255, 187, 18, 0.99);
     padding: 5px;
@@ -45,8 +47,8 @@
     position: relative;
     right: 0;
     bottom: 0;
-    width: 130%;
-    height :500px;
+    width: 753px;
+    height :100%;
     margin-top: -50px;
     margin-right: 2px;   
 }

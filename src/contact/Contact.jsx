@@ -3,10 +3,13 @@ import './countactus.css';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
 import Map from "../Components/Map";
+import Static from "../Components/Static";
+
 const Contact = () => {
 
     return (
         <>
+        <Static/>
             <div className="container-fluid" id="contact-maincontainer">
                 <div className="container-fluid" id="contact-container">
                     <div class="contact_heading">

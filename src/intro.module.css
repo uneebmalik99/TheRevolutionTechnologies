@@ -28,3 +28,21 @@
     width: 80%;
     
 }
+.introh1{
+    font-weight: 700;
+font-size: 63px;
+line-height: 76px;
+margin-bottom: 10px;
+color: #000000;
+
+
+}
+.para{
+    font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: #000000;
+margin-top: 1%;
+margin-bottom: 1%;
+
+}

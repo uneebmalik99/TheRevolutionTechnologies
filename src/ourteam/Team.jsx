@@ -1,10 +1,13 @@
 import react from 'react';
 import './ourteam.css';
+import Static from "../Components/Static";
+
 
 const Team = () => {
 
   return (
     <>
+     <Static/>
       <div className="container-fluid " id='team-container'>
         <div id="team-right">
           <div id="teaminner">

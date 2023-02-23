@@ -4,36 +4,44 @@
     box-sizing: border-box;
 }
 #ser-container1{
-    height: 600px;
-    background-image: url("../image/serbg1.jpg");
+    height: auto;
+    /* background-image: url("../image/serbg1.jpg");
     background-repeat:no-repeat;
     background-size: 100% 100%;
-    background-position: right;
+    background-position: right; */
+    background: linear-gradient(269.73deg, #3686AE 1.1%, rgba(254, 206, 60, 0) 115.91%);
 }
 #ser-count1-p1{
 
-font-style: normal;
-font-weight: 700;
-font-size: 76px;
-line-height: 92px;
-/* identical to box height */
-margin-top: 15%;
-text-align: left;
-margin-left: 10%;
-color: #FFFFFF;
-}#ser-count1-p2 {
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 31px;
-    margin-top: 5%;
-    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 92px;
+    margin-top: 20%;
     text-align: left;
     margin-left: 10%;
-    margin-right: 10%;
-    width: 63%;
-    color: 
-#082E53;
+  
+    
+    
+    color: #082E53;
+}
+#ser-count1-p2 {
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+margin-left: 10%;
+color: #082E53; 
+margin-top: 5%;
+text-align: left;
+width: 90%;
+
+
+}
+#ser-bg-img{
+    width: 80%;
+    height: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 #ser-container2{
     height: auto;
@@ -44,20 +52,7 @@ color: #FFFFFF;
     color: 
     #082E53;
 }
-#ser-count1-p1 {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 31px;
-    margin-top: 5%;
-    color: #FFFFFF;
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 63%;
-    color: 
-#082E53;
-}
+
 #container2-outerrow{
     font-style: normal;
 font-weight: 500;
@@ -67,6 +62,7 @@ margin-top: 5%;
 margin-bottom: 1%;
 color: #305F76;
 justify-content: center;
+
 
 }
 #ser-container2-p1{
@@ -217,3 +213,63 @@ border-radius: 11px;
     border-radius: 11px;
     margin-bottom: 10px;
 }
+.ser-images {
+    width: 80px;
+    height: 80px;
+    margin-top: 10%;
+
+}
+#ser-address-p{
+    font-weight: 500;
+font-size: 31px;
+line-height: 38px;
+color: #000000;
+margin-top: 5%;
+
+}
+#ser-address-p2{
+ font-weight: 400;
+font-size: 21px;
+line-height: 25px;
+color: #000000;
+margin-top: 3%;
+}
+#ser-mail-p{
+ font-weight: 500;
+font-size: 31px;
+line-height: 38px;
+margin-top: 5%;
+color: #000000;
+}
+#ser-mail-p2{
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 3%;
+    color: #000000;
+    
+}
+.ser-images2 {
+    width: 80px;
+    height: 80px;
+    margin-top: 15%;
+    
+}
+#ser-contact-p{
+    font-weight: 500;
+font-size: 31px;
+line-height: 38px;
+/* identical to box height */
+margin-top: 5%;
+
+color: #000000;
+
+}
+#ser-ontact-p2{
+    font-weight: 400;
+font-size: 21px;
+line-height: 25px;
+margin-top: 3%;
+color: #000000;
+}
+

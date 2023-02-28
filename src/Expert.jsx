@@ -35,7 +35,7 @@ const Expert = () => {
 
                 <div className="row rowlast">
 
-                    <div className=" colsm col11 col-sm-12 col-md-2 col-lg-2">
+                    <div className=" col-sm-12 col-md-2 col-lg-2">
 
                         <div className="card exp-card cardimg1 card-colr1 expertbox">
                             <div className="imgcir">
@@ -46,7 +46,7 @@ const Expert = () => {
                         </div>
 
                     </div>
-                    <div className=" colsm col22 col-sm-12 col-md-2 col-lg-2">
+                    <div className="  col-sm-12 col-md-2 col-lg-2">
                         <div className="card cardimg1 card-colr2 expertbox">
                             <div className="imgcir2">
                                 <img src="images/exp2.png" className='cardimg2' alt="flex img" />
@@ -57,7 +57,7 @@ const Expert = () => {
 
 
                     </div>
-                    <div className=" colsm col33 col-sm-12 col-md-2 col-lg-2">
+                    <div className=" col-sm-12 col-md-2 col-lg-2">
                     <div className="card cardimg1 card-colr2">
                             <div className="imgcir2">
                                 <img src="images/exp3.png" className='cardimg2' alt="flex img" />
@@ -67,7 +67,7 @@ const Expert = () => {
                         </div>
                       
                     </div>
-                    <div className=" colsm col44 col-sm-12 col-md-2 col-lg-2">
+                    <div className=" col-sm-12 col-md-2 col-lg-2">
                     <div className="card cardimg1 card-colr2">
                             <div className="imgcir2">
                                 <img src="images/exp4.png" className='cardimg2' alt="flex img" />
@@ -77,7 +77,7 @@ const Expert = () => {
                         </div>
                        
                     </div>
-                    <div className=" colsm col55 col-sm-12 col-md-2 col-lg-2">
+                    <div className="  col-sm-12 col-md-2 col-lg-2">
                     <div className="card cardimg1 card-colr2">
                             <div className="imgcir2">
                                 <img src="images/exp5.png" className='cardimg2' alt="flex img" />

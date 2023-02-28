@@ -18,9 +18,11 @@ a{
     align-items: center;
     justify-content: space-around;
     height: auto;
-    background: linear-gradient(180.03deg, rgba(8, 46, 83, 0.38) 0.03%, rgba(254, 206, 60, 0) 117.74%);
+    background-color: white;
     opacity: 0.8;
-    box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);
+    /* background: linear-gradient(180.03deg, rgba(8, 46, 83, 0.38) 0.03%, rgba(254, 206, 60, 0) 117.74%);
+     opacity: 0.8; */
+    /* box-shadow: 1px 2px 3px 4px rgba(20,20,20,0.4);  */
 }
 .nav_brand{
     text-transform: uppercase;
@@ -107,6 +109,29 @@ a{
     font-weight: 700;
  
 }
+.nav-link{
+    position: relative;
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    height: 3px;
+    width: 0;
+    left: 15px;
+    bottom: -0px;
+    transition: 0.3s;
+}
 .navbarlogo{
     height: 85px;
 }
+.nav-link:hover::after{
+    width: 70px;
+    
+    
+}
+.nav-link:hover{
+    color: yellow;
+}
+
+

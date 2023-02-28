@@ -67,6 +67,7 @@
     margin-bottom: 2%;
 }
 .rowibm{
-    margin-top: 1%;
+    margin-top: 1% !important;
     margin-bottom: 1%;
+    marquee:left;
 }

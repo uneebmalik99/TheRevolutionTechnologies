@@ -156,7 +156,7 @@ const Services = () => {
                                    
                                      <div className="container-fluid">
                                         <div className="row"><p> <img src="./images/ser-emailicon.png" className="ser-images2 " alt="faceook" srcset="" /></p></div>
-                                        <p id='ser-mail-p'> Eamil Us</p>
+                                        <p id='ser-mail-p'> Emil Us</p>
                                         <p id='ser-mail-p2'>therevolutiontechnologie.com  </p>
                                     </div>
 
@@ -168,7 +168,7 @@ const Services = () => {
                                 <div className="ser-count3-contact">
                                 <div className="container-fluid">
                                         <div className="row"><p> <img src="./images/ser-callicon.png" className="ser-images2 " alt="faceook" srcset="" /></p></div>
-                                        <p id='ser-contact-p'> Contect Us</p>
+                                        <p id='ser-contact-p'> Contact Us</p>
                                         <p id='ser-ontact-p2'>0303 3003030   </p>
                                     </div>
 

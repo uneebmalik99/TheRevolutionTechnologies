@@ -65,59 +65,11 @@ button{
                 height: 100%;
            
             }
-.cardimg1{
-   
-    width: 200px !important;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    
- 
-}
-/* .card{
-    margin-bottom: 10px;
-    width: 100%;
-} */
-.card-colr1{
 
-    background: rgb(219, 204, 230);
-    margin-bottom: 20px;
-    justify-content: center;
-    width: auto;
 
-}
-.card-colr2{
-    background-color:  #F4F4F4;;
-    margin-bottom: 20px;
-    justify-content: center;
-    width: auto;
-}
-.cardimg{
-    width: 40px; 
-    height: 40px;
-    display: flex;
-    justify-content: center;
 
-     margin-top: 19px; 
-     
-}
-.cardimg1{
-    width: 40px; 
-    height: 40px;
-    display: flex;
-    justify-content: center;
 
-     margin-top: 19px; 
-     background-color: #D8E7ED;;
 
-}
-.imgcir{
-    border-radius: 50%;
-    height: 80px;
-    width: 80px;
-    background-color: none;
-    margin-left: 33%;
-}
 .expert-p1::after{
     content: " ";
  position: absolute;
@@ -132,6 +84,16 @@ button{
     margin-top: 30px;
     height: 44px;
 
+}
+.cardimg1{
+    margin-top: 10px;
+
+}
+.card1{
+    background: #D8E7ED !important;
+border-radius: 15px;
+margin-top: 20px;
+margin-bottom: 51px;
 }
 
 

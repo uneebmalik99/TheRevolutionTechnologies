@@ -11,7 +11,8 @@ const Static=()=>{
         <>
          <div className="fixed">
                        <div id="pos-inq">
-                        inqurie now
+                     inqurie now 
+                      
                        </div>
 
                         <button className="btn  port-btn" onClick={handleButton} > + </button>

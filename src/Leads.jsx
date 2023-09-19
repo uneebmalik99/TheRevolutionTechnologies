@@ -26,7 +26,7 @@ const Leads = () => {
                             </div>
                             <div className={lead.lastrow}   >
                                 
-                                <button className={lead.btn}> Contact Us</button>
+                                <button className={lead.leadsbtn}> Contact Us</button>
                             </div>
                         </div>
 

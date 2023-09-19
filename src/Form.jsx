@@ -24,7 +24,7 @@ const Form = () => {
                 <div className="row row-2 ">
 
 
-                    <div className=" col-1 col-sm-12 col-md-6 col-lg-6 ">
+                    <div className="  col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
 
                         <form action="">
 
@@ -44,10 +44,11 @@ const Form = () => {
                         <br></br>
                     </div>
 
-                    <div className="col-2  col-sm-12 col-md-6 col-lg-6   ">
+                    <div className="   col-xs-12 col-sm-12 col-md-12 col-lg-6   ">
                         <form action="">
-                            <textarea name="textbox" id="" cols="50" rows="5" placeholder="Message" className="textarea1"></textarea>
+                            <textarea name="textbox" id="" cols="" rows="5" placeholder="Message" className="textarea1"></textarea>
                             {/* <input type="text" placeholder="Message" /> */}
+                            
 
                         </form>
 

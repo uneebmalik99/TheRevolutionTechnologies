@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import './Solution.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
@@ -6,11 +6,11 @@ const Solution = () => {
 
     return (
         <>
-         
+
 
             <div className="container-fluid outer-count">
                 <div className="row row-first">
-                    <h2>SOLUTION</h2>
+                    <h2 className='row-sol'>SOLUTION</h2>
                 </div>
 
                 <div className="row row-sec">
@@ -24,55 +24,55 @@ const Solution = () => {
 
 
 
-              <div className="container row-count">
-                <div className="row row-card ">
-                  
+                <div className="container row-count">
+                    <div className="row row-card ">
+
 
                         <div className=" col-sm-12 col-md-4 col-lg-4">
-                             <div className="card card1">                              
-                              <img src="./images/man.png" className='card-img' alt="faceook" srcset="" />
-                               <p className='p-card'>BOOST YOUR BUSINESS</p>
-                               <p className='p2-card'>Lorem ipsum dolor sit amet consectetur
-                                   adipisicing elit. Neque, facilis!</p>
-                             </div>
+                            <div className="card card1">
+                                <img src="./images/man.png" className='card-img1' alt="faceook" srcset="" />
+                                <p className='p-card '>BOOST YOUR BUSINESS</p>
+                                <p className='p2-card '>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Neque, facilis!</p>
+                            </div>
                         </div>
 
                         <div className="col-sm-12 col-md-4 col-lg-4">
-                           <div className="card card1">
-                               
-                                    <img src="./images/man1.png" className='card-img' alt="faceook" srcset="" />
-                                    <p className='p-card'>BOOST YOUR BUSINESS</p>
-                                    <p className='p2-card'>Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Neque, facilis!</p>
-                               
+                            <div className=" card2">
+
+                                <img src="./images/sol2.png" className='card-img' alt="faceook" srcset="" />
+                                <p className='p-card'>BOOST YOUR BUSINESS</p>
+                                <p className='p2-card'>Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Neque, facilis!</p>
+
 
                             </div>
 
                         </div>
-                     <div className=" col-sm-12 col-md-4 col-lg-4">
-                        <div className="card card1">
-                           
-                                <img src="./images/man2.png" className='card-img' alt="faceook" srcset="" />
+                        <div className=" col-sm-12 col-md-4 col-lg-4">
+                            <div className=" card2">
+
+                                <img src="./images/sol3.png" className='card-img' alt="faceook" srcset="" />
                                 <p className='p-card'>BOOST YOUR BUSINESS</p>
                                 <p className='p2-card'>Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Neque, facilis!</p>
-                           
 
+
+                            </div>
                         </div>
-                        </div>
-                    
+
 
 
                     </div>
 
 
-                    </div>
                 </div>
-                
-            </>
+            </div>
+
+        </>
 
 
-            );
+    );
 }
 
-            export default Solution;
+export default Solution;

@@ -1,9 +1,16 @@
 .test-count{
+
+     display: flex;
+     flex-direction: column;
     width: 100%;
     height: auto;
     background-color: #FDFBF7;
     /* position: relative;
     z-index: 5; */
+     background-image: url("./image/feedback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
 
     
 }
@@ -24,7 +31,7 @@
 .test-p1{
     color: 
     #FECE3C;
-    margin-top: 20px;
+    padding-top: 4%;
 }
 .test-p2{
     color:  #FECE3C;
@@ -33,8 +40,16 @@
 }
 .test-p6{
     color:#B6B6B6 ;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
 }
 .test-p3{
     margin-bottom: 25px;
+}
+.test-p4{
+    color: 
+    #333333;
+}
+.arrowbtn{
+    font-weight: bold;
+    font-size: 100px;
 }

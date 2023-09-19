@@ -33,15 +33,15 @@ const Footer = () => {
                            
                             <ul>
                             <h5>Links</h5>
-                                <a href="#"><li>Home</li></a>
+                                <a href="#"><li className="lifoot">Home</li></a>
 
-                                <a href="#"><li>About Us</li></a>
+                                <a href="#"><li className="lifoot">About Us</li></a>
 
-                                <a href="#"><li>Services</li></a>
+                                <a href="#"><li className="lifoot">Services</li></a>
 
-                                <a href="#"><li>PortFolio</li></a>
+                                <a href="#"><li className="lifoot">PortFolio</li></a>
 
-                                <a href="#"><li>Contact Us</li></a>
+                                <a href="#"><li className="lifoot">Contact Us</li></a>
                             </ul>
 
 
@@ -53,15 +53,15 @@ const Footer = () => {
                             <ul>
                             <h5>Company</h5>
 
-                                <a href="#"><li>About Company</li></a>
+                                <a href="#"><li className="lifoot">About Company</li></a>
 
-                                <a href="#"><li>Block chain</li></a>
+                                <a href="#"><li className="lifoot">Block chain</li></a>
 
-                                <a href="#"><li>Mobile App</li></a>
+                                <a href="#"><li className="lifoot">Mobile App</li></a>
 
-                                <a href="#"><li>Ui/UX Design</li></a>
+                                <a href="#"><li className="lifoot">Ui/UX Design</li></a>
 
-                                <a href="#"><li>Web</li></a>
+                                <a href="#"><li className="lifoot">Web</li></a>
 
                             </ul>
 
@@ -69,10 +69,10 @@ const Footer = () => {
                         </div>
                         <div className="fourth col-sm-12 col-md-3 col-lg-3 col-xs-12 media">
                             <h5>  Contact Us</h5>
-                            <p> Give us a call today and see what we can do for you.</p>
-                            <p> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office#09, National Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
-                            <p> <EmailIcon fontSize="small" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
-                            <p> <CallIcon fontSize="small"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
+                            <p className="footer-p1"> Give us a call today and see what we can do for you.</p>
+                            <p className="footer-p1"> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office#09, National Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
+                            <p className="footer-p1"> <EmailIcon fontSize="small" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
+                            <p className="footer-p1"> <CallIcon fontSize="small"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
                             <p>+92-331-7766-777</p>
 
 
@@ -90,9 +90,14 @@ const Footer = () => {
 
                         </div>
 
-                    <div className="row col-sm-12 span1">
-                    <span>Copyright © 2021 The Revolution Technologies. All Rights Reserved.</span>
+                    
+                </div>
+
+                <div className="container-fluid">
+                <div className="row  span1">
+                    <span id="span2">Copyright © 2021 The Revolution Technologies. All Rights Reserved.</span>
                     </div>
+
                 </div>
 
 

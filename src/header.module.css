@@ -12,7 +12,7 @@
     font-weight: bold;
     font-size: 50px;
     color: white;
-    margin-top: 100px;
+    margin-top: 100px !important;
 }
 .heading2{
     font-weight: bold;
@@ -29,21 +29,24 @@
     margin-top: -45px;
 }
 .btn{
-    /* height: 30px;
-    width: 150px; */
+   margin-top: 2rem;
     background: #FECE3C;
     border-radius: 13px;
-    width: 150px;
-    height: 50px;
+    width: 10rem !important;
+    height: 35px;
+
+
     text-align: center;
 }
 .btnrow{
     justify-content: center;
-    margin-top: 15px;
+   
+   
 }
 .contibm{
-    height: autosss;
+    height: auto;
     background: rgba(8, 46, 83, 0.03);
+   
     
 }
 .logo{
@@ -55,4 +58,16 @@
 .nav-link:hover{
     border-bottom: 5px solid yellow;
 
+}
+.imgrow{
+    margin-top: 2%;
+}
+.countibmimag{
+    margin-top: 2% !important;
+    margin-bottom: 2%;
+}
+.rowibm{
+    margin-top: 1% !important;
+    margin-bottom: 1%;
+    marquee:left;
 }

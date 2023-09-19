@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import './expert.css'
 const Expert = () => {
 
@@ -35,9 +35,9 @@ const Expert = () => {
 
                 <div className="row rowlast">
 
-                    <div className=" colsm col11 col-sm-12 col-md-2 col-lg-2">
+                    <div className=" col-sm-12 col-md-2 col-lg-2">
 
-                        <div className="card cardimg1 card-colr1">
+                        <div className="card exp-card cardimg1 card-colr1 expertbox">
                             <div className="imgcir">
                                 <img src="images/flexbility.png" className='cardimg' alt="flex img" />
                             </div>
@@ -46,10 +46,10 @@ const Expert = () => {
                         </div>
 
                     </div>
-                    <div className=" colsm col22 col-sm-12 col-md-2 col-lg-2">
-                        <div className="card cardimg1 card-colr2">
-                            <div className="imgcir">
-                                <img src="images/flexbility.png" className='cardimg' alt="flex img" />
+                    <div className="  col-sm-12 col-md-2 col-lg-2">
+                        <div className="card cardimg1 card-colr2 expertbox">
+                            <div className="imgcir2">
+                                <img src="images/exp2.png" className='cardimg2' alt="flex img" />
                             </div>
                             <p className='pclr'>EMPOWEMENT</p>
 
@@ -57,30 +57,30 @@ const Expert = () => {
 
 
                     </div>
-                    <div className=" colsm col33 col-sm-12 col-md-2 col-lg-2">
+                    <div className=" col-sm-12 col-md-2 col-lg-2">
                     <div className="card cardimg1 card-colr2">
-                            <div className="imgcir">
-                                <img src="images/flexbility.png" className='cardimg' alt="flex img" />
+                            <div className="imgcir2">
+                                <img src="images/exp3.png" className='cardimg2' alt="flex img" />
                             </div>
                             <p className='pclr'>INCLUSIVITY</p>
 
                         </div>
                       
                     </div>
-                    <div className=" colsm col44 col-sm-12 col-md-2 col-lg-2">
+                    <div className=" col-sm-12 col-md-2 col-lg-2">
                     <div className="card cardimg1 card-colr2">
-                            <div className="imgcir">
-                                <img src="images/flexbility.png" className='cardimg' alt="flex img" />
+                            <div className="imgcir2">
+                                <img src="images/exp4.png" className='cardimg2' alt="flex img" />
                             </div>
                             <p className='pclr'>DISCIPLINE</p>
 
                         </div>
                        
                     </div>
-                    <div className=" colsm col55 col-sm-12 col-md-2 col-lg-2">
+                    <div className="  col-sm-12 col-md-2 col-lg-2">
                     <div className="card cardimg1 card-colr2">
-                            <div className="imgcir">
-                                <img src="images/flexbility.png" className='cardimg' alt="flex img" />
+                            <div className="imgcir2">
+                                <img src="images/exp5.png" className='cardimg2' alt="flex img" />
                             </div>
                             <p className='pclr'>GROWYHMINDSET</p>
 

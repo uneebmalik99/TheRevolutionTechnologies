@@ -1,0 +1,63 @@
+.port-btn {
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    height: 50px;
+    bottom: 40px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    background: linear-gradient(167.2deg, #FECE3C -11.39%, #FECE3C 52.76%, #5390D5 126.18%);
+    box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.25), inset -1px -6px 4px rgba(0, 0, 0, 0.25);
+}
+#pos-inq {
+    width: 40px;
+    height: 150px;
+    text-align: center;
+    background: linear-gradient(179.91deg, #FECE3C -2.57%, #FECE3C 62.01%, #7C9FB1 110.92%);
+    writing-mode: vertical-rl;
+   
+    position: fixed;
+    right: 0;
+    top: 35%;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+.port-btn2 {
+    width: 45px;
+    position: fixed;
+    right: 23px;
+    height: 45px;
+    bottom: 100px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.port-btn3 {
+    width: 45px;
+    position: fixed;
+    right: 23px;
+    height: 45px;
+    bottom: 160px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.port-btn4 {
+    width: 45px;
+    position: fixed;
+    right: 23px;
+    height: 45px;
+    bottom: 225px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+}

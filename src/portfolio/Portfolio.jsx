@@ -19,6 +19,19 @@ const Portfolio = () => {
       heading: 'Slide 2',
       text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
     },
+    {
+      imageUrl: 'image2.jpg',
+      heading: 'Slide 3',
+      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
+    }, {
+      imageUrl: 'image2.jpg',
+      heading: 'Slide 4',
+      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
+    }, {
+      imageUrl: 'image2.jpg',
+      heading: 'Slide 5',
+      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
+    },
     // Add more slides as needed
   ];
   
@@ -117,28 +130,7 @@ const Portfolio = () => {
 
 
             <div className="container-fluid" id="port-maincount">
-                <div className="container-fluid" id="port-container">
-                 
-
-                    <div className="row">
-                        <div className="col-sm-12 col-md-4 col-lg-4">
-                            <div className="row" id="portrow1">
-                                <h1 id="port-h1">CUSTOMIZABLE</h1>
-                                <h3 id="port-h3">SOFTWARE PRODUCTS</h3>
-                                <p id="port-para">We build custom digital solutions to meet our clients unique business needs</p>
-                            </div>
-
-                        </div>
-                        <div className="col-sm-12 col-md-8 col-lg-8">
-                            <div className="">
-                                <img src="./images/portshade.png" alt="image" srcset="" id="port-imag1" />
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
+        
                   
               <div className="bg_img">
                 <div className="container" id="port-container2">

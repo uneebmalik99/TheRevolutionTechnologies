@@ -60,16 +60,19 @@
 }
 
 .port-p1 {
-    margin-top: -125px;
+    margin-top: -155px;
     color: white;
     font-weight: bold;
+    font-size: 10px;
 
 }
 
 .port-p2 {
-    margin-top: -95px;
+
+    margin-top: -133px;
     color: white;
     font-weight: bold;
+    font-size: 20px;
 
 }
 .bg_img{
@@ -129,9 +132,10 @@
 
 .img-port11 {
     width: 100%;
-    height: 425px;
+    height: 322px;
     border-radius: 12px;
     margin-bottom: 20px;
+  
     /* margin-left: 2%; */
 }
 
@@ -372,6 +376,97 @@
   /* Add more styling as needed */
   
 
+
+/*/* Style for the slider container */
+.slider-container {
+    width: 100%;
+    max-height: 400px; /* Set the fixed height */
+    overflow: hidden;
+    position: relative; /* Required for positioning the buttons */
+  }
+  
+  /* Style for the slider content */
+  .slider-content {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-left: 10rem;
+  }
+  
+  /* Style for individual slider items (images) */
+  .slider-item {
+    /* Remove the flex property */
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Style for the image inside the slider item */
+  .slider-item img {
+    /* width: 100%; */
+    /* height: 100%; Fill the container's fixed height */
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    
+  }
+  
+  /* Style for navigation buttons */
+ /* Style for navigation buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Style for the slider content */
+.slider-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+/* Style for the paragraph and heading container */
+.para_hd {
+  position: absolute;
+  top: 50%;
+  left: 60px; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  color: rgb(4, 3, 3);
+  background: rgba(255, 255, 255, 0.7); /* Add background to make text readable */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  z-index: 1; /* Ensure the text is above the images */
+}
+
+/* Style for the image container */
+.image-container {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Style for active slider item */
+.slider-item.active {
+  flex: 0 0 100%;
+  transition: flex 0.5s;
+}
+
 @media only screen and (max-width: 600px) {
 
     #port-container5-p1 {
@@ -420,4 +515,49 @@
     }
 
     
+
 }
+
+
+
+
+
+
+
+
+/* sliders  */
+ /* Slider.css */
+/* Slider.css */
+.slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .slider-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .slider-content {
+    position: absolute;
+    top:50% ; 
+    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;  
+    text-align: center;
+     
+  }
+  
+  .slider-content h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .slider-content p {
+    font-size: 16px;
+  }
+  
+

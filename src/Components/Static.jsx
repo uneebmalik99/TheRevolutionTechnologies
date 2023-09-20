@@ -10,7 +10,7 @@ const Static=()=>{
     return(
         <>
          <div className="fixed">
-                       <div id="pos-inq">
+                       <div id="pos-inq" style={{zIndex : "5"}}>
                      inqurie now 
                       
                        </div>

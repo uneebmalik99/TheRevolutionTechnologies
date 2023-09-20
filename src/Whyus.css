@@ -1,0 +1,56 @@
+.para_hd2{
+     display: flex;
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.cards-data{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; 
+    margin: 2rem;
+    flex-wrap: wrap;
+}
+
+.customcard{ 
+    width: 367.26px;
+    height: 396.71px;
+    border-radius: none;
+    padding: 2rem; 
+    /* background-image: url(./image/Group\ 2.png); */
+    background-image: url(./image/Group\ 98817.png);
+ 
+
+}
+.h2cardwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cardresposnsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.yeloow_para{
+    color: #FECE3C;
+    font-weight: bold;
+    font-size: 30px;
+}
+#card3_id{
+    background-color: #082E53;
+    color: white;
+}
+.card3{ 
+    width: 420px;
+       height: 277px ;
+    
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1) ;
+    color: #082E53;
+    border-radius: 2rem;
+    padding: 2rem;
+}

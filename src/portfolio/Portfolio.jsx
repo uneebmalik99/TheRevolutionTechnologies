@@ -5,6 +5,8 @@ import Static from "../Components/Static";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Showproject from "../Showproject";
+
 
 const Portfolio = () => {
 
@@ -112,7 +114,6 @@ const Portfolio = () => {
     return (
         <>
         <Static/>
-        
         <Slider {...settings}>
       {slidesData.map((slide, index) => (
         <div key={index} className="slider-item">
@@ -131,7 +132,7 @@ const Portfolio = () => {
 
             <div className="container-fluid" id="port-maincount">
         
-                  
+     
               <div className="bg_img">
                 <div className="container" id="port-container2">
                     <div className="row">
@@ -149,6 +150,7 @@ const Portfolio = () => {
 
 
     <div>
+
   {/* Filter buttons */}
   <div className="filter-buttons">
   <button

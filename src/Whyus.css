@@ -26,6 +26,10 @@
  
 
 }
+.h2cardwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
 .cardresposnsive{
     display: flex;
     flex-direction: column;
@@ -42,6 +46,7 @@
     color: white;
 }
 .card3{ 
+    width: 420px;
        height: 277px ;
     
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1) ;

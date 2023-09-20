@@ -7,6 +7,7 @@ import Test from './Test';
 import Expert from './Expert';
 import Solution from './Solution';
 import Form from './Form';
+import Servicesoffer from './Servicesoffer'
 
 const Home=()=>{
 
@@ -14,6 +15,7 @@ const Home=()=>{
         <>
    
   <Header/>,
+  <Servicesoffer/>,
 <Services/>,
   <Leads/>,
   <Introduce/>,

@@ -2,41 +2,8 @@ import React, { useState } from "react";
 import './portfolios.css';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Static from "../Components/Static";
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 const Portfolio = () => {
-
-  const slidesData = [
-    {
-      imageUrl: './images/imgpsh_fullsize_anim (1).png',
-      heading: 'Slide 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    },
-    {
-      imageUrl: 'image2.jpg',
-      heading: 'Slide 2',
-      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
-    },
-    // Add more slides as needed
-  ];
-  
-  
-  const images = [
-    './images/Instagram post - 51.png',
-    './images/Instagram post - 53.png',
-    './images/Instagram post - 54.png',
-    // Add more image URLs as needed
-  ];
-  const settings = {
-    dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    }
-  
  
     const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -89,9 +56,8 @@ const Portfolio = () => {
           },
 
       ];
-   
 
-
+      
    
 
 
@@ -99,23 +65,6 @@ const Portfolio = () => {
     return (
         <>
         <Static/>
-        
-        <Slider {...settings}>
-      {slidesData.map((slide, index) => (
-        <div key={index} className="slider-item">
-          <div className="slider-image">
-            <img src={slide.imageUrl} alt={slide.heading} />
-          </div>
-          <div className="slider-content">
-            <h2>{slide.heading}</h2>
-            <p>{slide.text}</p>
-          </div>
-        </div>
-      ))}
-    </Slider>
-
-
-
             <div className="container-fluid" id="port-maincount">
                 <div className="container-fluid" id="port-container">
                  
@@ -280,5 +229,4 @@ const Portfolio = () => {
         </>
     )
 }
-
 export default Portfolio;

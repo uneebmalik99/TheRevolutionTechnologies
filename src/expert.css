@@ -28,12 +28,24 @@ button{
 
 }
 .col1-exp{
-    background-color: #F4BE17;
-
-}
-.col2-exp ,.col3-exp {
     background-color: gainsboro;
 }
+.col2-exp{
+    background-color: gainsboro;
+}
+.col3-exp{
+    background-color: gainsboro;
+}
+.col1-exp :hover {
+    background-color: rgba(254, 213, 87, 1) !important;
+}
+.col2-exp :hover {
+    background-color: rgba(254, 213, 87, 1) !important;
+}
+.col3-exp :hover {
+    background-color: rgba(254, 213, 87, 1) !important;
+}
+
 .expert-count{
     display: flex;
     justify-content: center;
@@ -95,7 +107,67 @@ border-radius: 15px;
 margin-top: 20px;
 margin-bottom: 51px;
 }
+.expert-p2{
+ font-weight:bold;
+ padding-top: 40px;
+}
+img, svg {
+    vertical-align: middle;
+    padding-top: 5px;
+}
+.expert-p2{
+    padding-top: 25px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.f1 :hover{
+    background-color: pink;
+}
+.f2 :hover{
+    background-color: yellow;
+}
+.f3 :hover{
+    background-color: lightgreen;
+}
+.f4 :hover{
+    background-color: lightslategray;
+}
+.f5 :hover{
+    background-color: lightseagreen;
+}
+.rowlast{
+    height: var(--bs-card-height);
+}
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
 
-
-
-
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}

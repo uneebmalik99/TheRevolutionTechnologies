@@ -100,9 +100,6 @@
 }
 
 .rowing {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     width: 100%;
     justify-content: center;
     margin-right: 0px !important;
@@ -123,9 +120,6 @@
     padding-top: 2%;
     padding-bottom: 3%;
 
-}
-.centeritems{
-    display: flex;
 }
 
 .port-imag {
@@ -382,6 +376,7 @@
   /* Add more styling as needed */
   
 
+
 /*/* Style for the slider container */
 .slider-container {
     width: 100%;
@@ -472,8 +467,6 @@
   transition: flex 0.5s;
 }
 
-  
-
 @media only screen and (max-width: 600px) {
 
     #port-container5-p1 {
@@ -522,6 +515,7 @@
     }
 
     
+
 }
 
 
@@ -566,3 +560,4 @@
     font-size: 16px;
   }
   
+

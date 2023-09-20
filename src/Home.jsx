@@ -7,8 +7,12 @@ import Test from './Test';
 import Expert from './Expert';
 import Solution from './Solution';
 import Form from './Form';
+
+import Servicesoffer from './Servicesoffer'
+
 import WhyUs from "./whyUs";
 import Showproject from "./Showproject";
+
 
 const Home=()=>{
 
@@ -16,6 +20,8 @@ const Home=()=>{
         <>
    
   <Header/>,
+
+<Services/>,
   <WhyUs/>
   <Leads/>,
   <Showproject/> , 

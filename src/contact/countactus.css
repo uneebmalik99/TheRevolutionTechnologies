@@ -51,6 +51,7 @@
 .contact-input{
     height:32%;
     margin-bottom: 5%;
+    color: black;
 }
 .input{
     height: 40px!important;
@@ -171,5 +172,22 @@
     margin-bottom: 8%;
 }
 .textarea1{
-    margin-bottom: 10%;
+    
+    margin-left: 7%;
+    margin-right: 6%;
+}
+button {
+    text-transform: none;
+    margin-bottom: 5%;
+    border-radius: 10%;
+    padding: 1%;
+    border-color:10px solid black;
+}
+.contact-input {
+    width: 80%;
+    background-color: #ecf1f9!important;
+    border: 1px solid #B6B6B6!important;
+    color: black;
+    border-radius: 6px !important;
+    width: 80%;
 }

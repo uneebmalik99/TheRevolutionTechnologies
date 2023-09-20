@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './portfolios.css';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import Static from "../Components/Static";
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -52,6 +53,7 @@ const Portfolio = () => {
       slidesToScroll: 1,
     }
   
+
  
     const [selectedCategory, setSelectedCategory] = useState('All');
 
@@ -104,9 +106,8 @@ const Portfolio = () => {
           },
 
       ];
-   
 
-
+      
    
 
 
@@ -114,6 +115,7 @@ const Portfolio = () => {
     return (
         <>
         <Static/>
+
         <Slider {...settings}>
       {slidesData.map((slide, index) => (
         <div key={index} className="slider-item">
@@ -127,6 +129,7 @@ const Portfolio = () => {
         </div>
       ))}
     </Slider>
+
 
 
 
@@ -274,5 +277,4 @@ const Portfolio = () => {
         </>
     )
 }
-
 export default Portfolio;

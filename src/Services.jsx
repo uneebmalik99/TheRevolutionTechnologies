@@ -14,7 +14,7 @@ const Services = () => {
                     <div className={`row ${service.outerrow}`} >
                         <div className="col-sm-12 col-md-12 col-lg-6 ">
                             <h3 className={service.serh3}>Countries Worldwide</h3>
-                            <p className={service.serp1}>To succeed, every software solution must be deeply integrated into the existing tech environment..</p>
+                            <p className={service.serp1}>To    ok  succeed, every software solution must be deeply integrated into the existing tech environment..</p>
 
                         </div>
 

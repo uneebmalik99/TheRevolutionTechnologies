@@ -50,7 +50,7 @@ const WhyUs = () => {
         ))}
       </div>
 
-      <div className="cards-data container">
+      <div className="cards-data container h2cardwrap">
         <div className=" card card3  " id="card3_id">
 
             <div>
@@ -60,7 +60,7 @@ const WhyUs = () => {
           <h1>Countries Worldwide</h1>
           <p>
             To succeed, every software solution must be deeply integrated into
-            the existing tech environment..
+            the existing tech environment.
           </p>
             </div>
         </div>

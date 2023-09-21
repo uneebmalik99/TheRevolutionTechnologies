@@ -92,7 +92,7 @@ import emailjs from 'emailjs-com';
                     Ready to get Started?
                 </h1>
                 <p className="contact-color2">
-                    Your Email Address will not be published. Required fields are marked *
+                    Your Email Address will not be published.Required fields are marked.
                 </p>
                 {isSubmitted ? (
                     <p className="contact-color2">Thank you for your submission!</p>

@@ -27,7 +27,7 @@ const WhyUs = () => {
     <>
       <div className="para_hd2">
         <p>WHY CHOOSE US</p>
-        <h1>Design the Concept of Your Business Idea Now</h1>
+        <h1>Design the Concept of Your Business Idea Now.</h1>
       </div>
 
 <div className="cardresposnsive">
@@ -50,7 +50,7 @@ const WhyUs = () => {
         ))}
       </div>
 
-      <div className="cards-data container">
+      <div className="cards-data container h2cardwrap">
         <div className=" card card3  " id="card3_id">
 
             <div>
@@ -60,7 +60,7 @@ const WhyUs = () => {
           <h1>Countries Worldwide</h1>
           <p>
             To succeed, every software solution must be deeply integrated into
-            the existing tech environment..
+            the existing tech environment.
           </p>
             </div>
         </div>

@@ -11,7 +11,7 @@ const Static=()=>{
         <>
          <div className="fixed">
                        <div id="pos-inq" style={{zIndex : "5"}}>
-                     inqurie now 
+                     inqurie now.      
                       
                        </div>
 

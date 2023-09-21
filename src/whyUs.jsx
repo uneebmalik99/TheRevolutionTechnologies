@@ -27,7 +27,7 @@ const WhyUs = () => {
     <>
       <div className="para_hd2">
         <p>WHY CHOOSE US</p>
-        <h1>Design the Concept of Your Business Idea Now</h1>
+        <h1>Design the Concept of Your Business Idea Now.</h1>
       </div>
 
 <div className="cardresposnsive">

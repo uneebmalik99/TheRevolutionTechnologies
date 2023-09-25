@@ -9,6 +9,7 @@ const Header = () => {
 
 
       <Static />
+      
       <div className={`container-fluid ${head.containerhead}`}>
         {/* <Navbar/> */}
         <div className={`row ${head.headerrow}`}>

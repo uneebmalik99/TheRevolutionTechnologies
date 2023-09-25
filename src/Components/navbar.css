@@ -63,11 +63,11 @@ a{
 
     .nav_menu{
         position: absolute;
-        top: 17vh;
+        top: 0vh;
         right: 0;
         width:40% ;
-        height: 65vh;
-        background: rgb(231 231 231);
+        height: 65vh;   
+        background: rgb(232, 204, 204);
         flex-direction: column;
         transform: translateX(100%);
         transition: 0.5s ease-in;
@@ -79,7 +79,7 @@ a{
 .contact_heading{
     width: 100%;
     FONT-SIZE: 58PX;
-    COLOR: #FFFF;
+    COLOR: #deaaaa;
     FONT-WEIGHT: 700;
     FLOAT: LEFT;
     margin-left:7%;
@@ -88,7 +88,9 @@ a{
 /* nav active class */
 .nav_active{
     transform: translateX(0);
-    
+    margin-top: 5rem;
+    background-color: #ffebeb;
+    height: 398px;
 }
 /* toggler icon animation */
 .toggle .line1{

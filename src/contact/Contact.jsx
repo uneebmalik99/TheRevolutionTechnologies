@@ -35,7 +35,7 @@ import emailjs from 'emailjs-com';
     
             // Send the email (in a real-world scenario, you would use a server-side script to send the email)
             const subject = 'Contact Form Submission';
-            const mailtoLink = `mailto:youremail@example.com?subject=${encodeURIComponent(
+            const mailtoLink = `info@therevolutiontechnologies.com?subject=${encodeURIComponent(
                 subject
             )}&body=${encodeURIComponent(emailBody)}`;
     

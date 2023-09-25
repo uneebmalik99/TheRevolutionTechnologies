@@ -22,10 +22,10 @@ const Home=()=>{
   <Header/>,
 
 <Services/>,
-  <WhyUs/>
-  <Leads/>,
   <Showproject/> , 
+  <Leads/>,
   <Test/>,
+  <WhyUs/>
   <Expert/>,
   <Solution/>,
   <Form/>,

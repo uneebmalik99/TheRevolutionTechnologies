@@ -61,11 +61,11 @@ const Test = () => {
           <Slider {...sliderSettings} ref={sliderRef}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className="row test-row4">
-                <p className="test-p4">{testimonial.message}</p>
-                <div className="row test-row5">
+                <p className="test-p4 spacing-there">{testimonial.message}</p>
+                <div className="row test-row5 spacing-there">
                   <h2 className="test-p5">{testimonial.name}</h2>
                 </div>
-                <div className="row test-row6">
+                <div className="row test-row6 spacing-there">
                   <h3 className="test-p6">{testimonial.position}</h3>
                 </div>
               </div>

@@ -30,7 +30,7 @@ const Solution = () => {
 
                         <div className=" col-sm-12 col-md-4 col-lg-4">
                             <div className="card card1">
-                                <img src="./images/man.png" className='card-img1' alt="faceook" srcset="" />
+                                <img src="./images/man.png" className='card-img1' alt="faceook" srcset="" style={{height :  "391px"}} />
                                 <p className='p-card '>BOOST YOUR BUSINESS</p>
                                 <p className='p2-card '>Lorem ipsum dolor sit amet consectetur
                                     adipisicing elit. Neque, facilis!</p>

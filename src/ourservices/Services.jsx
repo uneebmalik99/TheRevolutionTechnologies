@@ -34,7 +34,7 @@ const Services = () => {
 
 <div class="row BACKING1">
 <div class="col-md-6 how-img">
-    <img src="images/pic1.png" class=" img-fluid" alt=""/>
+    <img src="images/mypic.png" class=" img-fluid" alt=""/>
 </div>
 <div class="col-md-6  web_sr">
     <h4>Mobile App Development</h4>
@@ -58,13 +58,13 @@ const Services = () => {
  and users who have something to offer to the world.</p>
 </div>
 <div class="col-md-6 how-img">
-    <img src="images/capture2.png" class=" img-fluid" alt=""/>
+    <img src="images/jawad1.png" class=" img-fluid" alt=""/>
 </div>
 </div>
 
 <div class="row BACKING3">
 <div class="col-md-6 how-img">
-    <img src="images/mypic.png" class=" img-fluid" alt=""/>
+    <img src="images/capture2.png" class=" img-fluid" alt=""/>
 </div>
 <div class="col-md-6  web_sr">
     <h4>Social Media Marketing</h4>

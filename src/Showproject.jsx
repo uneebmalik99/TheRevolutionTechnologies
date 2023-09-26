@@ -14,7 +14,6 @@ const breakPoints = [
 
 
 
-
 const portfolioData = [
   {
     image: "./images/ios1.png",
@@ -89,7 +88,7 @@ const Showproject = () => {
                   selectedCategory === "All" ? "active" : ""
                 }`}
                 onClick={() => setSelectedCategory("All")}>
-                All
+                hello
               </button>
               <button
                 className={`filter-button ${

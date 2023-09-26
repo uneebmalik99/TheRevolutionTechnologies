@@ -1,9 +1,13 @@
 import React from 'react';
 import './ser.css';
 import Static from "../Components/Static";
+import EmailIcon from '@mui/icons-material/Email';
+import LanguageIcon from '@mui/icons-material/Language';
+import AddIcCallIcon from '@mui/icons-material/AddIcCall';
+
 const Services = () => {
     return (
-        <>
+    <>
           <Static/>
 
             <div className="containeter-fluid" id='ser-container1'>
@@ -25,194 +29,104 @@ const Services = () => {
 
             </div>
 
-            <div className="row" id='container2-outerrow'>Services we offer</div>
-            <div className="container-fluid" id='ser-container2'>
-
-                <div className="row">
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                        <div className="row">
-                            <p id='ser-container2-p1'>Countries Worldwide</p>
-                            <p id='ser-container2-p2'>To succeed, every software solution must be deeply integrated into the
-                                existing tech environment..</p>
-                        </div>
-
-                    </div>
-                    <div className="col-sm-12 col-md-3 col-lg-3">
-                        <div className=' container-fluid ser-cont2-div'>
-                            <div className="row ser-count2-row3">
-                                <img src="images/ser1.png" alt="frame img" srcset="" className='ser-cont2-img1' />
-                            </div>
-                            <div className="row">
-                                <p className='ser-count2-p4'>UI/UX & Graphic Design</p>
-
-                            </div>
+            
 
 
-                        </div>
-
-                    </div>
-                    <div className="col-sm-12 col-md-3 col-lg-3">
-                        <div className=' container-fluid ser-cont2-div ser-count2-color'>
-                            <div className="row ser-count2-row3 ">
-                                <img src="images/ser1.png" alt="frame img" srcset="" className='ser-cont2-img1' />
-                            </div>
-                            <div className="row">
-                                <p className='ser-count2-p4'>Block Chain</p>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className="row">
-                    <div className="col-sm-12 col-md-3 col-lg-3">
-                        <div className=' container-fluid ser-cont2-div ser-count2-color2'>
-                            <div className="row ser-count2-row3 ">
-                                <img src="images/ser1.png" alt="frame img" srcset="" className='ser-cont2-img1' />
-                            </div>
-                            <div className="row">
-                                <p className='ser-count2-p5'>Pay per call</p>
-
-                            </div>
+<div class="row BACKING1">
+<div class="col-md-6 how-img">
+    <img src="images/pic1.png" class=" img-fluid" alt=""/>
+</div>
+<div class="col-md-6  web_sr">
+    <h4>Mobile App Development</h4>
+                
+<p class="text-muted">Websites for all type of businessesWe built Google friendly websites
+ for any industry and users. The sites we built can become the digital HQ for online companies, 
+ online shop of individual business owners or studios for young and aspiring artists, creators 
+ and users who have something to offer to the world.</p>
+</div>
+</div>
 
 
-                        </div>
+<div class="row BACKING2">
 
-                    </div>
-                    <div className="col-sm-12 col-md-3 col-lg-3">
-                        <div className=' container-fluid ser-cont2-div ser-count2-color2'>
-                            <div className="row ser-count2-row3 ">
-                                <img src="images/ser1.png" alt="frame img" srcset="" className='ser-cont2-img1' />
-                            </div>
-                            <div className="row">
-                                <p className='ser-count2-p5'>Pay per Acquisiton</p>
+<div class="col-md-6  web_sr">
+    <h4>Web Development</h4>
+                
+<p class="text-muted">Websites for all type of businessesWe built Google friendly websites
+ for any industry and users. The sites we built can become the digital HQ for online companies, 
+ online shop of individual business owners or studios for young and aspiring artists, creators 
+ and users who have something to offer to the world.</p>
+</div>
+<div class="col-md-6 how-img">
+    <img src="images/capture2.png" class=" img-fluid" alt=""/>
+</div>
+</div>
 
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div className="col-sm-12 col-md-3 col-lg-3">
-                        <div className=' container-fluid ser-cont2-div ser-count2-color2'>
-                            <div className="row ser-count2-row3 ">
-                                <img src="images/ser1.png" alt="frame img" srcset="" className='ser-cont2-img1' />
-                            </div>
-                            <div className="row">
-                                <p className='ser-count2-p5'>Web Development</p>
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                    <div className="col-sm-12 col-md-3 col-lg-3">
-
-                        <div className=' container-fluid ser-cont2-div ser-count2-color2'>
-                            <div className="row ser-count2-row3 ">
-                                <img src="images/ser1.png" alt="frame img" srcset="" className='ser-cont2-img1' />
-                            </div>
-                            <div className="row">
-                                <p className='ser-count2-p5'>App Development</p>
-
-                            </div>
+<div class="row BACKING3">
+<div class="col-md-6 how-img">
+    <img src="images/mypic.png" class=" img-fluid" alt=""/>
+</div>
+<div class="col-md-6  web_sr">
+    <h4>Social Media Marketing</h4>
+                
+<p class="text-muted">Websites for all type of businessesWe built Google friendly websites
+ for any industry and users. The sites we built can become the digital HQ for online companies, 
+ online shop of individual business owners or studios for young and aspiring artists, creators 
+ and users who have something to offer to the world.</p>
+</div>
+</div>
 
 
-                        </div>
+<div class="row BACKING2">
 
-                    </div>
+<div class="col-md-6  web_sr">
+    <h4>UI/UX and Graphics</h4>
+                
+<p class="text-muted">Websites for all type of businessesWe built Google friendly websites
+ for any industry and users. The sites we built can become the digital HQ for online companies, 
+ online shop of individual business owners or studios for young and aspiring artists, creators 
+ and users who have something to offer to the world.</p>
+</div>
+<div class="col-md-6 how-img">
+    <img src="images/jawad1.png" class=" img-fluid" alt=""/>
+</div>
+</div>
+<div class="how-section1">       
+ </div>
 
-                </div>
+{/* Contact US */}
 
+ <div class="container-1">
 
+    <div class="box-1"> 
+    <p className='address1'> <LanguageIcon fontSize='large' className='addressicon' />  <h3>Our Address</h3>  Office # 12,Aeies Tower 2nd floor Murree Road,Shamsabad,Rawalpindi </p>
+  
+    <div class="container-2"> 
+    <div class="box-3">
+    <p className='Emailus'> <EmailIcon fontSize='large' className='Emailicon' />  <h3>Email Us</h3> info@therevolutiontechnologies.com </p>
+    </div>
+     <div class="box-4">
+    <p className='Contactus'> <AddIcCallIcon fontSize='large' className='contacticon' />  <h3>Contact Us</h3> 0331 7766777 </p>
 
-            </div>
+     </div>
+    </div>
+    
+    
+    </div>
+    <div class="box-2 "> <h3>Put Your Comment Here</h3>
+   < form action="">
+      <input type="text" placeholder="Name  " className="contact-input input" /><br></br>
+      <input type="text" placeholder="Email" className="contact-input input" /><br></br>
+     <textarea name="textbox" id="" cols="" rows="5" placeholder="Message " className="textarea1 contact-input" ></textarea>
+    </form>
+    </div>
 
-            <div className="container-fluid" id='ser-container3'>
-
-                <div className="row">
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                        <div className="row">
-                            <div className="col-sm-12 col-md-12 col-lg-12">
-                                <div className="ser-count3-addres">
-              
-                                    <div className="container-fluid">
-                                        <div className="row"><p> <img src="./images/ser-locicon.png" className="ser-images " alt="faceook" srcset="" /></p></div>
-                                        <p id='ser-address-p'> Our Address</p>
-                                        <p id='ser-address-p2'>Aries Tower 4th floor, Office no 2 ,Murree road Shamsabad Rawalpindi </p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-sm-12 col-md-6 col-lg-6">
-                                <div className="ser-count3-mail">
-                                   
-                                     <div className="container-fluid">
-                                        <div className="row"><p> <img src="./images/ser-emailicon.png" className="ser-images2 " alt="faceook" srcset="" /></p></div>
-                                        <p id='ser-mail-p'> Emil Us</p>
-                                        <p id='ser-mail-p2'>therevolutiontechnologie.com  </p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div className='col-sm-12 col-md-6 col-lg-6'>
-                                <div className="ser-count3-contact">
-                                <div className="container-fluid">
-                                        <div className="row"><p> <img src="./images/ser-callicon.png" className="ser-images2 " alt="faceook" srcset="" /></p></div>
-                                        <p id='ser-contact-p'> Contact Us</p>
-                                        <p id='ser-ontact-p2'>0303 3003030   </p>
-                                    </div>
-
-                                    
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div className="col-sm-12 col-md-6 col-lg-6">
-                        <div id="contact-form2">
-
-
-                            <form action="">
-                                <div className='row'>
-                                    <div className='col-sm-6 col-md-6 col-lg-6 colform'>
-                                        <input type="text" placeholder="Name  " className="contact-input input name" />
-                                    </div>
-                                    <div className='col-sm-6 col-md-6 col-lg-6 colform2'>
-                                        <input type="text" placeholder="Email" className="contact-input input" />
-                                    </div>
-                                </div>
-                                <div className='textbox'>
-                                    <input type="text" placeholder="Subject" className="contact-input input contract" />
-                                    <textarea name="textbox" id="" cols="" rows="5" placeholder="Message " className="textarea1 contact-input  contract" ></textarea>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-
-
-
-
-
-
+    
+     </div>
+     
+   
+     
+     
         </>
     );
 }

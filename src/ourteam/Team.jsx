@@ -32,6 +32,25 @@ const Team = () => {
         <div className="container-fluid teams " id='team-count3'>
 
 <div className="row  container  " >
+  <div className="col-sm-12 col-md-4 col-lg-4 ">
+              <div className="card teamcard " >
+                <div className=" teamcard1">
+                  <div>
+                    <img src="./images/Ceo1.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
+                  </div>
+                  <h3>Uneeb Ghazanfer</h3>
+                </div>
+                <div className="row team-row-web">
+                  <img src="./images/ceoicon.png" alt="image" srcset="" className='teamwebimg' />
+                </div>
+                <div className="row">
+                <p>this is a message</p>
+                  <h4>CEO</h4>
+                </div>
+
+              </div>
+
+            </div>
 
 <div className="col-sm-12 col-md-4 col-lg-4 ">
               <div className="card teamcard " >
@@ -45,32 +64,14 @@ const Team = () => {
                   <img src="./images/Manager.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
-
+                  <p>This is a message </p>
                   <h4>MD</h4>
                 </div>
 
               </div>
 
             </div>
-            <div className="col-sm-12 col-md-4 col-lg-4 ">
-              <div className="card teamcard " >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Ceo1.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
-                  </div>
-                  <h3>Uneeb Ghazanfer</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/ceoicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>CEO</h4>
-                </div>
-
-              </div>
-
-            </div>
+            
 
             <div className="col-sm-12 col-md-4 col-lg-4 ">
               <div className="card teamcard " >
@@ -84,6 +85,7 @@ const Team = () => {
                   <img src="./images/bussinessicon.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
+                <p>This is a message </p>
 
                   <h4>Bussiness Developer</h4>
                 </div>
@@ -110,6 +112,7 @@ const Team = () => {
                   <img src="./images/seo.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
+                <p>This is a message </p>
 
                   <h4>SEO</h4>
                 </div>
@@ -131,6 +134,7 @@ const Team = () => {
                   <img src="./images/graphic1.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
+                <p>This is a message </p>
 
                   <h4>UX/UI and Graphic Designer</h4>
                 </div>
@@ -150,6 +154,7 @@ const Team = () => {
                   <img src="./images/graphic1.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
+                <p>This is a message </p>
 
                   <h4>UX/UI and Graphic Designer</h4>
                 </div>
@@ -163,29 +168,6 @@ const Team = () => {
           </div>
           {/* //2nd row */}
           <div className="row container ">
-            
-
-         
-            <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Web-Developer.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
-                  </div>
-                  <h3>Falak Maraj Mughal</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Webicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Web Developer</h4>
-                </div>
-
-
-              </div>
-
-            </div>
               <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
               <div className="card teamcard" >
                 <div className=" teamcard1">
@@ -193,6 +175,7 @@ const Team = () => {
                     <img src="./images/Ammara.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
                   </div>
                   <h3>Umme Umera</h3>
+                  <p>This is a message </p>
                 </div>
                 <div className="row team-row-web">
                   <img src="./images/Content Writer.png" alt="image" srcset="" className='teamwebimg' />
@@ -201,31 +184,9 @@ const Team = () => {
 
                   <h4>Content Writer</h4>
                 </div>
-
-
               </div>
-
             </div>
-            
-            <div className="col-sm-12 col-md-4 col-lg-4" style={{Height:"80%"}}>
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Web.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%" }}/>
-                  </div>
-                  <h3>Aamir Yasin</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Webicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
 
-                  <h4>Web Developer</h4>
-                </div>
-
-              </div>
-
-            </div>
             <div className="col-sm-12 col-md-4 col-lg-4 mb-5">
             <div className="card teamcard" >
                 <div className=" teamcard1">
@@ -233,21 +194,20 @@ const Team = () => {
                     <img src="./images/Web12.png" alt="image" srcset="" className='teamimag'style={{borderRadius:"80%" }} />
                   </div>
                   <h3>Muhammad Usama</h3>
+                  
                 </div>
                 <div className="row team-row-web">
                   <img src="./images/Webicon.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
-
+                <p>This is a message </p>
                   <h4>Web Developer</h4>
                 </div>
 
               </div>
 
             </div>
-            
-         
-            
+   
             <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
               <div className="card teamcard" >
                 <div className=" teamcard1">
@@ -260,40 +220,16 @@ const Team = () => {
                   <img src="./images/Content Writer.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
-
+                <p>This is a message </p>
                   <h4>Content Writer</h4>
                 </div>
 
 
               </div>
+              
 
             </div>
-            <div className="col-sm-12 col-md-4 col-lg-4 ">
-              <div className="card teamcard " >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Bussiness.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
-                  </div>
-                  <h3>Hamid Nasir</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/bussinessicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Bussiness Developer</h4>
-                </div>
-
-              </div>
-
-            </div> 
-            
-            {/* end of 2nd row */}
-          </div>
-          
-           
-          <div className="row container " style={{display:"flex", justifyContent:"center"}}>
-          <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
+            <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
               <div className="card teamcard" >
                 <div className=" teamcard1">
                   <div>
@@ -305,23 +241,44 @@ const Team = () => {
                   <img src="./images/Content Writer.png" alt="image" srcset="" className='teamwebimg' />
                 </div>
                 <div className="row">
+                <p>This is a message </p>
 
-                  <h4>Content Writer</h4>
+                  <h4>SEO specialist</h4>
                 </div>
 
 
               </div>
 
             </div>
+       
+          
+
+          <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
+          <div className="card teamcard" >
+                <div className=" teamcard1">
+                  <div>
+                    <img src="./images/Bussiness.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
+                  </div>
+                  <h3>Hamid Nasir</h3>
+                </div>
+                <div className="row team-row-web">
+                  <img src="./images/bussinessicon.png" alt="image" srcset="" className='teamwebimg' />
+                </div>
+                <div className="row">
+                <p>This is a message </p>
+
+                  <h4>Bussiness Developer</h4>
+                </div>
+
+              </div>
+              </div>
+            </div> 
+            </div>
           </div>
             
             
             {/* end of 2nd row */}
-          
-
-        </div>
-
-      </div>
+       
     </>
 
   );

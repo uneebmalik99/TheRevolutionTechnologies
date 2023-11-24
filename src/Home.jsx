@@ -27,7 +27,7 @@ const Home=()=>{
   <Test/>,
   <WhyUs/>
   <Expert/>,
-  {/* <Solution/>, */}
+  <Solution/>,
   <Form/>,
   
         

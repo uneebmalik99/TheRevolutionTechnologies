@@ -1,8 +1,6 @@
 .containerhead{
     height: 500px;
     background: linear-gradient(259.21deg, rgba(8, 20, 61, 0.63) 33.93%, rgba(0, 6, 26, 0) 117.36%);
-
-
     background-image: url("./image/bg2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -41,9 +39,7 @@
 }
 .btnrow{
     justify-content: center;
-  
-   
-   
+
 }
 .contibm{
     height: auto;
@@ -64,67 +60,24 @@
 .imgrow{
     margin-top: 2%;
 }
-.countibmimag{
-    margin-top: 2% !important;
-    margin-bottom: 2%;
+.countibmimag {
+  margin-top: 2% !important;
+  margin-bottom: 2%;
 }
-.rowibm{
-    margin-top: 1% !important;
-    margin-bottom: 1%;
-    marquee:left;
-}
-/* header.module.css */
 
-.containerhead {
-    padding: 20px;
-  }
-  
-  .headerrow {
-    text-align: center;
-  }
-  
-  .heading1 {
-    font-size: 2em;
-  }
-  
-  .heading2 {
-    font-size: 2em;
-  }
-  
-  .heading3 {
-    font-size: 1.5em;
-  }
-  
-  .btnrow {
-    margin-top: 20px;
-  }
-  
-  .btn {
-    font-size: 1.2em;
-  }
-  
-  .contibm {
-    padding: 20px;
-  }
-  
+.rowibm {
+  margin-top: 1% !important;
+  margin-bottom: 1%;
+  overflow: hidden; /* Ensure marquee content doesn't overflow */
+}
+
+/* Media query for small screens (e.g., mobile devices) */
+@media (max-width: 576px) {
   .rowibm {
-    margin-bottom: 20px;
+    white-space: nowrap; /* Prevent text wrapping */
   }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
-    .heading1,
-    .heading2,
-    .heading3 {
-      font-size: 1.5em;
-    }
-  
-    .btn {
-      font-size: 1em;
-    }
-  
-    .rowibm {
-      margin-bottom: 10px;
-    }
-  }
+}
+
+
+
   

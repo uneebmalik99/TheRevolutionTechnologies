@@ -1,13 +1,11 @@
 .test-count{
 
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     background-color: #FDFBF7;
-    /* position: relative;
-    z-index: 5; */
-     background-image: url("./image/feedback.png");
+    background-image: url("./image/feedback.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -34,7 +32,7 @@
 .test-p1{
     color: 
     #FECE3C;
-    padding-top: 4%;
+    padding-top: 3%;
 }
 .test-p2{
     color:  #FECE3C;

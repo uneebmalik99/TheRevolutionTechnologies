@@ -21,13 +21,13 @@ const Home=()=>{
    
   <Header/>,
 
-<Services/>,
+  <Services/>,
   <Showproject/> , 
   <Leads/>,
   <Test/>,
   <WhyUs/>
   <Expert/>,
-  <Solution/>,
+  {/* <Solution/>, */}
   <Form/>,
   
         

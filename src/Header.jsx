@@ -24,18 +24,28 @@ const Header = () => {
       </div>
 
 
-<div className={`container-fluid ${head.contibm} `}>
-<marquee behavior="" direction="right">
+      <div className={`container-fluid ${head.contibm}`}>
+      <marquee behavior="" direction="right">
+        
         <div className="row">
-          <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-3 ${head.rowibm}`}><img src="images/ibm.png" alt="pic" /></div>
-          <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-2 ${head.rowibm}`}><img src="images/ibm2.png" alt="pic" /></div>
-          <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-2 ${head.rowibm}`}><img src="images/ibm3.png" alt="pic" /></div>
-          <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-2 ${head.rowibm}`}><img src="images/ibm4.png" alt="pic" /></div>
-          <div className={`col-xs-12 col-sm-12 col-md-2 col-lg-3 ${head.rowibm}`}><img src="images/ibm5.png" alt="pic" /></div>
-
+          <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+            <img src="images/ibm.png" alt="pic" className="img-fluid" />
+          </div>
+          <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+            <img src="images/ibm2.png" alt="pic" className="img-fluid" />
+          </div>
+          <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+            <img src="images/ibm3.png" alt="pic" className="img-fluid" />
+          </div>
+          <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+            <img src="images/ibm4.png" alt="pic" className="img-fluid" />
+          </div>
+          <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+            <img src="images/ibm5.png" alt="pic" className="img-fluid" />
+          </div>
         </div>
-        </marquee>
-      </div>
+      </marquee>
+    </div>
 
       
 

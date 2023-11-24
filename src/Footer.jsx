@@ -70,7 +70,7 @@ const Footer = () => {
                         <div className="fourth col-sm-12 col-md-3 col-lg-3 col-xs-12 media">
                             <h5>  Contact Us</h5>
                             <p className="footer-p1"> Give us a call today and see what we can do for you.</p>
-                            <p className="footer-p1"> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office#09, National Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
+                            <p className="footer-p1"> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office no 12, Aries Tower Maryam Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
                             <p className="footer-p1"> <EmailIcon fontSize="small" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
                             <p className="footer-p1"> <CallIcon fontSize="small"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
                             <p>+92-331-7766-777</p>
@@ -82,10 +82,10 @@ const Footer = () => {
                     </div>
 
                     <div className="container count2">
-                        <a href="https://www.facebook.com"><img src="./images/fb_icon_325x325.png" className="footer-img" alt="faceook" srcset="" /></a>
+                        <a href="https://www.facebook.com/TheRevolutionTechnologies"><img src="./images/fb_icon_325x325.png" className="footer-img" alt="faceook" srcset="" /></a>
                         <a href="https://www.instagram.com"><img src="./images/instagram.png"className="footer-img" alt="instagram" srcset="" /></a>
                         <a href="https://www.twitter.com"><img src="./images/673524.png" className="footer-img" alt="Twitter" srcset="" /></a>
-                        <a href="https://www.linkedin.com"><img src="./images/link1.png" className="footer-img" alt="linkdin" srcset="" /></a>
+                        <a href="https://www.linkedin.com/company/therevolutiontechnologies/"><img src="./images/link1.png" className="footer-img" alt="linkdin" srcset="" /></a>
 
 
                         </div>
@@ -95,9 +95,8 @@ const Footer = () => {
 
                 <div className="container-fluid">
                 <div className="row  span1">
-                    <span id="span2">Copyright © 2021 The Revolution Technologies. All Rights Reserved.</span>
+                    <span id="span2" style={{color:"navy"}}> Copyright © 2021 The Revolution Technologies. All Rights Reserved.</span>
                     </div>
-
                 </div>
 
 

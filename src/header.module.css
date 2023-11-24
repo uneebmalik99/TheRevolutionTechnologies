@@ -29,17 +29,19 @@
     margin-top: -45px;
 }
 .btn{
-   margin-top: 2rem;
+   margin-top: 0.5rem;
     background: #FECE3C;
     border-radius: 13px;
-    width: 10rem !important;
-    height: 35px;
+    width: 8rem !important;
+    height: 40px;
+    padding: 10px;
 
 
     text-align: center;
 }
 .btnrow{
     justify-content: center;
+  
    
    
 }
@@ -71,3 +73,58 @@
     margin-bottom: 1%;
     marquee:left;
 }
+/* header.module.css */
+
+.containerhead {
+    padding: 20px;
+  }
+  
+  .headerrow {
+    text-align: center;
+  }
+  
+  .heading1 {
+    font-size: 2em;
+  }
+  
+  .heading2 {
+    font-size: 2em;
+  }
+  
+  .heading3 {
+    font-size: 1.5em;
+  }
+  
+  .btnrow {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    font-size: 1.2em;
+  }
+  
+  .contibm {
+    padding: 20px;
+  }
+  
+  .rowibm {
+    margin-bottom: 20px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .heading1,
+    .heading2,
+    .heading3 {
+      font-size: 1.5em;
+    }
+  
+    .btn {
+      font-size: 1em;
+    }
+  
+    .rowibm {
+      margin-bottom: 10px;
+    }
+  }
+  

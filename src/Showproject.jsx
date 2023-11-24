@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import "./stylescrusal.css";
+import { Margin } from "@mui/icons-material";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -82,13 +83,13 @@ const Showproject = () => {
 
           <div>
             {/* Filter buttons */}
-            <div className="filter-buttons">
+            <div className="filter-buttons" style={{justifyContent:"center"}}>
               <button
                 className={`filter-button ${
                   selectedCategory === "All" ? "active" : ""
                 }`}
                 onClick={() => setSelectedCategory("All")}>
-                hello
+                All
               </button>
               <button
                 className={`filter-button ${
@@ -146,7 +147,7 @@ const Showproject = () => {
 
 <>
 <Item>
-  <div className="container">
+<div className="container" style={{ margin: Margin }}>
 
                   <div
                     className="col-sm-12  port-row1"

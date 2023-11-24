@@ -71,8 +71,8 @@ const ServicesOffer = () => {
                     </div>
                     <div className=" mainy col-md-6 col-lg-4 mb-4">
                         <div className="service-card text-center p-4">
-                            <img src="./images/i3.png" alt="UI/UX" />
-                            <h4>UI/UX</h4>
+                            <img src="./images/i3.png" alt="SEO" />
+                            <h4>SEO</h4>
                             <p>We carry more than just good coding skills. Our experience makes us stand out from other UI/UX design.</p>
                         </div>
                     </div>
@@ -82,24 +82,24 @@ const ServicesOffer = () => {
                     <div className=" mainy col-md-6 col-lg-4 mb-4">
                         <div className="service-card text-left p-4">
                             <img src="./images/i4.png" alt="Pay per Call" />
-                            <h4>Pay per Call</h4>
+                            <h4>Digital Marketing</h4>
                             <p>We carry more than just good coding skills. Our experience makes us stand out from other web development.</p>
                         </div>
                     </div>
                     <div className=" mainy col-md-6 col-lg-4 mb-4">
                         <div className="service-card text-left p-4">
                             <img src="./images/i2.png" alt="Pay per Acquisition" />
-                            <h4>Pay per Acquisition</h4>
+                            <h4>Social Media Marketing</h4>
                             <p>We carry more than just good coding skills. Our experience makes us stand out from other web development.</p>
                         </div>
                     </div>
-                    <div className=" mainy col-md-6 col-lg-4 mb-4">
+                    {/* <div className=" mainy col-md-6 col-lg-4 mb-4">
                         <div className="service-card text-left p-4">
                             <img src="./images/i3.png" alt="Lead Generation" />
                             <h4>Lead Generation</h4>
                             <p>We carry more than just good coding skills. Our experience makes us stand out from other web development.</p>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             </div>

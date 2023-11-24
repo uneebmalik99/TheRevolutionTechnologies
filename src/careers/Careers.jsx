@@ -1,15 +1,16 @@
+
+
 import React from "react";
 import './career.css';
 import Static from "../Components/Static";
 const Careers = () => {
     return (
         <>
-        {/* <Static/> */}
-            <div>
+     
                 <div className="container-fluid" id="career-container1">
                     <div className="row">
                         <div className="col-sm-12 col-md-6 col-lg-6">
-                            <div className="row " id="career-row1">
+                            <div className="row "  id="career-row1">
                                 <p id="career-p1">Careers</p>
                                 <p id=" ">Discover your next career move with one of the leading Tech Firms!.</p>
                             </div>
@@ -23,11 +24,10 @@ const Careers = () => {
                     </div>
                 </div>
 
-
                 <div className="container-fluid" id="career-container2">
                     <div className="row heading"> <p id="career-container2-p1">WHY JOIN The Revolution Technologies ?</p></div>
 
-                    <div className="row" id="career-container2-row1">
+                    <div className="row"  id="career-container2-row1">
 
                         <p id="career-container2-p2">Techies, innovators, developers, and free-thinkers… you’ve come to the right place.Funsol Technologies has
                             been delivering premium
@@ -38,11 +38,11 @@ const Careers = () => {
                     </div>
 
                 </div>
-                <div className="row" id=" career-container3-row1">
+                <div className="" id=" career-container3-row1">
                         <p className="container3-p"> OPEN VACANCIES </p>
                     </div>
                 <div className="container-fluid" id="career-container3">
-<div className="row mainrw">
+                <div className="row mainrw">
                     
                     <div className="container-fluid" id=" container3-inner">
                         <div className=" career-container3-section1">
@@ -114,12 +114,8 @@ const Careers = () => {
 
                 </div>
 
+               
 
-                <div className="empty-row">
-
-                </div>
-
-            </div>
 
         </>
     );

@@ -4,6 +4,7 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     padding-bottom: 50px;
 }
 .cards-data{
     display: flex;
@@ -40,14 +41,16 @@
     color: #FECE3C;
     font-weight: bold;
     font-size: 30px;
+    /* margin-inline:20px; */
 }
 #card3_id{
     background-color: #082E53;
     color: white;
+    margin-inline:20px;
 }
 .card3{ 
     width: 420px;
-       height: 277px ;
+    height: 277px ;
     
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1) ;
     color: #082E53;

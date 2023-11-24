@@ -46,3 +46,45 @@ margin-top: 1%;
 margin-bottom: 1%;
 
 }
+/* intro.module.css */
+
+.cont {
+    padding: 20px;
+  }
+  
+  .introh1 {
+    font-size: 2em;
+  }
+  
+  .para {
+    font-size: 1.2em;
+  }
+  
+  .continner {
+    padding: 20px;
+  }
+  
+  .cards {
+    margin-bottom: 20px;
+  }
+  
+  .imag {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .introh1 {
+      font-size: 1.5em;
+    }
+  
+    .para {
+      font-size: 1em;
+    }
+  
+    .cards {
+      margin-bottom: 10px;
+    }
+  }
+  

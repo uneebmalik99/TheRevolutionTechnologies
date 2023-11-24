@@ -9,32 +9,22 @@ import 'slick-carousel/slick/slick-theme.css';
 import Showproject from "../Showproject";
 
 
+
+
 const Portfolio = () => {
 
   const slidesData = [
     {
       imageUrl: './images/imgpsh_fullsize_anim (1).png',
-      heading: 'Slide 1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      heading: 'Our Portfolio',
+      text: 'The Revolution in the Mobile App Development',
     },
     {
-      imageUrl: 'image2.jpg',
-      heading: 'Slide 2',
-      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
+      imageUrl: './images/serimg2.png',
+      heading: 'Our Portfolio',
+      text: 'The Revolution in the Web App Development',
     },
-    {
-      imageUrl: 'image2.jpg',
-      heading: 'Slide 3',
-      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
-    }, {
-      imageUrl: 'image2.jpg',
-      heading: 'Slide 4',
-      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
-    }, {
-      imageUrl: 'image2.jpg',
-      heading: 'Slide 5',
-      text: 'Nulla facilisi. Proin eget libero nec libero finibus egestas.',
-    },
+    
     // Add more slides as needed
   ];
   
@@ -155,7 +145,7 @@ const Portfolio = () => {
     <div>
 
   {/* Filter buttons */}
-  <div className="filter-buttons">
+  <div className="filter-buttons" style={{}}>
   <button
     className={`filter-button ${selectedCategory === 'All' ? 'active' : ''}`}
     onClick={() => setSelectedCategory('All')}

@@ -22,15 +22,35 @@ const Leads = () => {
             </button>
           </div>
         </div>
-{/* 
-        <div className=" col-sm-12 col-md-6 col-lg-7">
-          <img
-            src="images/leadpic.png"
-            alt=" image"
-            className={lead.imag}
-            srcSet=""
-          />
-        </div> */}
+
+        <div className="col-sm-12 col-md-6 col-lg-7">
+          <form action="">
+            <input
+              type="text"
+              placeholder="Name"
+              className="contact-input input"
+            />
+            <br />
+            <input
+              type="text"
+              placeholder="Email"
+              className="contact-input input"
+            />
+            <br />
+            <textarea
+              name="textbox"
+              id=""
+              cols=""
+              rows="5"
+              placeholder="Message"
+              className="textarea1 contact-input"
+            ></textarea>
+             <br />
+    <button type="submit" className="submit-button" style={{scrollPaddingBottom:'10px'}}>
+      Submit
+    </button>
+          </form>
+        </div>
       </div>
     </div>
   );

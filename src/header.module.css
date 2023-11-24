@@ -60,24 +60,7 @@
 .imgrow{
     margin-top: 2%;
 }
-.countibmimag {
-  margin-top: 2% !important;
-  margin-bottom: 2%;
-}
-
-.rowibm {
-  margin-top: 1% !important;
-  margin-bottom: 1%;
-  overflow: hidden; /* Ensure marquee content doesn't overflow */
-}
-
-/* Media query for small screens (e.g., mobile devices) */
-@media (max-width: 576px) {
-  .rowibm {
-    white-space: nowrap; /* Prevent text wrapping */
-  }
-}
-
+ 
 
 
   

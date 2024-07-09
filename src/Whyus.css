@@ -1,68 +1,74 @@
-.para_hd2{
-     display: flex;
-     width: 100%;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     padding-bottom: 50px;
+.para_hd2 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
-.cards-data{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem; 
-    margin: 2rem;
-    flex-wrap: wrap;
+.cards-data {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem;
+  flex-wrap: wrap;
 }
 
-.customcard{ 
-    width: 367.26px;
-    height: 396.71px;
-    border-radius: none;
-    padding: 2rem; 
-    /* background-image: url(./image/Group\ 2.png); */
-    background-image: url(./image/Group\ 98817.png);
- 
-
+.customcard {
+  width: 367.26px;
+  height: 396.71px;
+  border-radius: none;
+  padding: 2rem;
+  background-image: url(./image/Group\ 98817.png);
 }
-.h2cardwrap{
-    display: flex;
-    flex-wrap: wrap;
+.h2cardwrap {
+  display: flex;
+  flex-wrap: wrap;
 }
-.cardresposnsive{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.cardresposnsive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.yeloow_para{
-    color: #FECE3C;
-    font-weight: bold;
-    font-size: 30px;
-    /* margin-inline:20px; */
+.yeloow_para {
+  color: #fece3c;
+  font-weight: bold;
+  font-size: 30px;
 }
-#card3_id{
-    background-color: #082E53;
-    color: white;
-    margin-inline:20px;
+#card3_id {
+  background-color: #082e53;
+  color: white;
+  margin-inline: 20px;
 }
-.card3{ 
-    width: 420px;
-    height: 277px ;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1) ;
-    color: #082E53;
-    border-radius: 2rem;
-    padding: 2rem;
+.card3 {
+  width: 420px;
+  height: 277px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+  color: #082e53;
+  border-radius: 2rem;
+  padding: 2rem;
 }
-@media (max-width: 768px){
-    .card3{
-      width: 327px;
-      margin-inline: 5%;
-      margin-top: 3%;
-    }
-    .customcard{
-        margin-inline: 4%;
-    }
+@media (max-width: 768px) {
+  .card3 {
+    width: 327px;
+    margin-inline: 5%;
+    margin-top: 3%;
   }
+  .customcard {
+    margin-inline: 4%;
+  }
+}
+
+.why_h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.why_h3 {
+    font-size: 20px;
+    font-weight: 500;
+}

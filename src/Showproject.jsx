@@ -64,7 +64,7 @@ const portfolioData = [
 const Showproject = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   return (
-    <div className="container bg_img projects">
+    <div className="container-fluid bg_img projects px-5">
       <div className="row projects-section">
       <h1 className="h1-projects">Introduce Our Projects</h1>
         <p className="p-projects">
@@ -78,52 +78,60 @@ const Showproject = () => {
         {/* Filter buttons */}
         <div className="filter-buttons" style={{ justifyContent: "center" }}>
           <button
-            className={`filter-button ${selectedCategory === "All" ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory("All")}>
+            className={`filter-button ${
+              selectedCategory === "All" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("All")}
+          >
             All
           </button>
           <button
-            className={`filter-button ${selectedCategory === "IOS App" ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory("IOS App")}>
+            className={`filter-button ${
+              selectedCategory === "IOS App" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("IOS App")}
+          >
             Mobile App (Andriod/IOS)
           </button>
           <button
-            className={`filter-button ${selectedCategory === "uiux" ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory("uiux")}>
+            className={`filter-button ${
+              selectedCategory === "uiux" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("uiux")}
+          >
             UI/UX Graphics
           </button>
           <button
-            className={`filter-button ${selectedCategory === "seo" ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory("seo")}>
+            className={`filter-button ${
+              selectedCategory === "seo" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("seo")}
+          >
             SEO
           </button>
           <button
-            className={`filter-button ${selectedCategory === "automation" ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory("automation")}>
+            className={`filter-button ${
+              selectedCategory === "automation" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("automation")}
+          >
             Automation
           </button>
 
           <button
-            className={`filter-button ${selectedCategory === "Web Development" ? "active" : ""
-              }`}
-            onClick={() => setSelectedCategory("Web Development")}>
+            className={`filter-button ${
+              selectedCategory === "Web Development" ? "active" : ""
+            }`}
+            onClick={() => setSelectedCategory("Web Development")}
+          >
             Web Development
           </button>
-          {/* Add more category buttons as needed */}
         </div>
-
 
         {/* Display filtered portfolio items */}
         <div className="row rowing">
-
           <div className="App">
             <Carousel breakPoints={breakPoints}>
-
               {portfolioData
                 .filter(
                   (item) =>
@@ -131,24 +139,20 @@ const Showproject = () => {
                     item.category === selectedCategory
                 )
                 .map((item, index) => (
-
                   <>
                     <Item>
                       <div className="container" style={{ margin: Margin }}>
-
-                        <div
-                          className="col-sm-12  port-row1"
-                          key={index}>
+                        <div className="col-sm-12  port-row1" key={index}>
                           <div className="port-imag">
                             <img
                               src={item.image}
-                              alt="image"
+                              alt={item.title}
                               className="img-port11"
                             />
                             <div>
                               <img
                                 src="./images/portcolor1.png"
-                                alt="image"
+                                alt={item.title}
                                 srcset=""
                                 className="portcolor1"
                               />
@@ -162,14 +166,8 @@ const Showproject = () => {
                       </div>
                     </Item>
                   </>
-
-
-
-
-
                 ))}
             </Carousel>
-
           </div>
         </div>
       </div>

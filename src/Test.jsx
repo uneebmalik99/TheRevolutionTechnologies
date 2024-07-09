@@ -67,7 +67,7 @@ const Test = () => {
   return (
     <div className="container-fluid test-count">
       <div className="row test-row1">
-        <h5 className="test-p1">TESTIMONIALS</h5>
+        <h1 className="test-h1">TESTIMONIALS</h1>
       </div>
       <div className="row slidercenter">
         <div className="col-10">

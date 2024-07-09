@@ -21,9 +21,9 @@ function Navbar() {
     <>
       <nav
         className="nav blur blur-rounded top-0 z-index-fixed shadow position-absolute start-0 end-0 mx-6"
-        style={{ borderRadius: '10px' }}>
+        style={{ borderRadius: "10px" }}
+      >
         <NavLink to="/" className="nav_brand">
-          {" "}
           <img
             src="images/logo12.png"
             alt="company logo"
@@ -31,11 +31,11 @@ function Navbar() {
             className="navbarlogo"
           />
         </NavLink>
-        <ul className={active}   >
+        <ul className={active}>
           <li className="nav_item ">
             <NavLink to="/" className="nav-link">
               Home
-            </NavLink>{" "}
+            </NavLink>
           </li>
           <li className="nav_item text-primary">
             <NavLink to="/services" className="nav-link">
@@ -49,14 +49,14 @@ function Navbar() {
           </li>
           <li className="nav_item text-primary">
             <NavLink to="/team" className="nav-link">
-              Our teams
+              Our Team
             </NavLink>
           </li>
 
           <li className="nav_item">
             <NavLink to="/company" className="nav-link">
               Company
-            </NavLink>{" "}
+            </NavLink>
           </li>
 
           <li className="nav_item text-500">

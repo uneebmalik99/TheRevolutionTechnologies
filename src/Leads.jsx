@@ -17,7 +17,7 @@ const Leads = () => {
           </div>
           <div className={lead.lastrow}>
             <button className={lead.leadsbtn}>
-              <NavLink to="/contact" className="nav-link">Contact us</NavLink>
+              <NavLink to="/contact" className="contact-us-btn">Contact us</NavLink>
             </button>
           </div>
         </div>

@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Static=()=>{
-    const [show, setShow] = useState(false);
-
-    const handleButton = () => {
-        setShow(!show)
-    }
-
-    return(
-        <>
-         {/* <div className="fixed">
+const Static = () => {
+  return (
+    <>
+      {/* <div className="fixed">
                        <div id="pos-inq" style={{zIndex : "5"}}>
                      inqurie now.      
                       
@@ -32,8 +26,7 @@ const Static=()=>{
                        
 
                     </div> */}
-        
-        </>
-    )
-}
+    </>
+  );
+};
 export default Static;

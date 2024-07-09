@@ -23,9 +23,9 @@ const whyUSData = [
 const WhyUs = () => {
   return (
     <>
-      <div className="container-fluid para_hd2">
+      <div className="container-fluid para_hd2 pt-md-5">
         <p>WHY CHOOSE US</p>
-        <h1>Design the Concept of Your Business Idea Now.</h1>
+        <h1 className="why_h2">Design the Concept of Your Business Idea Now.</h1>
       </div>
 
       <div className="container-fluid cardresposnsive">
@@ -39,7 +39,7 @@ const WhyUs = () => {
                 backgroundSize: "cover",
               }}
             >
-              <h3>{item.heading}</h3>
+              <h3 className="why_h3">{item.heading}</h3>
               <p>{item.text}</p>
             </div>
           ))}
@@ -51,8 +51,8 @@ const WhyUs = () => {
               <p className="yeloow_para">5 +</p>
               <h1>Countries Worldwide</h1>
               <p>
-                To succeed, every software solution must be deeply integrated into
-                the existing tech environment.
+                To succeed, every software solution must be deeply integrated
+                into the existing tech environment.
               </p>
             </div>
           </div>

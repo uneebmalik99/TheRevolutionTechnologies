@@ -1,28 +1,29 @@
-import React, { useState } from "react";
-import './portfolios.css';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import React, { useEffect, useState } from "react";
+import "./portfolios.css";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import Static from "../Components/Static";
 
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-
-const Portfolio = () => {
+const Portfolio = ({ title }) => {
+  useEffect(() => {
+    document.title = `${title} - The Revolution Technologies`;
+  }, [title]);
 
   const slidesData = [
     {
-      imageUrl: './images/imgpsh_fullsize_anim (1).png',
-      heading: 'Our Portfolio',
-      text: 'The Revolution in the Mobile App Development',
+      imageUrl: "./images/imgpsh_fullsize_anim (1).png",
+      heading: "Our Portfolio",
+      text: "The Revolution in the Mobile App Development",
     },
     {
-      imageUrl: './images/serimg2.png',
-      heading: 'Our Portfolio',
-      text: 'The Revolution in the Web App Development',
+      imageUrl: "./images/serimg2.png",
+      heading: "Our Portfolio",
+      text: "The Revolution in the Web App Development",
     },
   ];
-
 
   const settings = {
     dots: true,
@@ -30,9 +31,9 @@ const Portfolio = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  }
+  };
 
-  const [selectedCategory, setSelectedCategory] = useState('All');
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
   const portfolioData = [
     {
@@ -83,7 +84,6 @@ const Portfolio = () => {
     },
   ];
 
-
   return (
     <>
       <Static />
@@ -106,66 +106,94 @@ const Portfolio = () => {
           <div className="container" id="port-container2">
             <div className="row">
               <h1 id="port-row2-h1">Introduce Our Projects</h1>
-              <p id="port-para2">Software development outsourcing is just a tool to achieve business goals. But there is no wayto get
-                worthwhile results without cooperation and trust between a client company.  </p>
+              <p id="port-para2">
+                Software development outsourcing is just a tool to achieve
+                business goals. But there is no wayto get worthwhile results
+                without cooperation and trust between a client company.{" "}
+              </p>
             </div>
             <div>
-
-
               {/* filter options  */}
               <div>
                 {/* Filter buttons */}
                 <div className="filter-buttons" style={{}}>
                   <button
-                    className={`filter-button ${selectedCategory === 'All' ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory('All')}
+                    className={`filter-button ${
+                      selectedCategory === "All" ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedCategory("All")}
                   >
                     All
                   </button>
                   <button
-                    className={`filter-button ${selectedCategory === 'IOS App' ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory('IOS App')}
+                    className={`filter-button ${
+                      selectedCategory === "IOS App" ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedCategory("IOS App")}
                   >
                     Mobile App (Andriod/IOS)
                   </button>
                   <button
-                    className={`filter-button ${selectedCategory === 'uiux' ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory('uiux')}
+                    className={`filter-button ${
+                      selectedCategory === "uiux" ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedCategory("uiux")}
                   >
                     UI/UX Graphics
                   </button>
                   <button
-                    className={`filter-button ${selectedCategory === 'seo' ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory('seo')}
+                    className={`filter-button ${
+                      selectedCategory === "seo" ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedCategory("seo")}
                   >
                     SEO
                   </button>
                   <button
-                    className={`filter-button ${selectedCategory === 'automation' ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory('automation')}
+                    className={`filter-button ${
+                      selectedCategory === "automation" ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedCategory("automation")}
                   >
                     Automation
                   </button>
 
                   <button
-                    className={`filter-button ${selectedCategory === 'Web Development' ? 'active' : ''}`}
-                    onClick={() => setSelectedCategory('Web Development')}
+                    className={`filter-button ${
+                      selectedCategory === "Web Development" ? "active" : ""
+                    }`}
+                    onClick={() => setSelectedCategory("Web Development")}
                   >
                     Web Development
                   </button>
                 </div>
 
-
                 {/* Display filtered portfolio items */}
                 <div className="row rowing">
                   {portfolioData
-                    .filter(item => selectedCategory === 'All' || item.category === selectedCategory)
+                    .filter(
+                      (item) =>
+                        selectedCategory === "All" ||
+                        item.category === selectedCategory
+                    )
                     .map((item, index) => (
-                      <div className="col-sm-12 col-md-4 col-lg-4 port-row1" key={index}>
+                      <div
+                        className="col-sm-12 col-md-4 col-lg-4 port-row1"
+                        key={index}
+                      >
                         <div className="port-imag">
-                          <img src={item.image} alt={item.title} className="img-port11" />
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="img-port11"
+                          />
                           <div>
-                            <img src="./images/portcolor1.png" alt={item.title} srcset="" className="portcolor1" />
+                            <img
+                              src="./images/portcolor1.png"
+                              alt={item.title}
+                              srcset=""
+                              className="portcolor1"
+                            />
                             <div className="row">
                               <p className="port-p1">{item.title}</p>
                               <p className="port-p2">{item.category}</p>
@@ -185,18 +213,38 @@ const Portfolio = () => {
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="row">
                 <p id="port-count3-p1">Trusted and love</p>
-                <p id="port-count3-pp"> <FavoriteIcon fontSize="large" style={{ color: "#C0472C" }} className="port-icon1" /><span id="port-count3-p2">Worldwide</span> </p>
-                <p id="port-count3-p3">Software development outsourcing is just a tool to achieve business goals.
-                  But there is no way to get worthwhile results without cooperation and trust
-                  between a client company.</p>
+                <p id="port-count3-pp">
+                  {" "}
+                  <FavoriteIcon
+                    fontSize="large"
+                    style={{ color: "#C0472C" }}
+                    className="port-icon1"
+                  />
+                  <span id="port-count3-p2">Worldwide</span>{" "}
+                </p>
+                <p id="port-count3-p3">
+                  Software development outsourcing is just a tool to achieve
+                  business goals. But there is no way to get worthwhile results
+                  without cooperation and trust between a client company.
+                </p>
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-8">
-              <img src="./images/porta.png" alt="porta" srcset="" id="port-imag33" />
+              <img
+                src="./images/porta.png"
+                alt="porta"
+                srcset=""
+                id="port-imag33"
+              />
             </div>
           </div>
         </div>
-        <img src="./images/portrowimag.png" alt="portrowimag" srcset="" id="port-rowimag1" />
+        <img
+          src="./images/portrowimag.png"
+          alt="portrowimag"
+          srcset=""
+          id="port-rowimag1"
+        />
       </div>
 
       <div className="container-fluid" id="port-container4">
@@ -204,18 +252,25 @@ const Portfolio = () => {
           <div className="row " id="port-container5-row">
             <div className="col-sm-12 col-md-8 col-lg-8">
               <div className="row" id="port-container5-row">
-                <p id="port-container5-p1">Drop Us line! We are hare to answer your question 24/7</p>
+                <p id="port-container5-p1">
+                  Drop Us line! We are hare to answer your question 24/7
+                </p>
                 <p id="port-container5-p2">Need A FREE CONSULTATION ?</p>
                 <button id="port-container5-btn">Contact Us</button>
               </div>
             </div>
             <div className="col-sm-12 col-md-4 col-lg-4">
-              <img src="./images/count5img.png" alt="count5img" srcset="" id="count5-img" />
+              <img
+                src="./images/count5img.png"
+                alt="count5img"
+                srcset=""
+                id="count5-img"
+              />
             </div>
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 export default Portfolio;

@@ -13,7 +13,18 @@
     margin-top: 4%!important;
 }
 button{
+    border-radius: 0!important;
+}
+button:hover{
+    border-radius: 0!important;
+}
+
+button:focus{
     border: none!important;
+}
+
+.btn{
+    border: none !important;
 }
 .expertbox{
     height: 118px!important;

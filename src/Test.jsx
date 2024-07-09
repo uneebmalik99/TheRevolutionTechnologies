@@ -8,16 +8,40 @@ const Test = () => {
   // Sample testimonial data
   const testimonials = [
     {
-      name: 'Billy Wade',
-      position: 'Office Manager',
+      name: 'Malik Noman ',
+      position: 'COO - Amsev ',
       message:
-        'It was nice working with your team because no matter what ideas we come with, you guys know how to implement them! Great work, guys! Our app has never looked better, ever. Thank you.',
+        'Malik is a motivated, hard-working, and intelligent CEO who is expertise in his area. A broad-minded CEO, who welcomes change and motivates to do better every day. His exceptional set of skills, ingenuity, and integrity made the project a dream. Malik leads by example, and many people in the workplace find his enthusiasm and dedication, both inspiring and motivating. I wish him all the success in his future.',
     },
     {
-      name: 'Jane Smith',
-      position: 'Marketing Director',
+      name: 'Matthias Madeja',
+      position: 'CTO - SmileUnion ',
       message:
-        "I'm incredibly impressed with the results we achieved working with your team. The level of professionalism and expertise is top-notch.",
+        "Working with Uneeb is highly recommended! He is a very dedicated and reliable person. A professional in what he does. He helped us to program our app.Besides the unique knowledge Uneeb puts a lot of patience and work is his work behind.",
+    },
+    {
+      name: 'John Galvagno ',
+      position: 'CTO - Rubicon Performance',
+      message:
+        "Uneeb has been an absolute treat to work with! He has helped us build some of our lead forms and has gone above and beyond to make sure he's built exactly what is required.",
+    },
+    {
+      name: 'Waheed ',
+      position: 'CEO - MMW',
+      message:
+        "Perfect as usual - Uneeb was patient with new inputs given the nature of the project and had always better Ideas . Will rehire again for sure .",
+    },
+    {
+      name: 'Charlie ',
+      position: 'CTO - XYZ',
+      message:
+        "Perfect as usual - Uneeb was patient with new inputs given the nature of the project and had always better Ideas . Will rehire again for sure .",
+    },
+    {
+      name: 'Fikre  ',
+      position: 'CEO - MesobStore ',
+      message:
+        "He is very proficient in AWS technologies like dynamoDB, Cogonito, Labda, GaphQL, and Appsyncand React Native as well for both my IOS and Android app.The work he did for me is IOS notification, location, and share and in-app browser and social logins as well. Admin Panel and he builds API to connect with my backend. Every configuration with AWS SES technology thanks to Uneeb I am getting orders coming to my work email now. He configured the admin panel subdomain.",
     },
     // Add more testimonials as needed
   ];
@@ -45,12 +69,7 @@ const Test = () => {
       <div className="row test-row1">
         <h5 className="test-p1">TESTIMONIALS</h5>
       </div>
-      <div className="row">
-        <div className="col-1 text-center">
-          <button className="btn arrowbtn" onClick={handlePrev}>
-            &lt; {/* Left arrow */}
-          </button>
-        </div>
+      <div className="row slidercenter">
         <div className="col-10">
           <div className="row test-row2">
             <h1 className="test-p2">,,</h1>
@@ -58,7 +77,7 @@ const Test = () => {
           <div className="row test-row3">
             <h3 className="test-p3">What Our Clients Say</h3>
           </div>
-          <Slider {...sliderSettings} ref={sliderRef}>
+          <Slider  {...sliderSettings} ref={sliderRef}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className="row test-row4">
                 <p className="test-p4 spacing-there">{testimonial.message}</p>
@@ -72,11 +91,7 @@ const Test = () => {
             ))}
           </Slider>
         </div>
-        <div className="col-1 text-center">
-          <button className="btn arrowbtn" onClick={handleNext}>
-            &gt; {/* Right arrow */}
-          </button>
-        </div>
+
       </div>
     </div>
   );

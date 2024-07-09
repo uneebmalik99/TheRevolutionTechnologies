@@ -1,6 +1,5 @@
 import React from "react";
 import "./Whyus.css";
-import image1 from "./image/Group 2.png";
 import image2 from "./image/Group 98817.png";
 
 const whyUSData = [

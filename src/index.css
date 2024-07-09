@@ -1,10 +1,14 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
-.main-div{
+.main-div {
   height: 100%;
   width: 100%;
   background: linear-gradient(to right, #002f53, #00223c, #051728);
@@ -13,41 +17,37 @@
   padding-top: 80px !important;
 }
 
-
-h5{
+h5 {
   color: #ffffff;
-  font-family: "Montserrat", Sans-serif;
   font-size: 20px;
   font-weight: 600;
-  text-align: center!important;
+  text-align: center !important;
 }
 
-ul,a,li{
+ul,
+a,
+li {
   list-style-type: none;
- 
-  /* font-weight: bold; */
-
-  font-family: "Roboto", Sans-serif;
-  
 }
-.lifoot{
+.lifoot {
   font-size: 15px;
   margin-top: 15px;
   color: #ada9c9;
-
 }
-ul,a,li:hover{
+ul,
+a,
+li:hover {
   color: white;
   text-decoration: none;
 }
 
-.row{
+.row {
   text-align: center;
 }
-.first,P{
+.first,
+P {
   color: #ada9c9;
-  font-family: "Roboto", Sans-serif;
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* .images{
@@ -55,64 +55,56 @@ ul,a,li:hover{
 
 } */
 
-.footer-img{
+.footer-img {
   height: 100%;
   width: 45px;
   /* display: inline-block; */
   /* display: inline; */
- 
 }
 a {
   /* color: var(--bs-link-color); */
-   text-decoration: none!important; 
+  text-decoration: none !important;
 }
 
-
-
-span{
+span {
   /* margin-top: 50%; */
   font-size: 15px;
   color: #ada9c9;
   /* margin-bottom: 20px !important;
   margin-top: 20px !important; */
 }
-.count2{
-
-display: flex;
-justify-content: center;
-margin-top: 10px;
+.count2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
-.span1{
+.span1 {
   margin-top: 35px;
   height: auto;
- 
-  background-color: #FECE3C;
 
+  background-color: #fece3c;
 }
-.para1:hover{
+.para1:hover {
   color: white;
- 
-
 }
-.para1{
+.para1 {
   font-weight: 500;
   /* font-weight: bold; */
   margin-top: 15px;
 }
-.count2 ,.footer-img{
+.count2,
+.footer-img {
   padding-left: 15px !important;
-
 }
-.footer-img:hover{
+.footer-img:hover {
   transition: transform 500ms;
   /* transform: translate3d(20%, 20%, 0); */
   transform: translateY(-20px);
-
 }
-.fourth{
+.fourth {
   font-size: 100%;
 }
-.logo{
+.logo {
   width: 50px;
   height: 50px;
   background-color: white;
@@ -122,20 +114,15 @@ margin-top: 10px;
 } */
 
 @media only screen and (max-width: 600px) {
-
-  .media{
+  .media {
     padding-top: 40px;
   }
-  
-  
 }
-#span2{
+#span2 {
   color: white;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.footer-p1{
+.footer-p1 {
   margin-top: 15px;
 }
-
-

@@ -1,26 +1,113 @@
-import react from 'react';
 import './ourteam.css';
 import Static from "../Components/Static";
-import { Height } from '@mui/icons-material';
-
 
 const Team = () => {
+  const ourTeam = [
+    {
+      image: "./images/haseeb.png",
+      title: "Haseeb Malik",
+      designation: "MD",
+      alt: "Haseeb Malik",
+      icon: "./images/md.png"
+    },
+    {
+      image: "./images/uneeb.png",
+      title: "Uneeb Ghazanfer",
+      designation: "CEO",
+      alt: "Uneeb Ghazanfer",
+      icon: "./images/ceo.png"
+    },
+    {
+      image: "./images/awais.png",
+      title: "Awais",
+      designation: "Bussiness Developer",
+      alt: "Awais",
+      icon: "./images/bd.png"
+    },
+    {
+      image: "./images/saqib.png",
+      title: "Saqib",
+      designation: "SEO",
+      alt: "Saqib",
+      icon: "./images/seo.png"
+    },
+    {
+      image: "./images/rimsha.png",
+      title: "Rimsha Javid",
+      designation: "UX/UI & Graphic Designer",
+      alt: "Rimsha Javid",
+      icon: "./images/graphic.png"
+    },
+    {
+      image: "./images/jawad.png",
+      title: "Jawad Khan",
+      designation: "UX/UI & Graphic Designer",
+      alt: "Jawad Khan",
+      icon: "./images/graphic.png"
+    },
+    {
+      image: "./images/falak.png",
+      title: "Falak Maraj Mughal",
+      designation: "Web Developer",
+      alt: "Falak Maraj Mughal",
+      icon: "./images/web_developer.png"
+    },
+    {
+      image: "./images/umera.png",
+      title: "Umme Umera",
+      designation: "Content Writer",
+      alt: "Umme Umera",
+      icon: "./images/content_writer.png"
+    },
+    {
+      image: "./images/aamir_yasin.png",
+      title: "Aamir Yasin",
+      designation: "Web Developer",
+      alt: "Aamir Yasin",
+      icon: "./images/web_developer.png"
+    },
+    {
+      image: "./images/usama.png",
+      title: "Muhammad Usama",
+      designation: "Web Developer",
+      alt: "Muhammad Usama",
+      icon: "./images/web_developer.png"
+    },
+    {
+      image: "./images/ayesha.png",
+      title: "Ayesha Zia",
+      designation: "Content Writer",
+      alt: "Ayesha Zia",
+      icon: "./images/content_writer.png"
+    },
+    {
+      image: "./images/hamid.png",
+      title: "Hamid Nasir",
+      designation: "Bussiness Developer",
+      alt: "Hamid Nasir",
+      icon: "./images/bd.png"
+    },
+    {
+      image: "./images/ayesha.png",
+      title: "Waqas",
+      designation: "Content Writer",
+      alt: "Waqas",
+      icon: "./images/content_writer.png"
+    },
+  ];
 
   return (
     <>
-     <Static/>
+      <Static />
       <div className="container-fluid " id='team-container'>
         <div id="team-right">
           <div id="teaminner">
             <div className="row">
               <h2 id='team-heading'>Meet Our Team</h2>
             </div>
-
             <p id='team-para'>We are conversation starters and trend-setters. Let’s discover, build and grow your digital business</p>
           </div>
-
         </div>
-
       </div>
 
       <div className="container-fluid" id='team-container2'>
@@ -29,298 +116,29 @@ const Team = () => {
           <h4 id='ourteamclr'>Get To Know Us</h4>
         </div>
 
-        <div className="container-fluid teams " id='team-count3'>
-
-<div className="row  container  " >
-
-<div className="col-sm-12 col-md-4 col-lg-4 ">
-              <div className="card teamcard " >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/mdd.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
+        <div className="container-fluid teams">
+          <div className="row container">
+            {ourTeam && ourTeam.map((item, index) => (
+              <div className="col-sm-12 col-md-4 col-lg-4" key={index}>
+                <div className="card teamcard">
+                  <div className="teamcard1">
+                    <div>
+                      <img src={item.image} alt={item.alt} className='teamimag' style={{ borderRadius: "80%" }} />
+                    </div>
+                    <h3>{item.title}</h3>
                   </div>
-                  <h3>Haseeb Malik</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Manager.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>MD</h4>
-                </div>
-
-              </div>
-
-            </div>
-            <div className="col-sm-12 col-md-4 col-lg-4 ">
-              <div className="card teamcard " >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Ceo1.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
+                  <div className="row team-row-web">
+                    <img src={item.icon} alt={item.alt} className='teamwebimg' />
                   </div>
-                  <h3>Uneeb Ghazanfer</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/ceoicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>CEO</h4>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div className="col-sm-12 col-md-4 col-lg-4 ">
-              <div className="card teamcard " >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Awais.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
+                  <div className="row">
+                    <h4>{item.designation}</h4>
                   </div>
-                  <h3>Awais</h3>
                 </div>
-                <div className="row team-row-web">
-                  <img src="./images/bussinessicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Bussiness Developer</h4>
-                </div>
-
               </div>
-
-            </div>
-            
-            </div>
-            </div>
-        <div className="container-fluid teams " id='team-count3'>
-
-          <div className="row  container  ">
-
-            <div className="col-sm-12 col-md-4 col-lg-4">
-            <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/dd.png" alt="image" srcset="" className='teamimag'  style={{borderRadius:"80%" }}/>
-                  </div>
-                  <h3>Saqib</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/seo.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>SEO</h4>
-                </div>
-
-              </div>
-
-            </div>
-            
-           
-            <div className="col-sm-12 col-md-4 col-lg-4 mb-5">
-            <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Rimsha.png" alt="image" srcset="" className='teamimag'style={{borderRadius:"80%" }} />
-                  </div>
-                  <h3>Rimsha Javid</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/graphic1.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>UX/UI and Graphic Designer</h4>
-                </div>
-
-              </div>
-
-            </div>
-             <div className="col-sm-12 col-md-4 col-lg-4">
-            <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Designer1.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%" }}/>
-                  </div>
-                  <h3>Jawad Khan</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/graphic1.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>UX/UI and Graphic Designer</h4>
-                </div>
-
-              </div>
-
-            </div>
-
-            
-  
+            ))}
           </div>
-          {/* //2nd row */}
-          <div className="row container ">
-            
-
-         
-            <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Web-Developer.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
-                  </div>
-                  <h3>Falak Maraj Mughal</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Webicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Web Developer</h4>
-                </div>
-
-
-              </div>
-
-            </div>
-              <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Ammara.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
-                  </div>
-                  <h3>Umme Umera</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Content Writer.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Content Writer</h4>
-                </div>
-
-
-              </div>
-
-            </div>
-            
-            <div className="col-sm-12 col-md-4 col-lg-4" style={{Height:"80%"}}>
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Web.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%" }}/>
-                  </div>
-                  <h3>Aamir Yasin</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Webicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Web Developer</h4>
-                </div>
-
-              </div>
-
-            </div>
-            <div className="col-sm-12 col-md-4 col-lg-4 mb-5">
-            <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Web12.png" alt="image" srcset="" className='teamimag'style={{borderRadius:"80%" }} />
-                  </div>
-                  <h3>Muhammad Usama</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Webicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Web Developer</h4>
-                </div>
-
-              </div>
-
-            </div>
-            
-         
-            
-            <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Ayesha.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"100%"}}/>
-                  </div>
-                  <h3>Ayesha Zia</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Content Writer.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Content Writer</h4>
-                </div>
-
-
-              </div>
-
-            </div>
-            <div className="col-sm-12 col-md-4 col-lg-4 ">
-              <div className="card teamcard " >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Bussiness.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"80%"}}/>
-                  </div>
-                  <h3>Hamid Nasir</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/bussinessicon.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Bussiness Developer</h4>
-                </div>
-
-              </div>
-
-            </div> 
-            
-            {/* end of 2nd row */}
-          </div>
-          
-           
-          <div className="row container " style={{display:"flex", justifyContent:"center"}}>
-          <div className="col-sm-12 col-md-4 col-lg-4 mb-4">
-              <div className="card teamcard" >
-                <div className=" teamcard1">
-                  <div>
-                    <img src="./images/Ayesha.png" alt="image" srcset="" className='teamimag' style={{borderRadius:"100%"}}/>
-                  </div>
-                  <h3>Waqas</h3>
-                </div>
-                <div className="row team-row-web">
-                  <img src="./images/Content Writer.png" alt="image" srcset="" className='teamwebimg' />
-                </div>
-                <div className="row">
-
-                  <h4>Content Writer</h4>
-                </div>
-
-
-              </div>
-
-            </div>
-          </div>
-            
-            
-            {/* end of 2nd row */}
-          
-
         </div>
-
+        
       </div>
     </>
 

@@ -1,13 +1,11 @@
 import React from 'react'
 import head from './header.module.css'
 import Static from "./Components/Static";
-import Navbar from './Components/Navbar';
 
 const Header = () => {
   return (
     <>
       <Static />
-      
       <div className={`container-fluid ${head.containerhead}`}>
         <div className={`row ${head.headerrow}`}>
           <h1 className={head.heading1}>Exploring</h1>

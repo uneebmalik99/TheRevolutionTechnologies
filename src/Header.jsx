@@ -19,7 +19,7 @@ const Header = () => {
       </div>
 
       <div className={`container-fluid ${head.contibm}`}>
-        <marquee behavior="" direction="right" scrollamount="30" scrolldelay="50">
+        <marquee behavior="" direction="right" scrollamount="10" scrolldelay="50">
           <div className="row">
             <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
               <img src="images/meso.jpg" alt="pic" className="img-fluid" />

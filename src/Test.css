@@ -12,6 +12,18 @@
 .spacing-there {
   padding-top: 1rem;
 }
+.slidercenter {
+  display: flex;
+  justify-content: center;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #fece3c;
+  font-size: 39px;
+}
+.spacing-there {
+  padding-top: 1rem;
+}
 /* /* .test-count::before{
     content: "Feed back ";
     position: absolute;

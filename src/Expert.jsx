@@ -225,14 +225,14 @@ const Expert = () => {
                     <p className='expert-p1'>Why The Revolution Technologies Experts</p>
                 </div>
                 <div className="row justify-content-center">
-                    <div className={`f1 col-sm-12 col-md-4 col-lg-1 ${activeButton === 'values' ? 'active' : ''}`} style={{ backgroundColor: activeButton === 'values' ? '#fed557' : 'white' }}>
-                        <button className='btn btn-block' onClick={() => handleButtonClick('values')}>Values</button>
+                    <div className={`f3 col-sm-12 col-md-4 col-lg-2 ${activeButton === 'industries' ? 'active' : ''}`} style={{ backgroundColor: activeButton === 'industries' ? '#fed557' : 'white' }}>
+                        <button className='btn btn-block' onClick={() => handleButtonClick('industries')}>Industries</button>
                     </div>
                     <div className={`f2 col-sm-12 col-md-4 col-lg-2 ${activeButton === 'technologies' ? 'active' : ''}`} style={{ backgroundColor: activeButton === 'technologies' ? '#fed557' : 'white' }}>
                         <button className='btn btn-block' onClick={() => handleButtonClick('technologies')}>Technologies</button>
                     </div>
-                    <div className={`f3 col-sm-12 col-md-4 col-lg-2 ${activeButton === 'industries' ? 'active' : ''}`} style={{ backgroundColor: activeButton === 'industries' ? '#fed557' : 'white' }}>
-                        <button className='btn btn-block' onClick={() => handleButtonClick('industries')}>Industries</button>
+                    <div className={`f1 col-sm-12 col-md-4 col-lg-2 ${activeButton === 'values' ? 'active' : ''}`} style={{ backgroundColor: activeButton === 'values' ? '#fed557' : 'white' }}>
+                        <button className='btn btn-block' onClick={() => handleButtonClick('values')}>Values</button>
                     </div>
                 </div>
                 <div className="row">

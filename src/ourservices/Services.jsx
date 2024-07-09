@@ -28,7 +28,6 @@ const Services = () => {
       </div>
 
       {/* Service Sections */}
-      {/* ... (your service sections code) */}
 
       {/* Contact Section */}
       <div className="container-1">

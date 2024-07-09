@@ -12,6 +12,15 @@
 
     
 }
+ .slidercenter {
+    display: flex;
+    justify-content: center;
+
+}
+.slick-prev:before, .slick-next:before{
+    color: #FECE3C;
+    font-size: 39px;
+}
 .spacing-there{
     padding-top: 1rem;
 }

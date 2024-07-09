@@ -17,3 +17,7 @@
 .filter-button {
   border-radius: 0px !important;
 }
+
+.App {
+  padding-bottom: 40px;
+}

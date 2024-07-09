@@ -1,122 +1,121 @@
-.cont2{
-    background: rgba(255, 187, 18, 0.99);
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: auto;
-    
-}
-.textoflead{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.leadcountainer{
-    background-color: white;  
+.cont2 {
+  background: rgba(255, 187, 18, 0.99);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: auto;
 }
 
-.bg{
-    background: url("./image/elips.png"); 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    height: 200px;
-    margin-top: 5rem;   
-
+.textoflead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.leadsinfo1{
-    color: white;
-    text-align: start;
-    margin-top: 5px;
+.leadcountainer {
+  background-color: white;
 }
-.leadsinfo2{
-    color: white;
-     margin-left: 2px;
-}
-.firstrow{
-    margin-top: 5%;
-}
-
-.leadsbtn{
-    
- 
-    border: 2px solid white !important;
-    border-radius: 50px;
-    background-color: rgba(255, 187, 18, 0.99);
-    padding: 5px;
-    width: 130px;
-    height: 40px;
-    color: white;
-    
-}
-
-.imag{
-    position: relative;
-    right: 0;
-    bottom: 0;
-    width: 829px;
-    height: 100%;
-    margin-top: 0px;
-    /* margin-right: -21px; */
-}
-
-
-.lastrow{
-    
-    margin-top: 50px;
-  /* margin-bottom: 10px; */
-}
-
-.outerrow{
-        margin-top: 50px;
-    }
-    /* Leads.module.css */
 
 .bg {
-    background-color: #f5f5f5; /* Set the background color as needed */
-  }
-  
-  .textoflead {
-    color: #333; /* Set the text color as needed */
-  }
-  
-  .cont2 {
-    padding: 20px;
-  }
-  
-  .firstrow {
-    margin-bottom: 10px;
-  }
-  
+  background: url("./image/elips.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 200px;
+  margin-top: 5rem;
+}
+
+.leadsinfo1 {
+  color: white;
+  text-align: start;
+  margin-top: 5px;
+}
+.leadsinfo2 {
+  color: white;
+}
+.firstrow {
+  margin-top: 5%;
+}
+
+.leadsbtn {
+  border: 2px solid white !important;
+  border-radius: 50px !important;
+  background-color: rgba(255, 187, 18, 0.99);
+  padding: 5px;
+  width: 130px;
+  height: 40px;
+  color: white;
+}
+
+.leadsbtn:hover {
+  border-radius: 0px !important;
+}
+
+.imag {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 829px;
+  height: 100%;
+  margin-top: 0px;
+}
+
+.lastrow {
+  margin-top: 30px;
+}
+
+.contact-us-btn {
+  color: white !important;
+}
+
+.contact-us-btn:hover {
+  color: white !important;
+  text-decoration: none;
+}
+
+.outerrow {
+  margin-top: 50px;
+}
+/* Leads.module.css */
+
+.bg {
+  background-color: #f5f5f5; /* Set the background color as needed */
+}
+
+.textoflead {
+  color: #333; /* Set the text color as needed */
+}
+
+.cont2 {
+  padding: 20px;
+}
+
+.firstrow {
+  margin-bottom: 10px;
+}
+
+.leadsinfo1 {
+  font-size: 1.2em;
+}
+
+.leadsinfo2 {
+  font-size: 2em;
+}
+
+.leadsbtn {
+  font-size: 1.2em;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
   .leadsinfo1 {
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  
-  .secondrow {
-    margin-bottom: 20px;
-  }
-  
+
   .leadsinfo2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
-  
+
   .leadsbtn {
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  
-  /* Media Queries for responsiveness */
-  @media (max-width: 768px) {
-    .leadsinfo1 {
-      font-size: 1em;
-    }
-  
-    .leadsinfo2 {
-      font-size: 1.5em;
-    }
-  
-    .leadsbtn {
-      font-size: 1em;
-    }
-  }
-  
+}

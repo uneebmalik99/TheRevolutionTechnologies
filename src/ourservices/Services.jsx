@@ -1,11 +1,14 @@
-import React from 'react';
-import './ser.css';
+import React, { useEffect } from "react";
+import "./ser.css";
 import Static from "../Components/Static";
-import EmailIcon from '@mui/icons-material/Email';
-import LanguageIcon from '@mui/icons-material/Language';
-import AddIcCallIcon from '@mui/icons-material/AddIcCall';
+import EmailIcon from "@mui/icons-material/Email";
+import LanguageIcon from "@mui/icons-material/Language";
+import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 
-const Services = () => {
+const Services = ({ title }) => {
+  useEffect(() => {
+    document.title = `${title} - The Revolution Technologies`;
+  }, [title]);
   return (
     <>
       <Static />
@@ -22,7 +25,7 @@ const Services = () => {
             </div>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <img src="images/serimg2.png" id="ser-bg-img" alt="Flexible Image" />
+            <img src="images/serimg2.png" id="ser-bg-img" alt="Flexible" />
           </div>
         </div>
       </div>
@@ -35,7 +38,8 @@ const Services = () => {
           <p className="address1">
             <LanguageIcon fontSize="large" className="addressicon" />
             <h3>Our Address</h3>
-            Office # 12, Aeies Tower 2nd floor Murree Road, Shamsabad, Rawalpindi
+            Office # 12, Aeies Tower 2nd floor Murree Road, Shamsabad,
+            Rawalpindi
           </p>
 
           <div className="container-2">

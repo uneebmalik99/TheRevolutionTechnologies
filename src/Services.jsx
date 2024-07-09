@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
 import service from './Services.module.css';
+import Lottie from "lottie-react";
+import webDevelopmentAnimation from "./Animations/webdevelopment.json";
+import mobileAppAnimation from "./Animations/mobileapp.json";
+import seoAnimation from "./Animations/seo.json";
+import uiuxDesignAnimation from "./Animations/uiuxdesign.json";
+import socialMediaMarketingAnimation from "./Animations/socialmediamarketing.json";
+import customsoftwaredevelopmentAnimation from "./Animations/customsoftwaredevelopment.json";
 
 const Services = () => {
     const [hoverColors, setHoverColors] = useState(Array(6).fill(''));
@@ -31,12 +38,12 @@ const Services = () => {
     };
 
     const services = [
-        { img: 'images/ser55.png', text: 'Web Development' },
-        { img: 'images/ser6.png', text: 'App Development' },
-        { img: 'images/ser333.png', text: 'SEO' },
-        { img: 'images/ser6.png', text: 'UI/UX Graphic Design' },
-        { img: 'images/ser33.png', text: 'Social Media Marketing' },
-        { img: 'images/ser4.png', text: 'Digital Marketing' }
+        { animation: webDevelopmentAnimation, text: 'Web Development' },
+        { animation: mobileAppAnimation, text: 'App Development' },
+        { animation: seoAnimation, text: 'SEO' },
+        { animation: uiuxDesignAnimation, text: 'UI/UX Graphic Design' },
+        { animation: socialMediaMarketingAnimation, text: 'Social Media Marketing' },
+        { animation: customsoftwaredevelopmentAnimation, text: 'Custom Software Development' }
     ];
 
     return (
@@ -48,7 +55,7 @@ const Services = () => {
                 <div className={`row ${service.outerrow}`}>
                     <div className="col-sm-12 col-md-12 col-lg-6" style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
                         <h3 className={service.serh3}>Countries Worldwide</h3>
-                        <p className={service.serp1}>To ok succeed, every software solution must be deeply integrated into the existing tech environment..</p>
+                        <p className={service.serp1}>To succeed, every software solution must be deeply integrated into the existing tech environment.</p>
                     </div>
                     {services.map((serviceItem, index) => (
                         <div key={index} className="col-sm-12 col-md-12 col-lg-3">
@@ -59,7 +66,7 @@ const Services = () => {
                                 style={{ backgroundColor: hoverColors[index] || 'initial' }}
                             >
                                 <div className="image">
-                                    <img src={serviceItem.img} alt="service" className={service.serimag} />
+                                    <Lottie animationData={serviceItem.animation} loop={true} />
                                 </div>
                                 <p className={service.sercount1p1}>{serviceItem.text}</p>
                             </div>

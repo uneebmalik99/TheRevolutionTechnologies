@@ -48,8 +48,10 @@ const Form = () => {
                         <form action="">
                             <textarea name="textbox" id="" cols="" rows="5" placeholder="Message" className="textarea1"></textarea>
                             {/* <input type="text" placeholder="Message" /> */}
-                            
 
+                            <div className="row msgrow">
+                                <button className="msg">SEND MESSAGE</button>
+                            </div>
                         </form>
 
                     </div>

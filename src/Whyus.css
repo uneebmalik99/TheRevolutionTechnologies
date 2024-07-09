@@ -51,9 +51,18 @@
 .card3{ 
     width: 420px;
     height: 277px ;
-    
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1) ;
     color: #082E53;
     border-radius: 2rem;
     padding: 2rem;
 }
+@media (max-width: 768px){
+    .card3{
+      width: 327px;
+      margin-inline: 5%;
+      margin-top: 3%;
+    }
+    .customcard{
+        margin-inline: 4%;
+    }
+  }

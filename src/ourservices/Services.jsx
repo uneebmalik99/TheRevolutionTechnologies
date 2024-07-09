@@ -77,6 +77,9 @@ const Services = () => {
               placeholder="Message"
               className="textarea1 contact-input"
             ></textarea>
+            <div className="row sendrow">
+              <button className="send">SEND MESSAGE</button>
+            </div>
           </form>
         </div>
       </div>

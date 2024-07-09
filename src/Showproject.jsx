@@ -8,7 +8,7 @@ import { Margin } from "@mui/icons-material";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2 }, 
+  { width: 550, itemsToShow: 2 },
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
@@ -79,51 +79,45 @@ const Showproject = () => {
         </div>
 
         <div>
-        
+
 
           <div>
             {/* Filter buttons */}
-            <div className="filter-buttons" style={{justifyContent:"center"}}>
+            <div className="filter-buttons" style={{ justifyContent: "center" }}>
               <button
-                className={`filter-button ${
-                  selectedCategory === "All" ? "active" : ""
-                }`}
+                className={`filter-button ${selectedCategory === "All" ? "active" : ""
+                  }`}
                 onClick={() => setSelectedCategory("All")}>
                 All
               </button>
               <button
-                className={`filter-button ${
-                  selectedCategory === "IOS App" ? "active" : ""
-                }`}
+                className={`filter-button ${selectedCategory === "IOS App" ? "active" : ""
+                  }`}
                 onClick={() => setSelectedCategory("IOS App")}>
                 Mobile App (Andriod/IOS)
               </button>
               <button
-                className={`filter-button ${
-                  selectedCategory === "uiux" ? "active" : ""
-                }`}
+                className={`filter-button ${selectedCategory === "uiux" ? "active" : ""
+                  }`}
                 onClick={() => setSelectedCategory("uiux")}>
                 UI/UX Graphics
               </button>
               <button
-                className={`filter-button ${
-                  selectedCategory === "seo" ? "active" : ""
-                }`}
+                className={`filter-button ${selectedCategory === "seo" ? "active" : ""
+                  }`}
                 onClick={() => setSelectedCategory("seo")}>
                 SEO
               </button>
               <button
-                className={`filter-button ${
-                  selectedCategory === "automation" ? "active" : ""
-                }`}
+                className={`filter-button ${selectedCategory === "automation" ? "active" : ""
+                  }`}
                 onClick={() => setSelectedCategory("automation")}>
                 Automation
               </button>
 
               <button
-                className={`filter-button ${
-                  selectedCategory === "Web Development" ? "active" : ""
-                }`}
+                className={`filter-button ${selectedCategory === "Web Development" ? "active" : ""
+                  }`}
                 onClick={() => setSelectedCategory("Web Development")}>
                 Web Development
               </button>
@@ -134,57 +128,57 @@ const Showproject = () => {
             {/* Display filtered portfolio items */}
             <div className="row rowing">
 
-            <div className="App">
-        <Carousel breakPoints={breakPoints}>
+              <div className="App">
+                <Carousel breakPoints={breakPoints}>
 
-        {portfolioData
-                .filter(
-                  (item) =>
-                    selectedCategory === "All" ||
-                    item.category === selectedCategory
-                )
-                .map((item, index) => (
+                  {portfolioData
+                    .filter(
+                      (item) =>
+                        selectedCategory === "All" ||
+                        item.category === selectedCategory
+                    )
+                    .map((item, index) => (
 
-<>
-<Item>
-<div className="container" style={{ margin: Margin }}>
+                      <>
+                        <Item>
+                          <div className="container" style={{ margin: Margin }}>
 
-                  <div
-                    className="col-sm-12  port-row1"
-                    key={index}>
-                    <div className="port-imag"> 
-                      <img
-                        src={item.image}
-                        alt="image"
-                        className="img-port11"
-                      />
-                      <div>
-                        <img
-                          src="./images/portcolor1.png"
-                          alt="image"
-                          srcset=""
-                          className="portcolor1"
-                        />
-                        <div className="row">
-                          <p className="port-p1">{item.title}</p>
-                          <p className="port-p2">{item.category}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-  </div>
-                  </Item>
-</>
-
-
+                            <div
+                              className="col-sm-12  port-row1"
+                              key={index}>
+                              <div className="port-imag">
+                                <img
+                                  src={item.image}
+                                  alt="image"
+                                  className="img-port11"
+                                />
+                                <div>
+                                  <img
+                                    src="./images/portcolor1.png"
+                                    alt="image"
+                                    srcset=""
+                                    className="portcolor1"
+                                  />
+                                  <div className="row">
+                                    <p className="port-p1">{item.title}</p>
+                                    <p className="port-p2">{item.category}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </Item>
+                      </>
 
 
-                  
-                ))}
-        </Carousel>
-    
-      </div>
-              
+
+
+
+                    ))}
+                </Carousel>
+
+              </div>
+
 
 
 

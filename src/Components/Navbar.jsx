@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-
-// import { link } from 'react-router-dom';
 import { NavLink } from "react-router-dom";
-
 import "./navbar.css";
 
 function Navbar() {
@@ -22,10 +19,10 @@ function Navbar() {
 
   return (
     <>
-  <nav
-      className="nav blur blur-rounded top-0 z-index-fixed shadow position-absolute start-0 end-0 mx-6"
-      style={{ borderRadius: '10px' }}>
-        <a href="#" className="nav_brand">
+      <nav
+        className="nav blur blur-rounded top-0 z-index-fixed shadow position-absolute start-0 end-0 mx-6"
+        style={{ borderRadius: '10px' }}>
+        <NavLink to="/" className="nav_brand">
           {" "}
           <img
             src="images/logo12.png"
@@ -33,14 +30,13 @@ function Navbar() {
             srcset=""
             className="navbarlogo"
           />
-        </a>
+        </NavLink>
         <ul className={active}   >
           <li className="nav_item ">
             <NavLink to="/" className="nav-link">
               Home
             </NavLink>{" "}
           </li>
-          {/* <li className="nav_item"><NavLink to="/about" className="nav-link">About</NavLink></li> */}
           <li className="nav_item text-primary">
             <NavLink to="/services" className="nav-link">
               Services
@@ -56,13 +52,13 @@ function Navbar() {
               Our teams
             </NavLink>
           </li>
-          
+
           <li className="nav_item">
             <NavLink to="/company" className="nav-link">
               Company
             </NavLink>{" "}
           </li>
-          
+
           <li className="nav_item text-500">
             <NavLink to="/careers" className="nav-link">
               Careers

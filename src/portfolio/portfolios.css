@@ -82,16 +82,9 @@
 
 #port-container2 {
     height: auto;
-    /* background-colior: rgb(165, 18, 18); */
-    /* background-image: url("../image/port1pic.jpg"), url("../image/port2pic.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 500px 600px,600px,500px;
-  background-position: left bottom,right; */
     margin-bottom: 100px;
     padding-left: 0px !important;
     padding-right: 0px !important;
-
-
 }
 
 .port-count2-h2 {
@@ -103,14 +96,10 @@
     width: 100%;
     justify-content: center;
     margin-right: 0px !important;
-
 }
 
 #port-para2 {
     color: black;
-
-
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -119,14 +108,12 @@
     padding-right: 5%;
     padding-top: 2%;
     padding-bottom: 3%;
-
 }
 
 .port-imag {
     width: 100%;
     height: 400px;
     margin-bottom: -14%;
-
 }
 
 .img-port11 {
@@ -134,13 +121,10 @@
     height: 322px;
     border-radius: 12px;
     margin-bottom: 20px;
-  
-    /* margin-left: 2%; */
 }
 
 #port-row2-h1 {
     margin-top: 5%;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 59px;
@@ -148,14 +132,11 @@
 
 #port-container3 {
     height: auto;
-
     margin-top: 5%;
-
     background-image: url("../image/portcount3bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 #port-imag33 {
@@ -163,7 +144,6 @@
     width: 80%;
     margin-bottom: 290px;
     margin-top: 1%;
-
 }
 
 #port-count3-p1 {
@@ -171,17 +151,11 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 61px;
-    /* identical to box height */
     margin-top: 30%;
-
-
     color: #FFFFFF;
-
 }
 
 #port-count3-p2 {
-
-
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -200,8 +174,6 @@
     color: #FFFFFF;
     text-align: left;
     margin-left: 5%;
-
-
 }
 
 .port-icon1 {
@@ -271,7 +243,6 @@
 #port-container4 {
     padding: 0 !important;
     height: 800px;
-
     background-image: url("../image/portbgcir.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -280,15 +251,11 @@
 
 #port-container5 {
     padding: 0 !important;
-
-
     height: 800px;
     background-image: url("../image/frameport21.png");
     background-repeat: no-repeat;
     background-size: 100% 60%;
-
     background-position: center;
-
 }
 
 #port-container5-p1 {
@@ -296,7 +263,6 @@
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-
     text-align: justify;
     margin-left: 25%;
     margin-bottom: 2%;
@@ -310,9 +276,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
-
     margin-right: 20%;
-
     color: #000000;
 }
 
@@ -355,9 +319,8 @@
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 3px;
+    gap: 10px;
     margin-inline: 5rem;
-    border-top-width: 1px ;
     border-color: #000000;
   }
   
@@ -369,7 +332,7 @@
   }
   
   .filter-button.active {
-    background-color: #cae308;
+    background-color: #f2cf5f;
     color: #fff;
     /* Add any other styles for the active button */
   }
@@ -582,4 +545,3 @@
     font-size: 15px;
   }
   
-

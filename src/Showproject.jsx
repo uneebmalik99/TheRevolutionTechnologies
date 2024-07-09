@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import ReactDOM from "react-dom";
 import Carousel from "react-elastic-carousel";
 import Item from "./Item";
 import "./stylescrusal.css";
@@ -12,8 +11,6 @@ const breakPoints = [
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
-
-
 
 const portfolioData = [
   {
@@ -67,122 +64,112 @@ const portfolioData = [
 const Showproject = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   return (
-    <div className="bg_img">
-      <div className="container" id="port-container2">
-        <div className="row">
-          <h1 id="port-row2-h1">Introduce Our Projects</h1>
-          <p id="port-para2">
-            Software development outsourcing is just a tool to achieve business
-            goals. But there is no wayto get worthwhile results without
-            cooperation and trust between a client company.{" "}
-          </p>
+    <div className="container bg_img projects">
+      <div className="row projects-section">
+        <h1>Introduce Our Projects</h1>
+        <p>
+          Software development outsourcing is just a tool to achieve business
+          goals. But there is no wayto get worthwhile results without
+          cooperation and trust between a client company.
+        </p>
+      </div>
+
+      <div>
+        {/* Filter buttons */}
+        <div className="filter-buttons" style={{ justifyContent: "center" }}>
+          <button
+            className={`filter-button ${selectedCategory === "All" ? "active" : ""
+              }`}
+            onClick={() => setSelectedCategory("All")}>
+            All
+          </button>
+          <button
+            className={`filter-button ${selectedCategory === "IOS App" ? "active" : ""
+              }`}
+            onClick={() => setSelectedCategory("IOS App")}>
+            Mobile App (Andriod/IOS)
+          </button>
+          <button
+            className={`filter-button ${selectedCategory === "uiux" ? "active" : ""
+              }`}
+            onClick={() => setSelectedCategory("uiux")}>
+            UI/UX Graphics
+          </button>
+          <button
+            className={`filter-button ${selectedCategory === "seo" ? "active" : ""
+              }`}
+            onClick={() => setSelectedCategory("seo")}>
+            SEO
+          </button>
+          <button
+            className={`filter-button ${selectedCategory === "automation" ? "active" : ""
+              }`}
+            onClick={() => setSelectedCategory("automation")}>
+            Automation
+          </button>
+
+          <button
+            className={`filter-button ${selectedCategory === "Web Development" ? "active" : ""
+              }`}
+            onClick={() => setSelectedCategory("Web Development")}>
+            Web Development
+          </button>
+          {/* Add more category buttons as needed */}
         </div>
 
-        <div>
 
+        {/* Display filtered portfolio items */}
+        <div className="row rowing">
 
-          <div>
-            {/* Filter buttons */}
-            <div className="filter-buttons" style={{ justifyContent: "center" }}>
-              <button
-                className={`filter-button ${selectedCategory === "All" ? "active" : ""
-                  }`}
-                onClick={() => setSelectedCategory("All")}>
-                All
-              </button>
-              <button
-                className={`filter-button ${selectedCategory === "IOS App" ? "active" : ""
-                  }`}
-                onClick={() => setSelectedCategory("IOS App")}>
-                Mobile App (Andriod/IOS)
-              </button>
-              <button
-                className={`filter-button ${selectedCategory === "uiux" ? "active" : ""
-                  }`}
-                onClick={() => setSelectedCategory("uiux")}>
-                UI/UX Graphics
-              </button>
-              <button
-                className={`filter-button ${selectedCategory === "seo" ? "active" : ""
-                  }`}
-                onClick={() => setSelectedCategory("seo")}>
-                SEO
-              </button>
-              <button
-                className={`filter-button ${selectedCategory === "automation" ? "active" : ""
-                  }`}
-                onClick={() => setSelectedCategory("automation")}>
-                Automation
-              </button>
+          <div className="App">
+            <Carousel breakPoints={breakPoints}>
 
-              <button
-                className={`filter-button ${selectedCategory === "Web Development" ? "active" : ""
-                  }`}
-                onClick={() => setSelectedCategory("Web Development")}>
-                Web Development
-              </button>
-              {/* Add more category buttons as needed */}
-            </div>
+              {portfolioData
+                .filter(
+                  (item) =>
+                    selectedCategory === "All" ||
+                    item.category === selectedCategory
+                )
+                .map((item, index) => (
 
+                  <>
+                    <Item>
+                      <div className="container" style={{ margin: Margin }}>
 
-            {/* Display filtered portfolio items */}
-            <div className="row rowing">
-
-              <div className="App">
-                <Carousel breakPoints={breakPoints}>
-
-                  {portfolioData
-                    .filter(
-                      (item) =>
-                        selectedCategory === "All" ||
-                        item.category === selectedCategory
-                    )
-                    .map((item, index) => (
-
-                      <>
-                        <Item>
-                          <div className="container" style={{ margin: Margin }}>
-
-                            <div
-                              className="col-sm-12  port-row1"
-                              key={index}>
-                              <div className="port-imag">
-                                <img
-                                  src={item.image}
-                                  alt="image"
-                                  className="img-port11"
-                                />
-                                <div>
-                                  <img
-                                    src="./images/portcolor1.png"
-                                    alt="image"
-                                    srcset=""
-                                    className="portcolor1"
-                                  />
-                                  <div className="row">
-                                    <p className="port-p1">{item.title}</p>
-                                    <p className="port-p2">{item.category}</p>
-                                  </div>
-                                </div>
+                        <div
+                          className="col-sm-12  port-row1"
+                          key={index}>
+                          <div className="port-imag">
+                            <img
+                              src={item.image}
+                              alt="image"
+                              className="img-port11"
+                            />
+                            <div>
+                              <img
+                                src="./images/portcolor1.png"
+                                alt="image"
+                                srcset=""
+                                className="portcolor1"
+                              />
+                              <div className="row">
+                                <p className="port-p1">{item.title}</p>
+                                <p className="port-p2">{item.category}</p>
                               </div>
                             </div>
                           </div>
-                        </Item>
-                      </>
+                        </div>
+                      </div>
+                    </Item>
+                  </>
 
 
 
 
 
-                    ))}
-                </Carousel>
+                ))}
+            </Carousel>
 
-              </div>
-
-
-
-
-            </div>
           </div>
         </div>
       </div>

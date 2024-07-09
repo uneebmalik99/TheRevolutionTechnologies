@@ -1,6 +1,5 @@
 import React from "react";
 import lead from "./Leads.module.css";
-
 import { NavLink } from 'react-router-dom';
 
 const Leads = () => {
@@ -22,15 +21,6 @@ const Leads = () => {
             </button>
           </div>
         </div>
-{/* 
-        <div className=" col-sm-12 col-md-6 col-lg-7">
-          <img
-            src="images/leadpic.png"
-            alt=" image"
-            className={lead.imag}
-            srcSet=""
-          />
-        </div> */}
       </div>
     </div>
   );

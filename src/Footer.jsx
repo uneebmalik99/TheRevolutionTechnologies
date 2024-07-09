@@ -33,15 +33,15 @@ const Footer = () => {
                            
                             <ul>
                             <h5>Links</h5>
-                                <a href="#"><li className="lifoot">Home</li></a>
+                                <a href="/"><li className="lifoot">Home</li></a>
 
-                                <a href="#"><li className="lifoot">About Us</li></a>
+                                <a href="/careers"><li className="lifoot">Careers</li></a>
 
-                                <a href="#"><li className="lifoot">Services</li></a>
+                                <a href="/services"><li className="lifoot">Services</li></a>
 
-                                <a href="#"><li className="lifoot">PortFolio</li></a>
+                                <a href="/portfolio"><li className="lifoot">PortFolio</li></a>
 
-                                <a href="#"><li className="lifoot">Contact Us</li></a>
+                                <a href="/contact"><li className="lifoot">Contact Us</li></a>
                             </ul>
 
 
@@ -70,9 +70,9 @@ const Footer = () => {
                         <div className="fourth col-sm-12 col-md-3 col-lg-3 col-xs-12 media">
                             <h5>  Contact Us</h5>
                             <p className="footer-p1"> Give us a call today and see what we can do for you.</p>
-                            <p className="footer-p1"> <FmdGoodIcon fontSize="small" style={{ color: "#ffcc39" }}  /> Office no 12, Aries Tower Maryam Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
-                            <p className="footer-p1"> <EmailIcon fontSize="small" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
-                            <p className="footer-p1"> <CallIcon fontSize="small"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
+                            <p className="footer-p1"> <FmdGoodIcon fontSize="large" style={{ color: "#ffcc39" }}  /> Office no 12, Aries Tower Maryam Business Center, Murree Rd, Shamsabad, Rawalpindi</p>
+                            <p className="footer-p1"> <EmailIcon fontSize="large" style={{ color: "#ffcc39" }} /> info@therevolutiontechnologies.com</p>
+                            <p className="footer-p1"> <CallIcon fontSize="large"style={{ color: "#ffcc39" }} /> 051-611-2452</p>
                             <p>+92-331-7766-777</p>
 
 
@@ -85,7 +85,7 @@ const Footer = () => {
                         <a href="https://www.facebook.com/TheRevolutionTechnologies"><img src="./images/fb_icon_325x325.png" className="footer-img" alt="faceook" srcset="" /></a>
                         <a href="https://www.instagram.com"><img src="./images/instagram.png"className="footer-img" alt="instagram" srcset="" /></a>
                         <a href="https://www.twitter.com"><img src="./images/673524.png" className="footer-img" alt="Twitter" srcset="" /></a>
-                        <a href="https://www.linkedin.com/company/therevolutiontechnologies/"><img src="./images/link1.png" className="footer-img" alt="linkdin" srcset="" /></a>
+                        <a href="https://www.linkedin.com/company/therevolutiontechnologies/"><img src="./images/link1.png" className="footer-img" alt="linkedin" srcset="" /></a>
 
 
                         </div>

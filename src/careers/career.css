@@ -109,7 +109,7 @@ color: #000000;
 
 
 font-style: normal;
-font-weight: bold;
+font-weight: 500;
 font-size: 20px;
 line-height: 137.52%;
 
@@ -199,4 +199,22 @@ p {
     width: 52%;
     height: 40px;
     margin-top: -1%;
+}
+@media only screen and (max-width: 768px)
+{
+    #career-p1{
+        margin-left: 12%;
+    }
+    #career-container2-p1{
+        font-size: 25px;
+    }
+    #career-container2-p2{
+        font-size: 16px;
+    }
+    .container3-p{
+        font-size: 36px;
+    }
+    .text{
+        float: center;
+    }
 }

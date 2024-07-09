@@ -91,3 +91,9 @@
 #team-para{
     padding: 50px;
 }
+@media only screen and (max-width: 768px){
+    #team-heading{
+        margin-top: 37%;
+        font-size: 21px;
+    }
+}

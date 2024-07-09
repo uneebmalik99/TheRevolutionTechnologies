@@ -355,7 +355,7 @@
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 0px;
+    gap: 3px;
     margin-inline: 5rem;
     border-top-width: 1px ;
     border-color: #000000;
@@ -514,6 +514,27 @@
         height: 100px;
         margin-top: -90px;
     }
+    #port-row2-h1{
+        font-size: 34px;
+    }
+    #port-para2 {
+        font-size: 20px;
+    }
+    .filter-buttons{
+        gap: 19px;
+    }
+    .slider-content {
+        margin-left: -1rem;
+      }
+      .slider-content h2{
+        font-size: 24px;
+      }
+      .slider-content p {
+        font-size: 12px;
+      }
+    .port-p2{
+        font-size: 16px;
+    }
 
     
 
@@ -558,7 +579,7 @@
   }
   
   .slider-content p {
-    font-size: 16px;
+    font-size: 15px;
   }
   
 

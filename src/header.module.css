@@ -1,8 +1,6 @@
 .containerhead{
     height: 500px;
     background: linear-gradient(259.21deg, rgba(8, 20, 61, 0.63) 33.93%, rgba(0, 6, 26, 0) 117.36%);
-
-
     background-image: url("./image/bg2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +31,7 @@
     background: #FECE3C;
     border-radius: 13px;
     width: 8rem !important;
-    height: 40px;
+    height: 47px;
     padding: 10px;
 
 
@@ -47,9 +45,7 @@
 }
 .contibm{
     height: auto;
-    background: rgba(8, 46, 83, 0.03);
-   
-    
+    background: rgba(8, 46, 83, 0.03);  
 }
 .logo{
     margin-right: 150px;
@@ -73,6 +69,7 @@
     margin-bottom: 1%;
     marquee:left;
 }
+
 /* header.module.css */
 
 .containerhead {
@@ -81,6 +78,7 @@
   
   .headerrow {
     text-align: center;
+    justify-content: center;
   }
   
   .heading1 {
@@ -100,7 +98,7 @@
   }
   
   .btn {
-    font-size: 1.2em;
+    font-size: 15px;
   }
   
   .contibm {

@@ -81,3 +81,19 @@ border-bottom: 3px solid yellow;
  
 
 }
+.msg{
+  margin-top: -4%;
+      background: #FECE3C;
+      border-radius: 13px;
+      width: 8rem !important;
+      height: 47px;
+      padding: 6px;
+      text-align: center;
+      margin-left: 41%;
+      font-size: 14px;
+  }
+  @media (max-width: 768px){
+    .msg{
+      margin-left: 33%;
+    }
+  }

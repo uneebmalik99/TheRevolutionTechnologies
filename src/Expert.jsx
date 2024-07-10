@@ -13,70 +13,72 @@ const Expert = () => {
 
         if (activeButton === 'values') {
             return (
+                <div className="container-img">
+                    <div className="row rowlast" style={{ marginInline: '0px' }}>
 
-                <div className="row rowlast" style={{ marginInline: '0px' }}>
+                        <div className=" col-sm-12 col-md-2 col-lg-2">
 
-                    <div className=" col-sm-12 col-md-2 col-lg-2">
+                            <div className=" card exp-card cardimg1 card-colr1 expertbox N1">
+                                <div className="imgcir">
+                                    <img src="images/flexbility.png" className='cardimg' alt="flex img" />
+                                </div>
+                                <p className='pclr'>Flexbility</p>
 
-                        <div className=" card exp-card cardimg1 card-colr1 expertbox N1">
-                            <div className="imgcir">
-                                <img src="images/flexbility.png" className='cardimg' alt="flex img" />
                             </div>
-                            <p className='pclr'>Flexbility</p>
+
+                        </div>
+                        <div className=" col-sm-12 col-md-2 col-lg-2  ">
+                            <div className="card cardimg1 card-colr2 expertbox N2">
+                                <div className="imgcir2">
+                                    <img src="images/exp2.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>EMPOWEMENT</p>
+
+                            </div>
+
+
+                        </div>
+                        <div className=" col-sm-12 col-md-2 col-lg-2 ">
+                            <div className="card cardimg1 card-colr2 N3">
+                                <div className="imgcir2">
+                                    <img src="images/exp3.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>INCLUSIVITY</p>
+
+                            </div>
+
+                        </div>
+                        <div className=" col-sm-12 col-md-2 col-lg-2 ">
+                            <div className="card cardimg1 card-colr2 N4">
+                                <div className="imgcir2">
+                                    <img src="images/exp4.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>DISCIPLINE</p>
+
+                            </div>
+
+                        </div>
+                        <div className="  col-sm-12 col-md-2 col-lg-2 ">
+                            <div className="card cardimg1 card-colr2 N5">
+                                <div className="imgcir2">
+                                    <img src="images/exp5.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>GROWYHMINDSET</p>
+
+                            </div>
 
                         </div>
 
-                    </div>
-                    <div className=" col-sm-12 col-md-2 col-lg-2  ">
-                        <div className="card cardimg1 card-colr2 expertbox N2">
-                            <div className="imgcir2">
-                                <img src="images/exp2.png" className='cardimg2' alt="flex img" />
-                            </div>
-                            <p className='pclr'>EMPOWEMENT</p>
-
-                        </div>
 
 
                     </div>
-                    <div className=" col-sm-12 col-md-2 col-lg-2 ">
-                        <div className="card cardimg1 card-colr2 N3">
-                            <div className="imgcir2">
-                                <img src="images/exp3.png" className='cardimg2' alt="flex img" />
-                            </div>
-                            <p className='pclr'>INCLUSIVITY</p>
-
-                        </div>
-
-                    </div>
-                    <div className=" col-sm-12 col-md-2 col-lg-2 ">
-                        <div className="card cardimg1 card-colr2 N4">
-                            <div className="imgcir2">
-                                <img src="images/exp4.png" className='cardimg2' alt="flex img" />
-                            </div>
-                            <p className='pclr'>DISCIPLINE</p>
-
-                        </div>
-
-                    </div>
-                    <div className="  col-sm-12 col-md-2 col-lg-2 ">
-                        <div className="card cardimg1 card-colr2 N5">
-                            <div className="imgcir2">
-                                <img src="images/exp5.png" className='cardimg2' alt="flex img" />
-                            </div>
-                            <p className='pclr'>GROWYHMINDSET</p>
-
-                        </div>
-
-                    </div>
-
-
-
                 </div>
 
             );
         } else if (activeButton === 'technologies') {
             return (
-                <div className="background" >
+                <div className="container-img">
+
                     <div className="row" >
                         <div className="col-md-6">
                             <div className="t1">
@@ -91,12 +93,14 @@ const Expert = () => {
                         <div className=" col-md-6 ">
                             <img src="images/g9.png" className="img-fluid" alt="Team" style={{ height: "90%", width: "80%" }} />
                         </div>
+
                     </div>
                 </div>
             );
         } else if (activeButton === 'industries') {
             return (
-                <div className='container1'>
+                <div className="container-img">
+
                     <div className="row rowlast1">
 
                         <div className=" col-sm-12 col-md-2 col-lg-2">
@@ -212,8 +216,8 @@ const Expert = () => {
                         </div>
                     </div>
 
-
                 </div>
+
             );
         }
     };

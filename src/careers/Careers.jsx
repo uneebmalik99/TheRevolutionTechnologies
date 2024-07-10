@@ -12,7 +12,7 @@ const Careers = ({ title }) => {
           <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="row " id="career-row1">
               <p id="career-p1">Careers</p>
-              <p id=" ">
+              <p className="career-paragraph ">
                 Discover your next career move with one of the leading Tech
                 Firms!.
               </p>

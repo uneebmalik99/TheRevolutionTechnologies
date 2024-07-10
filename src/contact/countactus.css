@@ -192,6 +192,8 @@ button {
     color: black;
     border-radius: 6px !important;
     width: 80%;
+    padding-left: 3%;
+    margin-left: 10%;
 }
 .btn1{
     margin-bottom: 2%;

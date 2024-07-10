@@ -50,29 +50,28 @@ const Company = ({ title }) => {
       </div>
       <div className="container-fluid contibm">
         <div className="row">
-          <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm ">
+          <div className="col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm">
             <img src="images/ibm.png" alt="ibm" />
           </div>
-          <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm">
+          <div className="col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm">
             <img src="images/ibm2.png" alt="ibm2" />
           </div>
-          <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm">
+          <div className="col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm">
             <img src="images/ibm3.png" alt="ibm3" />
           </div>
-          <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm">
+          <div className="col-xs-12 col-sm-12 col-md-2 col-lg-2 comp-ibm">
             <img src="images/ibm4.png" alt="ibm4" />
           </div>
-          <div className=" col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm">
+          <div className="col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm">
             <img src="images/ibm5.png" alt="ibm5" />
           </div>
         </div>
       </div>
-
       <div className="container-fluid aboutus" id="company-countainer22">
         <div className="row row1-heading">
           <h3 id="row1-h3">About Us</h3>
-          <div className="row ">
-            <div className=" abouthp col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div className="row">
+            <div className="abouthp col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <h class="company-p2">
                 Offering Sustainable Digital Solutions to Amazing People
               </h>
@@ -96,10 +95,19 @@ const Company = ({ title }) => {
           </div>
         </div>
       </div>
-
       <div className="container-fluid" id="company-container33">
         <div className="row aboutus_row col-12 col-xs-12 col-sm-12 col-md-12  col-lg-12">
-          <h1 className="sideone-h1 h1-main">OUR VISION</h1>
+          <h1
+            className="sideone-h1 h1-main"
+            style={{
+              paddingTop: "48px",
+              paddingLeft: " 45px",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            Our Vision
+          </h1>
           <div className="visiondiv col-8 col-xs-8 col-sm-8 col-md-8  col-lg-8 p-3">
             <div className="flex sideone">
               <div className="imgdiv">
@@ -158,7 +166,7 @@ const Company = ({ title }) => {
               <div className="side-para-andh">
                 <h3 className="sideone-h1">Our Goals</h3>
                 <p className="sideone-p">
-                  our team, skillset and expertise kept growing and evolving
+                  Our team, skillset and expertise kept growing and evolving
                   enabling us to create innovative digital solutions for other
                   entrepreneurs and businesses
                 </p>
@@ -167,60 +175,60 @@ const Company = ({ title }) => {
           </div>
         </div>
       </div>
-
       <div className="container-fluid" id="company-countainer3">
         <div className="row banner">
           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
             <h1 className="count3-h3">20+</h1>
-            <p className="count3-p3">AC TIVE CLIENTS</p>
+            <p className="count3-p3">ACTIVE CLIENTS</p>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <h1 className="count3-h3">20+</h1>
-            <p className="count3-p3">AC TIVE CLIENTS</p>
+            <p className="count3-p3">ACTIVE CLIENTS</p>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <h1 className="count3-h3">20+</h1>
-            <p className="count3-p3">AC TIVE CLIENTS</p>
+            <p className="count3-p3">ACTIVE CLIENTS</p>
           </div>
           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3">
             <h1 className="count3-h3">20+</h1>
-            <p className="count3-p3">AC TIVE CLIENTS</p>
+            <p className="count3-p3">ACTIVE CLIENTS</p>
           </div>
         </div>
       </div>
-
       <Test />
+      <div className="container-fluid">
+        <div className="row services">
+          <div className="col-6">
+            <h1>SERVICES</h1>
+            <p style={{ color: "white" }}>
+              It was nice working with your team because no matter what ideas we
+              come with, you guys
+            </p>
+          </div>
 
-      <div className="col-12 row services">
-        <div className="col-6">
-          <h1>SERVICES</h1>
-          <p style={{ color: "white" }}>
-            It was nice working with your team because no matter what ideas we
-            come with, you guys
-          </p>
-        </div>
-
-        <div className="col-3">
-          <img
-            src="./images/19333429 1.png"
-            alt="service"
-            className="serviceimg"
-          />
+          <div className="col-3">
+            <img
+              src="./images/19333429 1.png"
+              alt="service"
+              className="serviceimg"
+            />
+          </div>
         </div>
       </div>
-      <div className="whyus">
-        <div className="whyheading">Why Choose Us</div>
-
-        <div className="container">
-          <div className="row cardsdata ">
-            {cardData.map((card, index) => (
-              <Card
-                className=""
-                key={index}
-                heading={card.heading}
-                text={card.text}
-              />
-            ))}
+      <div className="container-fluid">
+        <div className="whyus">
+          <div className="whyheading">Why Choose Us</div>
+          <div className="container">
+            <div className="row cardsdata ">
+              {cardData.map((card, index) => (
+                <Card
+                  className=""
+                  key={index}
+                  heading={card.heading}
+                  text={card.text}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

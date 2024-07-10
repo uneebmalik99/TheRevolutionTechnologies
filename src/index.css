@@ -44,8 +44,7 @@ li:hover {
 .row {
   text-align: center;
 }
-.first,
-P {
+.first {
   color: #ada9c9;
   font-weight: 500;
 }
@@ -125,4 +124,5 @@ span {
 }
 .footer-p1 {
   margin-top: 15px;
+  color: #ada9c9;
 }

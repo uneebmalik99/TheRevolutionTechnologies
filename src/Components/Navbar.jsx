@@ -21,7 +21,7 @@ function Navbar() {
     <>
       <nav
         className="nav blur blur-rounded top-0 z-index-fixed shadow position-absolute start-0 end-0 mx-6"
-        style={{ borderRadius: "10px" }}
+        style={{ borderRadius: "0px 0px 10px 10px" }}
       >
         <NavLink to="/" className="nav_brand">
           <img

@@ -119,7 +119,7 @@ const Team = ({ title }) => {
 
       <div className="container-fluid" id="team-container2">
         <div className="row">
-          <h1>Our Team</h1>
+          <h1 style={{fontSize: "35px", fontWeight: "700"}}>Our Team</h1>
           <h4 id="ourteamclr">Get To Know Us</h4>
         </div>
 

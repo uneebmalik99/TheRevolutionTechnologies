@@ -10,11 +10,11 @@ const Careers = ({ title }) => {
       <div className="container-fluid" id="career-container1">
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="row " id="career-row1">
+            <div className="row" id="career-row1">
               <p id="career-p1">Careers</p>
-              <p className="career-paragraph ">
+              <p className="career-paragraph">
                 Discover your next career move with one of the leading Tech
-                Firms!.
+                Firms!
               </p>
             </div>
           </div>
@@ -26,25 +26,22 @@ const Careers = ({ title }) => {
 
       <div className="container-fluid" id="career-container2">
         <div className="row heading">
-          {" "}
-          <p id="career-container2-p1">
-            WHY JOIN The Revolution Technologies ?
-          </p>
+          <p id="career-container2-p1">Why Join The Revolution Technologies?</p>
         </div>
         <div className="row" id="career-container2-row1">
           <p id="career-container2-p2">
-            Techies, innovators, developers, and free-thinkers… you’ve come to
-            the right place.Funsol Technologies has been delivering premium
+            Techies, innovators, developers, and free-thinkers. You’ve come to
+            the right place. Funsol Technologies has been delivering premium
             IT-enabled business solutions to a wide array of client
             organizations for over four decades. We have remained at the cutting
             edge of enterprise technology by making employee excellence our top
             priority. We believe in cultivating a working environment that
-            supports innovation and creative thinking.We give you opportunities
+            supports innovation and creative thinking. We give you opportunities
             to excel and achieve the global recognition that you deserve!
           </p>
         </div>
       </div>
-      <div className="" id=" career-container3-row1">
+      <div className="" id="career-container3-row1">
         <p className="container3-p"> OPEN VACANCIES </p>
       </div>
       <div className="container-fluid" id="career-container3">

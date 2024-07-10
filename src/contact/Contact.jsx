@@ -3,7 +3,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import Map from "../Components/Map";
 import React, { useEffect, useState } from "react";
-import { Form, Button, FormControl } from 'react-bootstrap';
+import { Form, Button, FormControl } from "react-bootstrap";
 import CallIcon from "@mui/icons-material/Call";
 
 const Contact = ({ title }) => {
@@ -112,7 +112,10 @@ const Contact = ({ title }) => {
               <p className="contact-color-black contact-align contact-mar3">
                 <h5 className="contact-color-black contact-align contact-mar-b">
                   {" "}
-                  <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />{" "}
+                  <CallIcon
+                    fontSize="large"
+                    style={{ color: "#ffcc39" }}
+                  />{" "}
                   Contact
                 </h5>
                 <span className="contact-span2">
@@ -175,9 +178,7 @@ const Contact = ({ title }) => {
 
                     <Button
                       style={{
-                        color: "navy",
                         backgroundColor: "#BA8D06",
-                        fontWeight: "bold",
                         paddingInline: "2%",
                         width: "24%",
                       }}

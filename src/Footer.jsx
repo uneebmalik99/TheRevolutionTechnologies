@@ -63,7 +63,7 @@ const Footer = () => {
                 </a>
 
                 <a href="/">
-                  <li className="lifoot">Ui/UX Design</li>
+                  <li className="lifoot">UI/UX Design</li>
                 </a>
 
                 <a href="/">
@@ -76,20 +76,35 @@ const Footer = () => {
               <p className="footer-p1">
                 Give us a call today and see what we can do for you.
               </p>
-              <p className="footer-p1">
+              <p
+                className="footer-p1"
+                style={{ display: "flex", alignItems: "self-start" }}
+              >
                 <FmdGoodIcon fontSize="large" style={{ color: "#ffcc39" }} />
                 Office no 12, Aries Tower Maryam Business Center, Murree Rd,
                 Shamsabad, Rawalpindi
               </p>
-              <p className="footer-p1">
+              <p
+                className="footer-p1"
+                style={{ display: "flex", alignItems: "self-end" }}
+              >
                 <EmailIcon fontSize="large" style={{ color: "#ffcc39" }} />
                 info@therevolutiontechnologies.com
               </p>
-              <p className="footer-p1">
+              <p
+                className="footer-p1"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />
                 051-611-2452
               </p>
-              <p>+92-331-7766-777</p>
+              <p
+                className="footer-p1"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />
+                +92-331-7766-777
+              </p>
             </div>
           </div>
 

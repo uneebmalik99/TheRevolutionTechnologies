@@ -1,0 +1,563 @@
+#port-container {
+  height: auto;
+  background: linear-gradient(
+    269.73deg,
+    #f4be17 1.1%,
+    rgba(254, 206, 60, 0) 115.91%
+  );
+  margin-bottom: 10px;
+}
+
+#porfolio-container {
+  height: auto;
+  background: linear-gradient(
+    269.73deg,
+    #3686ae 1.1%,
+    rgba(254, 206, 60, 0) 115.91%
+  );
+}
+
+#portfolio-count1-p1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: 92px;
+  margin-top: 30%;
+  text-align: left;
+  margin-left: 10%;
+  color: #082e53;
+}
+
+#portfolio-count1-p2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 31px;
+  margin-left: 10%;
+  color: #082e53;
+  text-align: left;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  #portfolio-count1-p1 {
+    font-size: 56px;
+    line-height: 110px;
+  }
+}
+
+#port-maincount {
+  margin-bottom: 30px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+#port-imag1 {
+  height: 100%;
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#port-h1 {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 20%;
+  font-weight: bold;
+}
+
+#port-h3 {
+  margin-top: 3%;
+  text-align: left;
+  margin-left: 10%;
+}
+
+#portrow1 {
+  margin-top: 20%;
+}
+
+#port-para {
+  color: black;
+  font-weight: bold;
+  text-align: justify;
+  margin-left: 10%;
+  margin-top: 6%;
+  padding-right: 100px !important;
+  font-size: 19px;
+}
+
+.portcolor1 {
+  width: 100%;
+  height: 30%;
+  margin-top: -41%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-bottom: 40px;
+}
+
+.port-p1 {
+  margin-top: -120px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.port-p2 {
+  margin-top: -100px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+.bg_img {
+  background-image: url(../../public/images/Group\ 98815.png);
+}
+
+#port-container2 {
+  height: auto;
+  margin-bottom: 100px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.port-count2-h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.rowing {
+  width: 100%;
+  justify-content: center;
+  margin-right: 0px !important;
+}
+
+#port-para2 {
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 5%;
+}
+
+.btns-row {
+  padding-bottom: 15px;
+}
+
+.port-imag {
+  width: 100%;
+  height: 400px;
+  margin-bottom: -14%;
+}
+
+.img-port11 {
+  width: 100%;
+  height: 322px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+#port-row2-h1 {
+  margin-top: 5%;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#port-container3 {
+  height: auto;
+  margin-top: 5%;
+  background-image: url("../image/portcount3bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#port-imag33 {
+  height: 70%;
+  width: 80%;
+  margin-bottom: 290px;
+  margin-top: 1%;
+}
+
+#port-count3-p1 {
+  margin-left: 5%;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+  margin-top: 30%;
+  color: #ffffff;
+}
+
+#port-count3-p2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 5px !important;
+  color: #ffffff;
+  margin-left: 2%;
+}
+
+#port-count3-p3 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 31px;
+  margin-top: 5%;
+  color: #ffffff;
+  margin-left: 5%;
+}
+
+.port-icon1 {
+  margin-top: -17px;
+  font-size: 37px !important;
+}
+
+.port-icon2 {
+  margin-top: -16px;
+  font-size: 40px !important;
+}
+
+#port-count3-pp {
+  margin-top: 15px;
+}
+
+#port-rowimag1 {
+  width: 100%;
+  height: 200px;
+  margin-top: -225px;
+}
+
+.port-btn {
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  height: 50px;
+  bottom: 40px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  background: linear-gradient(
+    167.08deg,
+    #fece3c -11.3%,
+    #fece3c 7.25%,
+    #5390d5 109.59%
+  );
+}
+
+.port-btn2 {
+  width: 45px;
+  position: fixed;
+  right: 23px;
+  height: 45px;
+  bottom: 100px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.port-btn3 {
+  width: 45px;
+  position: fixed;
+  right: 23px;
+  height: 45px;
+  bottom: 160px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.port-btn4 {
+  width: 45px;
+  position: fixed;
+  right: 23px;
+  height: 45px;
+  bottom: 225px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.port-btn:hover {
+  background-color: #f4be17;
+}
+
+#port-container4 {
+  padding: 0 !important;
+  height: 800px;
+  background-image: url("../image/portbgcir.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top;
+}
+
+#port-container5-p1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+}
+
+#port-container5-p2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+  margin-bottom: 2%;
+}
+
+#port-container5-btn {
+  text-align: center;
+  position: relative;
+  background: #fece3c;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+}
+
+#count5-img {
+  margin-top: 48%;
+  margin-right: 40%;
+}
+
+#pos-inq {
+  width: 40px;
+  height: 150px;
+  text-align: center;
+  background: linear-gradient(
+    180deg,
+    #f5ce55 0%,
+    #ba8d06 47.49%,
+    #7c9fb1 88.64%
+  );
+  writing-mode: vertical-rl;
+  position: fixed;
+  right: 0;
+  top: 35%;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#pos-inq:hover {
+  color: black;
+}
+/* Add styling for the filter buttons */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-inline: 5rem;
+  border-color: #000000;
+  justify-content: center;
+}
+
+.filter-button {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.filter-button.active {
+  background-color: #f2cf5f;
+  color: #fff;
+  /* Add any other styles for the active button */
+}
+
+/* Add more styling as needed */
+
+/*/* Style for the slider container */
+.slider-container {
+  width: 100%;
+  max-height: 400px; /* Set the fixed height */
+  overflow: hidden;
+  position: relative; /* Required for positioning the buttons */
+}
+
+/* Style for the slider content */
+.slider-content {
+  display: flex;
+  transition: transform 0.5s ease;
+  margin-left: 10rem;
+}
+
+/* Style for individual slider items (images) */
+.slider-item {
+  /* Remove the flex property */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Style for the image inside the slider item */
+.slider-item img {
+  /* width: 100%; */
+  /* height: 100%; Fill the container's fixed height */
+  width: 100%;
+  height: 400px;
+
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Style for navigation buttons */
+/* Style for navigation buttons */
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+/* Style for the slider content */
+.slider-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+/* Style for the paragraph and heading container */
+.para_hd {
+  position: absolute;
+  top: 50%;
+  left: 60px; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  color: rgb(4, 3, 3);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Add background to make text readable */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  z-index: 1; /* Ensure the text is above the images */
+}
+
+/* Style for the image container */
+.image-container {
+  display: flex;
+  overflow: hidden;
+}
+
+/* Style for active slider item */
+.slider-item.active {
+  flex: 0 0 100%;
+  transition: flex 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  #port-container5-p1 {
+    margin-top: 240px;
+    margin-left: 50px;
+    padding-right: 40px;
+    font-weight: bold;
+    font-size: 10px;
+
+    text-align: left;
+
+    margin-bottom: 3px;
+    color: #000000;
+  }
+
+  #count5-img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  #port-container5-p2 {
+    text-align: left;
+    margin-left: 35px;
+    margin-bottom: 1%;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 50px;
+  }
+
+  #port-container5-btn {
+    margin-left: 150px;
+    margin-top: 20px;
+  }
+  .img-port11 {
+    margin-left: 15px;
+  }
+  .portcolor1 {
+    margin-left: 15px;
+  }
+  #port-rowimag1 {
+    height: 100px;
+    margin-top: -90px;
+  }
+  #port-row2-h1 {
+    font-size: 34px;
+  }
+  #port-para2 {
+    font-size: 20px;
+  }
+  .filter-buttons {
+    gap: 19px;
+  }
+  .slider-content {
+    margin-left: -1rem;
+  }
+  .slider-content h2 {
+    font-size: 24px;
+  }
+  .slider-content p {
+    font-size: 12px;
+  }
+  .port-p2 {
+    font-size: 16px;
+  }
+}
+
+/* sliders  */
+/* Slider.css */
+/* Slider.css */
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.slider-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slider-content {
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+.slider-content h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.slider-content p {
+  font-size: 15px;
+}

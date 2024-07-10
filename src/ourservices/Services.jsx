@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./ser.css";
+import "./Services.css";
 import Static from "../Components/Static";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -38,7 +38,7 @@ const Services = ({ title }) => {
           <p className="address1">
             <LanguageIcon fontSize="large" className="addressicon" />
             <h3>Our Address</h3>
-            Office # 12, Aeies Tower 2nd floor Murree Road, Shamsabad,
+            Office # 12, Aries Tower 2nd floor Murree Road, Shamsabad,
             Rawalpindi
           </p>
 
@@ -59,28 +59,27 @@ const Services = ({ title }) => {
         </div>
         <div className="box-2">
           <h3>Put Your Comment Here</h3>
-          <form action="">
+          <form action="" className="services-form">
             <input
               type="text"
               placeholder="Name"
-              className="contact-input input"
+              className="form-control mb-md-2"
+              style={{ backgroundColor: "#ecf1f9" }}
             />
-            <br />
             <input
               type="text"
               placeholder="Email"
-              className="contact-input input"
+              className="form-control mb-md-2"
+              style={{ backgroundColor: "#ecf1f9" }}
             />
-            <br />
             <textarea
               name="textbox"
-              id=""
-              cols=""
               rows="5"
               placeholder="Message"
-              className="textarea1 contact-input"
+              className="form-control mb-md-2"
+              style={{ backgroundColor: "#ecf1f9" }}
             ></textarea>
-            <div className="row sendrow">
+            <div className="row">
               <button className="send">SEND MESSAGE</button>
             </div>
           </form>

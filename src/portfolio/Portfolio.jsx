@@ -1,37 +1,37 @@
 import React, { useEffect, useState } from "react";
-import "./portfolios.css";
+import "./Portfolio.css";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import Static from "../Components/Static";
 
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 const Portfolio = ({ title }) => {
   useEffect(() => {
     document.title = `${title} - The Revolution Technologies`;
   }, [title]);
 
-  const slidesData = [
-    {
-      imageUrl: "./images/imgpsh_fullsize_anim (1).png",
-      heading: "Our Portfolio",
-      text: "The Revolution in the Mobile App Development",
-    },
-    {
-      imageUrl: "./images/serimg2.png",
-      heading: "Our Portfolio",
-      text: "The Revolution in the Web App Development",
-    },
-  ];
+  // const slidesData = [
+  //   {
+  //     imageUrl: "./images/imgpsh_fullsize_anim (1).png",
+  //     heading: "Our Portfolio",
+  //     text: "The Revolution in the Mobile App Development",
+  //   },
+  //   {
+  //     imageUrl: "./images/serimg2.png",
+  //     heading: "Our Portfolio",
+  //     text: "The Revolution in the Web App Development",
+  //   },
+  // ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500
+  // };
 
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -84,10 +84,14 @@ const Portfolio = ({ title }) => {
     },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <>
       <Static />
-      <Slider {...settings}>
+      {/* <Slider {...settings}>
         {slidesData.map((slide, index) => (
           <div key={index} className="slider-item">
             <div className="slider-image">
@@ -99,7 +103,23 @@ const Portfolio = ({ title }) => {
             </div>
           </div>
         ))}
-      </Slider>
+      </Slider> */}
+
+      <div className="container-fluid" id="porfolio-container">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="row">
+              <p id="portfolio-count1-p1">Portfolio</p>
+              <p id="portfolio-count1-p2">
+                The Revolution in the Mobile & Web App Development.
+              </p>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <img src="images/serimg2.png" id="ser-bg-img" alt="Flexible" />
+          </div>
+        </div>
+      </div>
 
       <div className="container-fluid" id="port-maincount">
         <div className="bg_img">
@@ -109,14 +129,14 @@ const Portfolio = ({ title }) => {
               <p id="port-para2">
                 Software development outsourcing is just a tool to achieve
                 business goals. But there is no wayto get worthwhile results
-                without cooperation and trust between a client company.{" "}
+                without cooperation and trust between a client company.
               </p>
             </div>
             <div>
               {/* filter options  */}
               <div>
                 {/* Filter buttons */}
-                <div className="filter-buttons" style={{}}>
+                <div className="filter-buttons btns-row" style={{}}>
                   <button
                     className={`filter-button ${
                       selectedCategory === "All" ? "active" : ""
@@ -187,17 +207,15 @@ const Portfolio = ({ title }) => {
                             alt={item.title}
                             className="img-port11"
                           />
-                          <div>
-                            <img
-                              src="./images/portcolor1.png"
-                              alt={item.title}
-                              srcset=""
-                              className="portcolor1"
-                            />
-                            <div className="row">
-                              <p className="port-p1">{item.title}</p>
-                              <p className="port-p2">{item.category}</p>
-                            </div>
+                          <img
+                            src="./images/portcolor1.png"
+                            alt={item.title}
+                            srcset=""
+                            className="portcolor1"
+                          />
+                          <div className="row">
+                            <p className="port-p1">{item.title}</p>
+                            <p className="port-p2">{item.category}</p>
                           </div>
                         </div>
                       </div>
@@ -212,16 +230,22 @@ const Portfolio = ({ title }) => {
           <div className="row">
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="row">
-                <p id="port-count3-p1">Trusted and love</p>
-                <p id="port-count3-pp">
-                  {" "}
-                  <FavoriteIcon
+                <p id="port-count3-p1">
+                  Trusted
+                  <VerifiedUserIcon
                     fontSize="large"
                     style={{ color: "#C0472C" }}
                     className="port-icon1"
                   />
-                  <span id="port-count3-p2">Worldwide</span>{" "}
+                  & love
+                  <FavoriteIcon
+                    fontSize="large"
+                    style={{ color: "#C0472C" }}
+                    className="port-icon2"
+                  />
+                  Worldwide
                 </p>
+                <p id="port-count3-pp"></p>
                 <p id="port-count3-p3">
                   Software development outsourcing is just a tool to achieve
                   business goals. But there is no way to get worthwhile results
@@ -247,27 +271,19 @@ const Portfolio = ({ title }) => {
         />
       </div>
 
-      <div className="container-fluid" id="port-container4">
-        <div className="container-fluid" id="port-container5">
-          <div className="row " id="port-container5-row">
-            <div className="col-sm-12 col-md-8 col-lg-8">
-              <div className="row" id="port-container5-row">
-                <p id="port-container5-p1">
-                  Drop Us line! We are hare to answer your question 24/7
-                </p>
-                <p id="port-container5-p2">Need A FREE CONSULTATION ?</p>
-                <button id="port-container5-btn">Contact Us</button>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-4 col-lg-4">
-              <img
-                src="./images/count5img.png"
-                alt="count5img"
-                srcset=""
-                id="count5-img"
-              />
-            </div>
-          </div>
+      <div
+        className="container-fluid row d-flex justify-content-center align-item-center"
+        id="port-container5"
+        style={{ paddingBottom: "50px" }}
+      >
+        <div className="col-sm-12 col-md-12 col-lg-12">
+          <p id="port-container5-p1">
+            Drop Us line! We are here to answer your question 24/7
+          </p>
+          <p id="port-container5-p2">Need a Free Consultation?</p>
+          <Link to={"/contact"} id="port-container5-btn" onClick={scrollToTop}>
+            Contact Us
+          </Link>
         </div>
       </div>
     </>

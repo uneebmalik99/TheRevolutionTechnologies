@@ -1,128 +1,124 @@
 .contservice {
-    height: auto;
-    background-image: url("./image/rectangle.png");
-    background-repeat: no-repeat;
-    background-size: 100% 780px;
-    background-position: center;
-    margin-bottom: 10px;
-    padding-top: 3%;
+  height: auto;
+  background-image: url("./image/rectangle.png");
+  background-repeat: no-repeat;
+  background-size: 100% 780px;
+  background-position: center;
+  margin-bottom: 10px;
+  padding-top: 3%;
 }
 
-/* .firstrow {
-    margin-top: 80px;
-} */
-
 .outerrow {
-    margin-top: 10px !important;
+  margin-top: 10px !important;
 }
 
 .serh3 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 50px;
-    text-align: center;
-    padding-inline: 4%;
-    color: #082E53;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  text-align: center;
+  padding-inline: 4%;
+  color: #082e53;
 }
 
 .serp1 {
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    padding-inline: 4%;
-    color: #082E53;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding-inline: 4%;
+  color: #082e53;
 }
 
 @media only screen and (max-width: 600px) {
-    .outerrow {
-        margin-top: 20px !important;
-    }
-    .firstrow {
-        margin-top: 20px !important;
-    }
-    .cards {
-        margin-left: 30px;
-    }
-    .serh3 {
-        font-size: 27px;
-    }
+  .outerrow {
+    margin-top: 20px !important;
+  }
+  .firstrow {
+    margin-top: 20px !important;
+  }
+  .cards {
+    margin-left: 30px;
+  }
+  .serh3 {
+    font-size: 27px;
+  }
 }
 
 .serimag {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    height: 150px;
-    width: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 150px;
+  width: 50%;
 }
 
 .serimag2 {
-    margin-top: 6px;
-    margin-bottom: 10px;
-    height: 278px;
-    width: 70%;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  height: 278px;
+  width: 70%;
 }
 
 .rowcards2 {
-    margin-bottom: 45px;
+  margin-bottom: 45px;
 }
 
 .sercount1h2 {
-    position: relative;
-    font-size: 35px;
-    font-weight: 700;
+  position: relative;
+  font-size: 35px;
+  font-weight: 700;
 }
 
 .sercount1h2::after {
-    content: " ";
-    position: absolute;
-    width: 15%;
-    bottom: -40%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-bottom: 3px solid #f2cf5f;
+  content: " ";
+  position: absolute;
+  width: 15%;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 3px solid #f2cf5f;
 }
 
 .ser4-p {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .sercount1p1 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-weight: bold;
-    color: #928F8F;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-weight: bold;
+  color: #928f8f;
 }
 
 .sercard1 {
-    width: 85%;
-    margin-left: 8%;
-    border: none !important;
-    box-shadow: 0px 0px 2px #8898BD;
-    margin-top: 50px;
+  width: 85%;
+  margin-left: 8%;
+  border: none !important;
+  box-shadow: 0px 0px 2px #8898bd;
+  margin-top: 50px;
 }
 
 .serpdiv {
-    width: 50%;
-    margin-left: 25%;
+  width: 50%;
+  margin-left: 25%;
 }
 
 .serinnercount {
-    padding-right: 40px !important;
-    padding-left: 40px !important;
+  padding-right: 40px !important;
+  padding-left: 40px !important;
 }
 
 .Leads_imag__i5MzY {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    width: 753px;
-    height: 100%;
-    margin-right: 2px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 753px;
+  height: 100%;
+  margin-right: 2px;
 }
 
 .Services_serimag__ksPqX {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    height: 265px;
-    width: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 265px;
+  width: 50%;
 }

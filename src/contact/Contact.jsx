@@ -1,4 +1,4 @@
-import "./countactus.css";
+import "./Contact.css";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import Map from "../Components/Map";
@@ -98,16 +98,14 @@ const Contact = ({ title }) => {
 
               <p className="contact-color-black contact-align contact-mar3">
                 <h5 className="contact-color-black contact-align contact-mar-b">
-                  {" "}
                   <EmailIcon
                     fontSize="large"
                     style={{ color: "#ffcc39" }}
                     className="m-icon"
-                  />{" "}
+                  />
                   Our Mails
-                </h5>{" "}
+                </h5>
                 <span className="contact-span2">
-                  {" "}
                   <p class="contact-text">info@therevolutiontechnologies.com</p>
                 </span>
               </p>
@@ -116,9 +114,8 @@ const Contact = ({ title }) => {
                   {" "}
                   <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />{" "}
                   Contact
-                </h5>{" "}
+                </h5>
                 <span className="contact-span2">
-                  {" "}
                   <p class="contact-text">+92-331-7766-777</p>
                 </span>
               </p>

@@ -1,6 +1,17 @@
-.expert-countf {
-  height: auto;
-  background-color: white;
+.container-img{
+    height: auto;
+    background-image: url("./image/rectangle.png");
+    background-repeat: no-repeat;
+    background-size: 100% 780px;
+    background-position: center;
+    margin-bottom: 10px;
+    padding-top: 3%;
+}
+.expert-countf{
+    
+    height: auto;
+    background-color: white;
+  
 }
 .row-btn {
   justify-content: center;

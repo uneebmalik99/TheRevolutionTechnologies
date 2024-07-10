@@ -3,6 +3,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
 import Map from "../Components/Map";
 import React, { useEffect, useState } from "react";
+import { Form, Button, FormControl } from 'react-bootstrap';
+import CallIcon from "@mui/icons-material/Call";
 
 const Contact = ({ title }) => {
   useEffect(() => {
@@ -109,11 +111,8 @@ const Contact = ({ title }) => {
               </p>
               <p className="contact-color-black contact-align contact-mar3">
                 <h5 className="contact-color-black contact-align contact-mar-b">
-                  <EmailIcon
-                    fontSize="large"
-                    style={{ color: "#ffcc39" }}
-                    className="m-icon"
-                  />
+                  {" "}
+                  <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />{" "}
                   Contact
                 </h5>
                 <span className="contact-span2">
@@ -136,48 +135,59 @@ const Contact = ({ title }) => {
                     Thank you for your submission!
                   </p>
                 ) : (
-                  <form onSubmit={handleSubmit}>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      className="contact-input input"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="contact-input input"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                    <textarea
-                      name="message"
-                      rows="5"
-                      placeholder="Message"
-                      className="textarea1 contact-input"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    ></textarea>
-                    <button
+                  <Form onSubmit={handleSubmit}>
+                    <Form.Group controlId="formName">
+                      <FormControl
+                        type="text"
+                        placeholder="Name"
+                        className="contact-input input"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        required
+                      />
+                    </Form.Group>
+
+                    <Form.Group controlId="formEmail">
+                      <FormControl
+                        type="email"
+                        placeholder="Email"
+                        className="contact-input input"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                      />
+                    </Form.Group>
+
+                    <Form.Group controlId="formMessage">
+                      <FormControl
+                        as="textarea"
+                        rows={5}
+                        placeholder="Message"
+                        className="textarea1 contact-input"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                      />
+                    </Form.Group>
+
+                    <Button
                       style={{
                         color: "navy",
                         backgroundColor: "#BA8D06",
                         fontWeight: "bold",
                         paddingInline: "2%",
+                        width: "24%",
                       }}
                       className="btn1"
                       type="submit"
                       id="sendButton"
                     >
                       Send Email
-                    </button>
-                  </form>
+                    </Button>
+                  </Form>
                 )}
               </div>
             </div>

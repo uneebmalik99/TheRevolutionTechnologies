@@ -159,68 +159,67 @@ const Expert = () => {
 
                     </div>
 
-          <div className="row rowlast1">
-            <div className=" col-sm-12 col-md-2 col-lg-2">
-              <div className="card exp-card cardimg1 card-colr1 expertbox N1">
-                <div className="imgcir">
-                  <img src="images/F6.png" className="cardimg" alt="flex img" />
+                    <div className="row rowlast1">
+
+                        <div className=" col-sm-12 col-md-2 col-lg-2">
+
+                            <div className="card exp-card cardimg1 card-colr1 expertbox N1">
+                                <div className="imgcir">
+                                    <img src="images/F6.png" className='cardimg' alt="flex img" />
+                                </div>
+                                <p className='pclr'>FINANCE</p>
+
+                            </div>
+
+                        </div>
+                        <div className="  col-sm-12 col-md-2 col-lg-2">
+                            <div className="card cardimg1 card-colr2 expertbox N2">
+                                <div className="imgcir2">
+                                    <img src="images/F7.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>INDUSTRIALS</p>
+
+                            </div>
+
+
+                        </div>
+                        <div className=" col-sm-12 col-md-2 col-lg-2">
+                            <div className="card cardimg1 card-colr2 N3">
+                                <div className="imgcir2">
+                                    <img src="images/F8.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>TRAVEL AND TOURISM</p>
+
+                            </div>
+
+                        </div>
+                        <div className=" col-sm-12 col-md-2 col-lg-2">
+                            <div className="card cardimg1 card-colr2 N4">
+                                <div className="imgcir2">
+                                    <img src="images/F9.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>AVAITION</p>
+
+                            </div>
+
+                        </div>
+                        <div className="  col-sm-12 col-md-2 col-lg-2">
+                            <div className="card cardimg1 card-colr2 N5">
+                                <div className="imgcir2">
+                                    <img src="images/F10.png" className='cardimg2' alt="flex img" />
+                                </div>
+                                <p className='pclr'>EDUCATION</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
                 </div>
-                <p className="pclr">FINANCE</p>
-              </div>
-            </div>
-            <div className="  col-sm-12 col-md-2 col-lg-2">
-              <div className="card cardimg1 card-colr2 expertbox N2">
-                <div className="imgcir2">
-                  <img
-                    src="images/F7.png"
-                    className="cardimg2"
-                    alt="flex img"
-                  />
-                </div>
-                <p className="pclr">INDUSTRIALS</p>
-              </div>
-            </div>
-            <div className=" col-sm-12 col-md-2 col-lg-2">
-              <div className="card cardimg1 card-colr2 N3">
-                <div className="imgcir2">
-                  <img
-                    src="images/F8.png"
-                    className="cardimg2"
-                    alt="flex img"
-                  />
-                </div>
-                <p className="pclr">TRAVEL & TOURISM</p>
-              </div>
-            </div>
-            <div className=" col-sm-12 col-md-2 col-lg-2">
-              <div className="card cardimg1 card-colr2 N4">
-                <div className="imgcir2">
-                  <img
-                    src="images/F9.png"
-                    className="cardimg2"
-                    alt="flex img"
-                  />
-                </div>
-                <p className="pclr">AVAITION</p>
-              </div>
-            </div>
-            <div className="  col-sm-12 col-md-2 col-lg-2">
-              <div className="card cardimg1 card-colr2 N5">
-                <div className="imgcir2">
-                  <img
-                    src="images/F10.png"
-                    className="cardimg2"
-                    alt="flex img"
-                  />
-                </div>
-                <p className="pclr">EDUCATION</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    }
-  };
+            );
+        }
+    };
 
   return (
     <>

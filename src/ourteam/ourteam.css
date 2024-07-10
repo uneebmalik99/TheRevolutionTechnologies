@@ -18,10 +18,17 @@
   color: #0e0e75;
   font-weight: bold;
   font-size: 30;
+  display: flex;
+  padding-left: 11%;
+  justify-content: flex-start;
 }
 #team-para {
   color: white;
-  margin-left: 10px;
+  padding-left: 10%;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-start;
+  width: 75%;
 }
 
 #team-container2 {
@@ -73,9 +80,6 @@
 P {
   color: #ada9c9;
   font-weight: 500;
-}
-#team-para {
-  padding: 50px;
 }
 @media only screen and (max-width: 768px) {
   #team-heading {

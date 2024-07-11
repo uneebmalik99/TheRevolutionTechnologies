@@ -59,9 +59,6 @@ const Contact = ({ title }) => {
     <>
       <div className="container-fluid" id="contact-maincontainer">
         <div className="container-fluid" id="contact-container">
-          <div class="contact_heading">
-            <h1>Contact Us</h1>
-          </div>
         </div>
         {/* <div className="container-fluid" id="contact-container1"> */}
         <div
@@ -112,10 +109,7 @@ const Contact = ({ title }) => {
               <p className="contact-color-black contact-align contact-mar3">
                 <h5 className="contact-color-black contact-align contact-mar-b">
                   {" "}
-                  <CallIcon
-                    fontSize="large"
-                    style={{ color: "#ffcc39" }}
-                  />{" "}
+                  <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />{" "}
                   Contact
                 </h5>
                 <span className="contact-span2">
@@ -178,7 +172,9 @@ const Contact = ({ title }) => {
 
                     <Button
                       style={{
+                      
                         backgroundColor: "#BA8D06",
+                       
                         paddingInline: "2%",
                         width: "24%",
                       }}

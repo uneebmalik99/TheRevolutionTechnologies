@@ -11,7 +11,7 @@ function Navbar() {
       ? setActive("nav_menu nav_active")
       : setActive("nav_menu");
 
-    //toggler icon
+    // toggler icon
     toggleIcon === "nav_toggler"
       ? setToggleIcon("nav_toggler toggle")
       : setToggleIcon("nav_toggler ");
@@ -32,40 +32,38 @@ function Navbar() {
           />
         </NavLink>
         <ul className={active}>
-          <li className="nav_item ">
-            <NavLink to="/" className="nav-link">
+          <li className="nav_item">
+            <NavLink to="/" className="nav-link" activeClassName="active">
               Home
             </NavLink>
           </li>
           <li className="nav_item text-primary">
-            <NavLink to="/services" className="nav-link">
+            <NavLink to="/services" className="nav-link" activeClassName="active">
               Services
             </NavLink>
           </li>
           <li className="nav_item">
-            <NavLink to="/portfolio" className="nav-link">
+            <NavLink to="/portfolio" className="nav-link" activeClassName="active">
               Portfolio
             </NavLink>
           </li>
           <li className="nav_item text-primary">
-            <NavLink to="/team" className="nav-link">
+            <NavLink to="/team" className="nav-link" activeClassName="active">
               Our Team
             </NavLink>
           </li>
-
           <li className="nav_item">
-            <NavLink to="/company" className="nav-link">
+            <NavLink to="/company" className="nav-link" activeClassName="active">
               Company
             </NavLink>
           </li>
-
           <li className="nav_item text-500">
-            <NavLink to="/careers" className="nav-link">
+            <NavLink to="/careers" className="nav-link" activeClassName="active">
               Careers
             </NavLink>
           </li>
           <li className="nav_item">
-            <NavLink to="/contact" className="nav-link">
+            <NavLink to="/contact" className="nav-link" activeClassName="active">
               Contact us
             </NavLink>
           </li>

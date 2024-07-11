@@ -1,19 +1,25 @@
+/* General styles */
+
 *,
 *::after,
 *::before {
   margin: 0;
   box-sizing: border-box;
 }
+
 li {
   list-style: none;
 }
+
 ul li {
   color: #03172b;
 }
+
 a {
   text-decoration: none;
   color: darkgray;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -24,11 +30,13 @@ a {
   color: #03172b;
   z-index: 1;
 }
+
 .nav_brand {
   color: black !important;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 .nav_menu {
   margin-bottom: -2px;
   display: flex;
@@ -36,20 +44,22 @@ a {
   justify-content: center;
   gap: 0.25rem;
 }
+
 .nav_toggler div {
   width: 1.5rem;
   height: 0.1rem;
   margin: 0.4rem;
   background: darkgray;
   transition: 0.4s ease-in;
-
   color: #03172b;
 }
+
 .nav_toggler {
   cursor: pointer;
   display: none;
   color: white !important;
 }
+
 @media screen and (max-width: 768px) {
   .nav_toggler {
     display: block;
@@ -69,6 +79,7 @@ a {
     color: white !important;
   }
 }
+
 .contact_heading {
   width: 100%;
   font-size: 58px;
@@ -77,6 +88,7 @@ a {
   float: LEFT;
   margin-left: 7%;
 }
+
 /* nav active class */
 .nav_active {
   transform: translateX(0);
@@ -84,18 +96,22 @@ a {
   background-color: #ffebeb;
   height: 398px;
 }
+
 /* toggler icon animation */
 .toggle .line1 {
   transform: rotate(-45deg) translate(-4px, 5px);
   color: white !important;
 }
+
 .toggle .line2 {
   opacity: 0;
 }
+
 .toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
   color: white !important;
 }
+
 .nav-link {
   color: black;
   font-weight: 700;
@@ -104,8 +120,7 @@ a {
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   color: black;
   size: 18px;
   font-weight: 700;
@@ -139,5 +154,10 @@ a {
 }
 
 .nav-link:focus {
+  color: #f2cf5f !important;
+}
+
+/* Active link style */
+.active {
   color: #f2cf5f !important;
 }

@@ -1,12 +1,3 @@
-/* General styles */
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 li {
   list-style: none;
 }
@@ -67,11 +58,11 @@ a {
 
   .nav_menu {
     position: absolute;
-    top: 101px;
+    top: 100px;
     right: 4px;
-    width: 39%;
+    width: 98%;
     height: 49vh;
-    background: rgb(232, 204, 204);
+    background: white;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -82,6 +73,7 @@ a {
   .nav_active {
     transform: translateX(0);
     display: flex;
+    padding-left: 0px !important;
   }
 }
 
@@ -108,7 +100,8 @@ a {
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
   text-decoration: none;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
   color: black;
   size: 18px;
   font-weight: 700;

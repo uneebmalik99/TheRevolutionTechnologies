@@ -275,5 +275,17 @@
 @media only screen and (max-width: 600px) {
   #company-h1 {
     margin-top: 69%;
+    
+  }
+  .company-img1{
+    width: 355px;
+    height: 506px;
+  }
+  .serviceimg{
+    width: 131px;
+    height: 204px;
+  }
+  .sideone{
+    width: 166%;
   }
 }

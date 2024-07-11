@@ -50,7 +50,6 @@ a {
   height: 0.1rem;
   margin: 0.4rem;
   background: darkgray;
-  transition: 0.4s ease-in;
   color: #03172b;
 }
 
@@ -68,33 +67,22 @@ a {
 
   .nav_menu {
     position: absolute;
-    top: 0vh;
-    right: 0;
-    width: 40%;
-    height: 65vh;
+    top: 101px;
+    right: 4px;
+    width: 39%;
+    height: 49vh;
     background: rgb(232, 204, 204);
     flex-direction: column;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
+    align-items: center;
+    justify-content: center;
     color: white !important;
+    display: none;
   }
-}
 
-.contact_heading {
-  width: 100%;
-  font-size: 58px;
-  color: #deaaaa;
-  font-weight: 700;
-  float: LEFT;
-  margin-left: 7%;
-}
-
-/* nav active class */
-.nav_active {
-  transform: translateX(0);
-  margin-top: 5rem;
-  background-color: #ffebeb;
-  height: 398px;
+  .nav_active {
+    transform: translateX(0);
+    display: flex;
+  }
 }
 
 /* toggler icon animation */
@@ -138,7 +126,6 @@ a {
   width: 0;
   left: 15px;
   bottom: -0px;
-  transition: 0.3s;
 }
 
 .navbarlogo {

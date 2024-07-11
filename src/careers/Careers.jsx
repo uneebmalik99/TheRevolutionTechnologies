@@ -8,7 +8,7 @@ const Careers = ({ title }) => {
   return (
     <>
       <div className="container-fluid" id="career-container1">
-        <div className="row">
+        <div className="row cpar">
           <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="row" id="career-row1">
               <p id="career-p1">Careers</p>

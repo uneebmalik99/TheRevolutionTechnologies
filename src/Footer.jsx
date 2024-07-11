@@ -119,7 +119,7 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com">
               <img
-                src="./images/instagram.png"
+                src="./images/Instagram.png"
                 className="footer-img"
                 alt="instagram"
                 srcset=""

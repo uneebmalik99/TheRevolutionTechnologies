@@ -82,7 +82,15 @@
 }
 @media only screen and (max-width: 768px) {
   #team-heading {
-    margin-top: 37%;
     font-size: 21px;
+  }
+  #team-container{
+    margin-top: 27%;
+  }
+  #team-right {
+    width: 68%;
+  }
+  #team-para{
+    width: 86%;
   }
 }

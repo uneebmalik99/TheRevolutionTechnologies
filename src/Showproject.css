@@ -18,6 +18,29 @@
   padding-bottom: 40px;
 }
 
+.portcolor11 {
+  width: 100%;
+  height: 30%;
+  margin-top: -73%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin-bottom: 40px;
+}
+
+.port-p11 {
+  margin-top: -180px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.port-p22 {
+  margin-top: -160px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* .h1-projects::after {
   content: " ";
   position: absolute;

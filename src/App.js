@@ -1,3 +1,4 @@
+// App.js
 import React from 'react';
 import Home from './Home';
 import Navbar from './Components/Navbar';
@@ -8,13 +9,12 @@ import Careers from './careers/Careers';
 import Portfolio from './portfolio/Portfolio';
 import Footer from './Footer';
 import Company from './ourcompany/Company';
+import Fab from './Components/Fab'; // Import the Fab component
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
-
     return (
-
         <Router>
             <Navbar />
             <Routes>
@@ -26,9 +26,10 @@ const App = () => {
                 <Route exact path="/portfolio" element={<Portfolio title="Portfolio" />} />
                 <Route exact path="/contact" element={<Contact title="Contact Us" />} />
             </Routes>
-            < Footer />
+            <Footer />
+            <Fab /> {/* Add the Fab component here */}
         </Router>
-
     );
 }
+
 export default App;

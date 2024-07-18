@@ -19,7 +19,7 @@ const Expert = () => {
 
                             <div className=" card exp-card cardimg1 card-colr1 expertbox N1">
                                 <div className="imgcir">
-                                    <img src="images/flexbility.png" className='cardimg' alt="flex img" />
+                                    <img src="images/flexbility.png" className='cardimg2' alt="flex img" />
                                 </div>
                                 <p className='pclr'>Flexbility</p>
 
@@ -106,7 +106,7 @@ const Expert = () => {
 
                             <div className="card exp-card cardimg1 card-colr1 expertbox N1">
                                 <div className="imgcir">
-                                    <img src="images/F1.png" className='cardimg' alt="flex img" />
+                                    <img src="images/F1.png" className='cardimg2' alt="flex img" />
                                 </div>
                                 <p className='pclr'>ECOMMERCE</p>
 
@@ -165,7 +165,7 @@ const Expert = () => {
 
                             <div className="card exp-card cardimg1 card-colr1 expertbox N1">
                                 <div className="imgcir">
-                                    <img src="images/F6.png" className='cardimg' alt="flex img" />
+                                    <img src="images/F6.png" className='cardimg2' alt="flex img" />
                                 </div>
                                 <p className='pclr'>FINANCE</p>
 

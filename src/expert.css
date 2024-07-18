@@ -117,6 +117,10 @@
 img,
 svg {
   vertical-align: middle;
+  height: 30px;
+  /* padding-top: 10px; */
+}
+.cardimg2{
   height: 43px;
   padding-top: 10px;
 }

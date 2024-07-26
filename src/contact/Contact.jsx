@@ -1,7 +1,7 @@
 import "./Contact.css";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageIcon from "@mui/icons-material/Language";
-import Map from "../Components/Map";
+// import Map from "../Components/Map";
 import React, { useEffect, useState } from "react";
 import { Form, Button, FormControl } from "react-bootstrap";
 import CallIcon from "@mui/icons-material/Call";
@@ -192,10 +192,9 @@ const Contact = ({ title }) => {
         </div>
         {/* </div> */}
       </div>
-      <div className="container-fluid" id="contact-container3">
-        {/* <img src="../images/googlemap.png" alt="image" srcset="" className="contactimag2" /> */}
+      {/* <div className="container-fluid" id="contact-container3">
         <Map />
-      </div>
+      </div> */}
     </>
   );
 };

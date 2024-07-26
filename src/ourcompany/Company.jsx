@@ -1,55 +1,70 @@
 import React, { useEffect } from "react";
 import "./company.css";
 import Test from "../Test";
-import Static from "../Components/Static";
+// import Static from "../Components/Static";
 import "bootstrap/dist/css/bootstrap.min.css";
+import OurTeam from "../ourteam/Team";
+import Marquee from "react-fast-marquee";
 
 const Company = ({ title }) => {
   useEffect(() => {
     document.title = `${title} - The Revolution Technologies`;
   }, [title]);
 
-  const Card = ({ heading, text }) => {
-    return (
-      <div className="col-md-4  bgimg">
-        <div className="card single-card">
-          <div className="card-body">
-            <h5 className="card-title p-2">{heading}</h5>
-            <p className="card-text text-color">{text}</p>
-          </div>
-        </div>
-      </div>
-    );
-  };
+  // const Card = ({ heading, text }) => {
+  //   return (
+  //     <div className="col-md-4  bgimg">
+  //       <div className="card single-card">
+  //         <div className="card-body">
+  //           <h5 className="card-title p-2">{heading}</h5>
+  //           <p className="card-text text-color">{text}</p>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // };
 
-  const cardData = [
-    {
-      heading: "Reach",
-      text: "It was nice working with your team because no matter what ideas we come.",
-    },
-    {
-      heading: "Nice",
-      text: "It was nice working with your team because no matter what ideas we come",
-    },
-    {
-      heading: "Nice",
-      text: "It was nice working with your team because no matter what ideas we come",
-    },
-  ];
+  // const cardData = [
+  //   {
+  //     heading: "Reach",
+  //     text: "It was nice working with your team because no matter what ideas we come.",
+  //   },
+  //   {
+  //     heading: "Nice",
+  //     text: "It was nice working with your team because no matter what ideas we come",
+  //   },
+  //   {
+  //     heading: "Nice",
+  //     text: "It was nice working with your team because no matter what ideas we come",
+  //   },
+  // ];
 
   return (
     <>
-      <Static />
-      <div className="container-fluid" id="company-countainer">
+      {/* <Static /> */}
+      {/* <div className="container-fluid" id="company-countainer">
         <div className="row">
           <h1 id="company-h1">What We Actually Do</h1>
         </div>
         <div className="row">
           <p className="company-p1">EXPERIENCE. EXECUTION. EXCELLENCE</p>
         </div>
+      </div> */}
+      <div className="container-fluid" id="team-container">
+        <div id="team-right">
+          <div id="teaminner">
+            <div className="row">
+              <h2 id="team-heading">What We Actually Do</h2>
+            </div>
+            <p id="team-para">
+              We are conversation starters and trend-setters. Let’s discover,
+              build and grow your digital business
+            </p>
+          </div>
+        </div>
       </div>
       <div className="container-fluid contibm">
-        <div className="row">
+        {/* <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm">
             <img src="images/ibm.png" alt="ibm" />
           </div>
@@ -65,7 +80,33 @@ const Company = ({ title }) => {
           <div className="col-xs-12 col-sm-12 col-md-2 col-lg-3 comp-ibm">
             <img src="images/ibm5.png" alt="ibm5" />
           </div>
-        </div>
+        </div> */}
+        <Marquee style={{ padding: "25px" }}>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <img
+              src="images/meso.jpg"
+              alt="Mesob Store"
+              style={{ marginRight: "10px" }}
+            />
+            Mesob Store
+          </div>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <img
+              src="images/afg.webp"
+              alt="AFG Shipping"
+              style={{ marginRight: "10px" }}
+            />
+            AFG Shipping
+          </div>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <img
+              src="images/3line.webp"
+              alt="3Line Shipping"
+              style={{ marginRight: "10px" }}
+            />
+            3Line Shipping
+          </div>
+        </Marquee>
       </div>
       <div className="container-fluid aboutus" id="company-countainer22">
         <div className="row row1-heading">
@@ -95,7 +136,7 @@ const Company = ({ title }) => {
           </div>
         </div>
       </div>
-      <div className="container-fluid" id="company-container33">
+      {/* <div className="container-fluid" id="company-container33">
         <div className="row aboutus_row col-12 col-xs-12 col-sm-12 col-md-12  col-lg-12">
           <h1
             className="sideone-h1 h1-main"
@@ -119,7 +160,6 @@ const Company = ({ title }) => {
                   id="company-elipse52"
                 />
               </div>
-
               <div className="side-para-andh">
                 <h3 className="sideone-h1">Our Vision</h3>
                 <p className="sideone-p">
@@ -128,7 +168,6 @@ const Company = ({ title }) => {
                 </p>
               </div>
             </div>
-            {/* our mission  */}
             <div className="flex  sideone  ">
               <div className="imgdiv">
                 <img
@@ -150,8 +189,6 @@ const Company = ({ title }) => {
                 </p>
               </div>
             </div>
-
-            {/* our Goals */}
             <div className="flex  sideone  ">
               <div className="imgdiv">
                 <img
@@ -174,8 +211,8 @@ const Company = ({ title }) => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container-fluid" id="company-countainer3">
+      </div> */}
+      {/* <div className="container-fluid" id="company-countainer3">
         <div className="row banner">
           <div className="col-xs-12 col-sm-12 col-md-3 col-lg-3 ">
             <h1 className="count3-h3">20+</h1>
@@ -194,9 +231,11 @@ const Company = ({ title }) => {
             <p className="count3-p3">ACTIVE CLIENTS</p>
           </div>
         </div>
-      </div>
+      </div> */}
       <Test />
-      <div className="container-fluid">
+      <OurTeam />
+
+      {/* <div className="container-fluid">
         <div className="row services">
           <div className="col-6">
             <h1>SERVICES</h1>
@@ -214,8 +253,8 @@ const Company = ({ title }) => {
             />
           </div>
         </div>
-      </div>
-      <div className="container-fluid">
+      </div> */}
+      {/* <div className="container-fluid">
         <div className="whyus">
           <div className="whyheading">Why Choose Us</div>
           <div className="container">
@@ -231,7 +270,7 @@ const Company = ({ title }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "./Header";
-import Services from "./Services";
+import ServicesComponent from "./ServicesComponent";
 // import Leads from "./Leads";
 import Test from "./Test";
 import Expert from "./Expert";
@@ -16,7 +16,7 @@ const Home = ({ title }) => {
   return (
     <>
       <Header />
-      <Services />
+      <ServicesComponent />
       <Showproject />
       {/* <Leads /> */}
       <Test />

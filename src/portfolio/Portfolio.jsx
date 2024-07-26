@@ -125,7 +125,7 @@ const Portfolio = ({ title }) => {
         <div className="bg_img">
           <div className="container" id="port-container2">
             <div className="row">
-              <h1 id="port-row2-h1">Introduce Our Projects</h1>
+              <h1 id="port-row2-h1">Our Projects</h1>
               <p id="port-para2">
                 Software development outsourcing is just a tool to achieve
                 business goals. But there is no wayto get worthwhile results

@@ -1,6 +1,7 @@
 import React from "react";
 import head from "./header.module.css";
 import Static from "./Components/Static";
+import Marquee from "react-fast-marquee";
 
 const Header = () => {
   return (
@@ -21,24 +22,32 @@ const Header = () => {
       </div>
 
       <div className={`container-fluid ${head.contibm}`}>
-        <marquee
-          behavior=""
-          direction="right"
-          scrollamount="10"
-          scrolldelay="50"
-        >
-          <div className="row">
-            <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
-              <img src="images/meso.jpg" alt="pic" className="img-fluid" />
-            </div>
-            <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
-              <img src="images/afg.webp" alt="pic" className="img-fluid" />
-            </div>
-            <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
-              <img src="images/3line.webp" alt="pic" className="img-fluid" />
-            </div>
+        <Marquee style={{ padding: "25px" }}>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <img
+              src="images/meso.jpg"
+              alt="Mesob Store"
+              style={{ marginRight: "10px" }}
+            />
+            Mesob Store
           </div>
-        </marquee>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <img
+              src="images/afg.webp"
+              alt="AFG Shipping"
+              style={{ marginRight: "10px" }}
+            />
+            AFG Shipping
+          </div>
+          <div style={{ marginLeft: "20px", marginRight: "20px" }}>
+            <img
+              src="images/3line.webp"
+              alt="3Line Shipping"
+              style={{ marginRight: "10px" }}
+            />
+            3Line Shipping
+          </div>
+        </Marquee>
       </div>
     </>
   );

@@ -50,21 +50,21 @@ function Navbar() {
               Portfolio
             </NavLink>
           </li>
-          <li className="nav_item text-primary">
+          {/* <li className="nav_item text-primary">
             <NavLink to="/team" className="nav-link" activeClassName="active" onClick={closeMenu}>
               Our Team
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav_item">
             <NavLink to="/company" className="nav-link" activeClassName="active" onClick={closeMenu}>
               Company
             </NavLink>
           </li>
-          <li className="nav_item text-500">
+          {/* <li className="nav_item text-500">
             <NavLink to="/careers" className="nav-link" activeClassName="active" onClick={closeMenu}>
               Careers
             </NavLink>
-          </li>
+          </li> */}
           <li className="nav_item">
             <NavLink to="/contact" className="nav-link" activeClassName="active" onClick={closeMenu}>
               Contact us

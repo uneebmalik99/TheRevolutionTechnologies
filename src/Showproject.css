@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .projects {
@@ -14,9 +14,9 @@
   margin-bottom: 2%;
 }
 
-.App {
+/* .App {
   padding-bottom: 40px;
-}
+} */
 
 .portcolor11 {
   width: 100%;
@@ -41,16 +41,6 @@
   font-size: 20px;
 }
 
-/* .h1-projects::after {
-  content: " ";
-  position: absolute;
-  width: 22%;
-  bottom: -192%;
-  left: 50%;
-  transform: translateX(-50%);
-  border-bottom: 3px solid #f2cf5f;
-} */
-
 .h1-projects {
   font-size: 35px;
   font-weight: 700px;
@@ -62,4 +52,11 @@
 }
 .filter-button.active{
   color: white!important;
+}
+
+
+.show-img-port11 {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }

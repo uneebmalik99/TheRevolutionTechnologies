@@ -103,7 +103,7 @@ const Team = ({ title }) => {
   return (
     <>
       <Static />
-      <div className="container-fluid " id="team-container">
+      {/* <div className="container-fluid " id="team-container">
         <div id="team-right">
           <div id="teaminner">
             <div className="row">
@@ -115,7 +115,7 @@ const Team = ({ title }) => {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="container-fluid" id="team-container2">
         <div className="row">

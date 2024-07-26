@@ -147,15 +147,9 @@ const Showproject = () => {
                             <img
                               src={item.image}
                               alt={item.title}
-                              className="img-port11"
+                              className="show-img-port11"
                             />
                             <div>
-                              <img
-                                src="./images/portcolor1.png"
-                                alt={item.title}
-                                srcset=""
-                                className="portcolor11"
-                              />
                               <div className="row">
                                 <p className="port-p11">{item.title}</p>
                                 <p className="port-p22">{item.category}</p>

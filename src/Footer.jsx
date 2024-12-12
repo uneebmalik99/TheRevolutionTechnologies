@@ -46,8 +46,8 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="third col-sm-12 col-md-3 col-lg-3  col-xs-12 col-xs-12 media">
-              <ul>
+            <div className="third col-sm-12 col-md-3 col-lg-3  col-xs-12 col-xs-12 media" >
+              <ul className="third">
                 <h5>Company</h5>
 
                 <a href="/">
@@ -89,7 +89,7 @@ const Footer = () => {
                 style={{ display: "flex", alignItems: "self-end" }}
               >
                 <EmailIcon fontSize="large" style={{ color: "#ffcc39" }} />
-                info@therevolutiontechnologies.com
+                info@therevolutiontechnologies.tech
               </p>
               <p
                 className="footer-p1"

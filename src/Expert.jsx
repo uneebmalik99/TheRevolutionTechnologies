@@ -98,13 +98,13 @@ const Expert = () => {
             );
         } else if (activeButton === 'industries') {
             return (
-                <div className="container-img">
+                <div className="container-img ">
 
                     <div className="row rowlast1">
 
-                        <div className=" col-sm-12 col-md-2 col-lg-2">
+                        <div className=" col-sm-12 col-md-2 col-lg-2 ">
 
-                            <div className="card exp-card cardimg1 card-colr1 expertbox N1">
+                            <div className="card exp-card cardimg1 card-colr1 expertbox N1 ">
                                 <div className="imgcir">
                                     <img src="images/F1.png" className='cardimg2' alt="flex img" />
                                 </div>

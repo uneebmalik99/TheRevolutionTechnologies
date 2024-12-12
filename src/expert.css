@@ -96,7 +96,7 @@
 
 .pclr {
   color: black;
-  margin-top: 30px;
+  margin-top: 25px;
   height: 44px;
 }
 .pclr {
@@ -122,7 +122,7 @@ svg {
 }
 .cardimg2{
   height: 43px;
-  padding-top: 10px;
+  padding-top: 23px;
 }
 
 .background {
@@ -144,23 +144,67 @@ svg {
 }
 
 .N1:hover {
-  background-color: rgba(248, 193, 246, 1);
+  background-color: rgb(221, 221, 221);
+  /* background-color: rgba(248, 193, 246, 1); */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;;
+      transition: scale 0.3s linear;
+    
+      &:hover {
+        scale: 1.1;
+      }
 }
 
 .N2:hover {
-  background-color: rgba(171, 196, 254, 1);
+  background-color: rgb(221, 221, 221);
+  /* background-color: rgba(171, 196, 254, 1); */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    ;
+    transition: scale 0.3s linear;
+  
+    &:hover {
+      scale: 1.1;
+    }
 }
 
 .N3:hover {
-  background-color: rgba(207, 143, 209, 1);
+  background-color: rgb(221, 221, 221);
+  /* background-color: rgba(207, 143, 209, 1); */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    ;
+    transition: scale 0.3s linear;
+  
+    &:hover {
+      scale: 1.1;
+    }
 }
 
 .N4:hover {
-  background-color: rgba(244, 208, 97, 1);
+  background-color: rgb(221, 221, 221);
+  /* background-color: rgba(244, 208, 97, 1); */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    ;
+    transition: scale 0.3s linear;
+  
+    &:hover {
+      scale: 1.1;
+    }
 }
 
 .N5:hover {
-  background-color: rgba(114, 218, 190, 1);
+  background-color: rgb(221, 221, 221);
+  /* background-color: rgba(114, 218, 190, 1); */
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    ;
+    transition: scale 0.3s linear;
+  
+    &:hover {
+      scale: 1.1;
+    }
 }
 
 .img-fluid {

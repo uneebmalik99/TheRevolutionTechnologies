@@ -12,7 +12,7 @@ const Header = () => {
           <h1 className={head.heading2}>New Paths</h1>
           <p className={head.heading3}>Enterprise & small business cloud</p>
           <p className={head.heading3}>
-            solution that exceed client expectations
+            solutions that exceed client expectations
           </p>
           <div className={`row ${head.btnrow}`}>
             <button className={head.btn}>LEARN MORE</button>

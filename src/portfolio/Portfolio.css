@@ -439,6 +439,7 @@
 .para_hd {
   position: absolute;
   top: 50%;
+  
   left: 60px; /* Adjust the left position as needed */
   transform: translateY(-50%);
   color: rgb(4, 3, 3);

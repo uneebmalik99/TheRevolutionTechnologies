@@ -88,21 +88,21 @@ const Footer = () => {
                 className="footer-p1"
                 style={{ display: "flex", alignItems: "self-end" }}
               >
-                <EmailIcon fontSize="large" style={{ color: "#ffcc39" }} />
-                info@therevolutiontechnologies.tech
+                <EmailIcon fontSize="large" style={{ color: "#ffcc39", marginRight: "5px" }} />
+                 info@therevolutiontechnologies.tech
               </p>
               <p
                 className="footer-p1"
                 style={{ display: "flex", alignItems: "center" }}
               >
-                <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />
+                <CallIcon fontSize="large" style={{ color: "#ffcc39", marginRight: "5px" }} />
                 051-611-2452
               </p>
               <p
                 className="footer-p1"
                 style={{ display: "flex", alignItems: "center" }}
               >
-                <CallIcon fontSize="large" style={{ color: "#ffcc39" }} />
+                <CallIcon fontSize="large" style={{ color: "#ffcc39", marginRight: "5px" }} />
                 +92-331-7766-777
               </p>
             </div>

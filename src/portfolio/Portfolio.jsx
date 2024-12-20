@@ -4,7 +4,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
 import Static from "../Components/Static";
 
-// import Slider from "react-slick";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
@@ -14,24 +14,24 @@ const Portfolio = ({ title }) => {
     document.title = `${title} - The Revolution Technologies`;
   }, [title]);
 
-  // const slidesData = [
-  //   {
-  //     imageUrl: "./images/imgpsh_fullsize_anim (1).png",
-  //     heading: "Our Portfolio",
-  //     text: "The Revolution in the Mobile App Development",
-  //   },
-  //   {
-  //     imageUrl: "./images/serimg2.png",
-  //     heading: "Our Portfolio",
-  //     text: "The Revolution in the Web App Development",
-  //   },
-  // ];
+  const slidesData = [
+    {
+      imageUrl: "./images/imgpsh_fullsize_anim (1).png",
+      heading: "Our Portfolio",
+      text: "The Revolution in the Mobile App Development",
+    },
+    {
+      imageUrl: "./images/serimg2.png",
+      heading: "Our Portfolio",
+      text: "The Revolution in the Web App Development",
+    },
+  ];
 
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500
-  // };
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+  };
 
   const [selectedCategory, setSelectedCategory] = useState("All");
 
@@ -82,6 +82,21 @@ const Portfolio = ({ title }) => {
       title: "Health care Pronto",
       category: "Web Development",
     },
+    {
+      image: "./images/Instagram post - 45.png",
+      title: "UI/UX Design Project ",
+      category: "UI/UX Graphics",
+    },
+    {
+      image: "./images/Instagram post - 45.png",
+      title: "Automation ",
+      category: "Automation",
+    },
+    {
+      image: "./images/Instagram post - 45.png",
+      title: "SEO ",
+      category: "SEO",
+    },
   ];
 
   const scrollToTop = () => {
@@ -91,22 +106,9 @@ const Portfolio = ({ title }) => {
   return (
     <>
       <Static />
-      {/* <Slider {...settings}>
-        {slidesData.map((slide, index) => (
-          <div key={index} className="slider-item">
-            <div className="slider-image">
-              <img src={slide.imageUrl} alt={slide.heading} />
-            </div>
-            <div className="slider-content">
-              <h2>{slide.heading}</h2>
-              <p>{slide.text}</p>
-            </div>
-          </div>
-        ))}
-      </Slider> */}
 
       <div className="container-fluid" id="porfolio-container">
-        <div className="row">
+        {/* <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="row">
               <p id="portfolio-count1-p1">Portfolio</p>
@@ -118,7 +120,20 @@ const Portfolio = ({ title }) => {
           <div className="col-sm-12 col-md-6 col-lg-6">
             <img src="images/serimg2.png" id="ser-bg-img" alt="Flexible" />
           </div>
-        </div>
+        </div> */}
+        <Slider {...settings}>
+          {slidesData.map((slide, index) => (
+            <div key={index} className="slider-item">
+              <div className="slider-image">
+                <img src={slide.imageUrl} alt={slide.heading} />
+              </div>
+              <div className="slider-content">
+                <h2>{slide.heading}</h2>
+                <p>{slide.text}</p>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
 
       <div className="container-fluid" id="port-maincount">
@@ -155,25 +170,25 @@ const Portfolio = ({ title }) => {
                   </button>
                   <button
                     className={`filter-button ${
-                      selectedCategory === "uiux" ? "active" : ""
+                      selectedCategory === "UI/UX Graphics" ? "active" : ""
                     }`}
-                    onClick={() => setSelectedCategory("uiux")}
+                    onClick={() => setSelectedCategory("UI/UX Graphics")}
                   >
                     UI/UX Graphics
                   </button>
                   <button
                     className={`filter-button ${
-                      selectedCategory === "seo" ? "active" : ""
+                      selectedCategory === "SEO" ? "active" : ""
                     }`}
-                    onClick={() => setSelectedCategory("seo")}
+                    onClick={() => setSelectedCategory("SEO")}
                   >
                     SEO
                   </button>
                   <button
                     className={`filter-button ${
-                      selectedCategory === "automation" ? "active" : ""
+                      selectedCategory === "Automation" ? "active" : ""
                     }`}
-                    onClick={() => setSelectedCategory("automation")}
+                    onClick={() => setSelectedCategory("Automation")}
                   >
                     Automation
                   </button>

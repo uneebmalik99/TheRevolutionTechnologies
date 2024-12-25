@@ -1,34 +1,39 @@
 .containerhead {
   height: 500px;
-  background: linear-gradient(
-    259.21deg,
-    rgba(8, 20, 61, 0.63) 33.93%,
-    rgba(0, 6, 26, 0) 117.36%
-  );
+  background: linear-gradient(259.21deg,
+      rgba(8, 20, 61, 0.63) 33.93%,
+      rgba(0, 6, 26, 0) 117.36%);
   background-image: url("./image/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .heading1 {
   font-weight: bold;
   font-size: 50px;
   color: white;
   margin-top: 157px !important;
+  text-align: center;
 }
+
 .heading2 {
   font-weight: bold;
   font-size: 50px;
   color: white;
+  text-align: center;
 }
 
 .heading3 {
   color: white;
   margin-bottom: 5px;
+  text-align: center;
 }
+
 .headerrow {
   margin-top: -45px;
 }
+
 .btn {
   margin-top: 0.5rem;
   background: #fece3c;
@@ -37,79 +42,71 @@
   height: 47px;
   padding: 10px;
   border: none !important;
-
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
 }
+
 .btnrow {
   justify-content: center;
 }
+
 .contibm {
   height: auto;
   background: rgba(8, 46, 83, 0.03);
+  overflow: hidden;
 }
-.logo {
-  margin-right: 150px;
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.nav-link:active {
-  border-bottom: 5px solid yellow;
+
+.marqueeContent {
+  display: flex;
+  animation: scrollLeft 40s linear infinite;
+  align-items: center;
 }
-.nav-link:hover {
-  border-bottom: 5px solid yellow;
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
-.imgrow {
-  margin-top: 2%;
+
+.fluid {
+  max-width: 40px;
+  height: auto;
+  padding-left: 10px;
 }
-.countibmimag {
-  margin-top: 2% !important;
-  margin-bottom: 2%;
-}
+
 .rowibm {
-  margin-top: 1% !important;
-  margin-bottom: 1%;
-  marquee: left;
+  margin: 0 10px;
+  display: flex;
+    align-items: center;
+}
+.rowibm img {
+  margin-right: 10px;
 }
 
-/* header.module.css */
-
-.containerhead {
-  padding: 20px;
-}
-
-.headerrow {
+.rowibm p {
+  margin-left: 10px;
   text-align: center;
-  justify-content: center;
-}
-
-.heading1 {
-  font-size: 2em;
-}
-
-.heading2 {
-  font-size: 2em;
-}
-
-.heading3 {
-  font-size: 1.5em;
-}
-
-.btnrow {
-  margin-top: 20px;
-}
-
-.btn {
-  font-size: 15px;
-}
-
-.contibm {
-  padding: 20px;
-}
-
-.rowibm {
-  margin-bottom: 20px;
 }
 
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
+
   .heading1,
   .heading2,
   .heading3 {

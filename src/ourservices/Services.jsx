@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import "./Services.css";
-import Static from "../Components/Static";
-import EmailIcon from "@mui/icons-material/Email";
-import LanguageIcon from "@mui/icons-material/Language";
-import AddIcCallIcon from "@mui/icons-material/AddIcCall";
+import ServicesOffer from "../Servicesoffer";
+// import Static from "../Components/Static";
+// import EmailIcon from "@mui/icons-material/Email";
+// import LanguageIcon from "@mui/icons-material/Language";
+// import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 
 const Services = ({ title }) => {
   useEffect(() => {
@@ -11,9 +12,10 @@ const Services = ({ title }) => {
   }, [title]);
   return (
     <>
-      <Static />
+      <ServicesOffer />
+      {/* <Static /> */}
 
-      <div className="container-fluid" id="ser-container1">
+      {/* <div className="container-fluid" id="ser-container1">
         <div className="row">
           <div className="col-sm-12 col-md-6 col-lg-6">
             <div className="row">
@@ -28,12 +30,12 @@ const Services = ({ title }) => {
             <img src="images/serimg2.png" id="ser-bg-img" alt="Flexible" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Service Sections */}
 
       {/* Contact Section */}
-      <div className="container-1">
+      {/* <div className="container-1">
         <div className="box-1">
           <p className="address1">
             <LanguageIcon fontSize="large" className="addressicon" />
@@ -84,7 +86,7 @@ const Services = ({ title }) => {
             </div>
           </form>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

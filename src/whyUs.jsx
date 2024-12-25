@@ -25,7 +25,9 @@ const WhyUs = () => {
     <>
       <div className="container-fluid para_hd2 pt-md-5">
         <p>WHY CHOOSE US</p>
-        <h1 className="why_h2">Design the Concept of Your Business Idea Now.</h1>
+        <h1 className="why_h2">
+          Design the Concept of Your Business Idea Now.
+        </h1>
       </div>
 
       <div className="container-fluid cardresposnsive">

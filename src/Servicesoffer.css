@@ -6,6 +6,7 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
     z-index: 4;
     background-color: white;
+    text-align: center;
  }
  .mainy :hover{
   background-color: whitesmoke;
@@ -13,6 +14,8 @@
  .container1{
     background-image: url(./../public/images/background.png);
     background-size: cover;
+   text-align: center;
  }
+ 
  
  

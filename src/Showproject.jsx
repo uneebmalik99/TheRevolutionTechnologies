@@ -59,6 +59,21 @@ const portfolioData = [
     title: "Health care Pronto",
     category: "Web Development",
   },
+  {
+    image: "./images/Instagram post - 45.png",
+    title: "UI/UX Design Project",
+    category: "UI/UX Graphics",
+  },
+  {
+    image: "./images/Instagram post - 45.png",
+    title: "Automation",
+    category: "Automation",
+  },
+  {
+    image: "./images/Instagram post - 45.png",
+    title: "SEO",
+    category: "SEO",
+  },
 ];
 
 const Showproject = () => {
@@ -66,7 +81,7 @@ const Showproject = () => {
   return (
     <div className="container-fluid bg_img projects px-5">
       <div className="row projects-section">
-      <h1 className="h1-projects">Introduce Our Projects</h1>
+        <h1 className="h1-projects">Introduce Our Projects</h1>
         <p className="p-projects">
           Software development outsourcing is just a tool to achieve business
           goals. But there is no wayto get worthwhile results without
@@ -95,25 +110,25 @@ const Showproject = () => {
           </button>
           <button
             className={`filter-button ${
-              selectedCategory === "uiux" ? "active" : ""
+              selectedCategory === "UI/UX Graphics" ? "active" : ""
             }`}
-            onClick={() => setSelectedCategory("uiux")}
+            onClick={() => setSelectedCategory("UI/UX Graphics")}
           >
             UI/UX Graphics
           </button>
           <button
             className={`filter-button ${
-              selectedCategory === "seo" ? "active" : ""
+              selectedCategory === "SEO" ? "active" : ""
             }`}
-            onClick={() => setSelectedCategory("seo")}
+            onClick={() => setSelectedCategory("SEO")}
           >
             SEO
           </button>
           <button
             className={`filter-button ${
-              selectedCategory === "automation" ? "active" : ""
+              selectedCategory === "Automation" ? "active" : ""
             }`}
-            onClick={() => setSelectedCategory("automation")}
+            onClick={() => setSelectedCategory("Automation")}
           >
             Automation
           </button>
@@ -129,7 +144,7 @@ const Showproject = () => {
         </div>
 
         {/* Display filtered portfolio items */}
-        <div className="row rowing">
+        <div className="row-rowing">
           <div className="App">
             <Carousel breakPoints={breakPoints}>
               {portfolioData
@@ -139,33 +154,45 @@ const Showproject = () => {
                     item.category === selectedCategory
                 )
                 .map((item, index) => (
-                  <>
-                    <Item>
-                      <div className="container" style={{ margin: Margin }}>
-                        <div className="col-sm-12  port-row1" key={index}>
-                          <div className="port-imag">
+                  <Item key={index}>
+                    <div
+                      style={{ margin: Margin }}
+                      className={`portfolio-item ${item.category
+                        .replace(/\s+/g, "-")
+                        .toLowerCase()}`}
+                    >
+                      <div className="col-sm-12 port-row1">
+                        <div className="port-imag">
+                          <img
+                            src={item.image}
+                            alt={item.title}
+                            className="img-port11"
+                            style={{
+                              boxShadow:
+                                item.category === "UI/UX Graphics"
+                                  ? "0 4px 6px rgba(0, 0, 0, 0.2)"
+                                  : item.category === "SEO"
+                                  ? "0 4px 6px rgba(0, 128, 0, 0.2)"
+                                  : item.category === "Automation"
+                                  ? "0 4px 6px rgba(255, 165, 0, 0.2)"
+                                  : "0 4px 6px rgba(0, 0, 0, 0.1)", // Example unique shadows
+                            }}
+                          />
+                          <div>
                             <img
-                              src={item.image}
+                              src="./images/portcolor1.png"
                               alt={item.title}
-                              className="img-port11"
+                              className="portcolor1"
                             />
-                            <div>
-                              <img
-                                src="./images/portcolor1.png"
-                                alt={item.title}
-                                srcset=""
-                                className="portcolor1"
-                              />
-                              <div className="row">
-                                <p className="port-p1">{item.title}</p>
-                                <p className="port-p2">{item.category}</p>
-                              </div>
+                            <div className="row">
+                              <p className="port-p1">{item.title}</p>
+                              <p className="port-p2">{item.category}</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </Item>
-                  </>
+                    </div>
+                  </Item>
                 ))}
             </Carousel>
           </div>

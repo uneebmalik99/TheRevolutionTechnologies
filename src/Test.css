@@ -1,6 +1,5 @@
  
- 
-.testimonial-image-container {
+/* .testimonial-image-container {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
@@ -11,7 +10,7 @@
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fece3c;
-}
+} */
 
 .test-count {
   display: flex;
@@ -19,14 +18,14 @@
   width: 100%;
   height: auto;
   background-color: #fdfbf7;
-  background-image: url("./image/feedback.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .spacing-there {
-  padding-top: 1rem;
+  text-align: center;
+  margin-left: 5px;
 }
 
 .slidercenter {
@@ -63,18 +62,30 @@
   padding-top: 5%;
   font-size: 45px;
   font-weight: 700;
+  text-align: center;
+ 
 }
 
 .test-p2 {
   color: #fece3c;
   font-weight: bold;
+text-align: center;
+ 
 }
-
+.test-p3{
+  text-align: center;
+  /* margin-top: 5px; */
+  margin-bottom: 25px;
+   
+}
 .test-p6 {
   color: #b6b6b6;
   margin-bottom: 10%;
+  text-align: center;
 }
-
+.test-p5{
+  text-align: center;
+}
 
 .test-p4 {
   color: #333333;

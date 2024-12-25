@@ -57,17 +57,21 @@ label {
   padding-top: 10px;
   width: 60%;
 }
-
+.heading{
+  text-align: center;
+}
 .msg {
   margin-top: 20px;
+  margin-bottom: 5px;
   background: #fece3c;
   border-radius: 13px !important;
   width: 9rem !important;
   height: 47px;
   padding: 6px;
-  text-align: center;
+  /* text-align: center; */
   font-size: 15px;
   border: none !important;
+  margin-left: 15rem;
 }
 
 

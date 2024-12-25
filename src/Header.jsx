@@ -20,25 +20,37 @@ const Header = () => {
         </div>
       </div>
 
+      {/* Modern CSS-based Marquee */}
       <div className={`container-fluid ${head.contibm}`}>
-        <marquee
-          behavior=""
-          direction="right"
-          scrollamount="10"
-          scrolldelay="50"
-        >
-          <div className="row">
+        <div className={head.marquee}>
+          <div className={head.marqueeContent}>
             <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
-              <img src="images/meso.jpg" alt="pic" className="img-fluid" />
+              <img src="images/meso.jpg" alt="pic" className=" fluid" />
+              Mesob Store
             </div>
             <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
-              <img src="images/afg.webp" alt="pic" className="img-fluid" />
+              <img src="images/afg.webp" alt="pic" className=" fluid" />
+              AFG Shipping
             </div>
             <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
-              <img src="images/3line.webp" alt="pic" className="img-fluid" />
+              <img src="images/3line.webp" alt="pic" className=" fluid" />
+              3Line Shipping
+            </div>
+            {/* Repeat items for continuous scrolling */}
+            <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+              <img src="images/meso.jpg" alt="pic" className=" fluid" />
+              Mesob Store
+            </div>
+            <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+              <img src="images/afg.webp" alt="pic" className=" fluid" />
+              AFG Shipping
+            </div>
+            <div className={`col-6 col-sm-4 col-md-2 ${head.rowibm}`}>
+              <img src="images/3line.webp" alt="pic" className=" fluid" />
+              3Line Shipping
             </div>
           </div>
-        </marquee>
+        </div>
       </div>
     </>
   );

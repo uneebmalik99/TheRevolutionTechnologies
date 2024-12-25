@@ -20,10 +20,12 @@ const Form = () => {
                   name="pets"
                   className="form-control form-select mb-md-2"
                 >
-                  <option value="" disable-selected>How Can We Help You</option>
+                  <option value="" disable-selected>
+                    How Can We Help You
+                  </option>
                   <option value="consulting">Consulting</option>
-                <option value="support">Support</option>
-                <option value="other">Other</option>
+                  <option value="support">Support</option>
+                  <option value="other">Other</option>
                 </select>
                 <input
                   className="form-control mb-md-2"

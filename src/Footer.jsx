@@ -37,7 +37,7 @@ const Footer = () => {
                 </a>
 
                 <a href="/portfolio">
-                  <li className="lifoot">PortFolio</li>
+                  <li className="lifoot">Portfolio</li>
                 </a>
 
                 <a href="/contact">
@@ -46,7 +46,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="third col-sm-12 col-md-3 col-lg-3  col-xs-12 col-xs-12 media" >
+            <div className="third col-sm-12 col-md-3 col-lg-3  col-xs-12 col-xs-12 media">
               <ul className="third">
                 <h5>Company</h5>
 
@@ -72,39 +72,25 @@ const Footer = () => {
               </ul>
             </div>
             <div className="fourth col-sm-12 col-md-3 col-lg-3 col-xs-12 media">
-              <h5> Contact Us</h5>
+              <h5>Contact Us</h5>
               <p className="footer-p1">
                 Give us a call today and see what we can do for you.
               </p>
-              <p
-                className="footer-p1"
-                style={{ display: "flex", alignItems: "self-start" }}
-              >
-                <FmdGoodIcon fontSize="large" style={{ color: "#ffcc39" }} />
-                Office no 12, Aries Tower Maryam Business Center, Murree Rd,
-                Shamsabad, Rawalpindi
-              </p>
-              <p
-                className="footer-p1"
-                style={{ display: "flex", alignItems: "self-end" }}
-              >
-                <EmailIcon fontSize="large" style={{ color: "#ffcc39", marginRight: "5px" }} />
-                 info@therevolutiontechnologies.tech
-              </p>
-              <p
-                className="footer-p1"
-                style={{ display: "flex", alignItems: "center" }}
-              >
-                <CallIcon fontSize="large" style={{ color: "#ffcc39", marginRight: "5px" }} />
-                051-611-2452
-              </p>
-              <p
-                className="footer-p1"
-                style={{ display: "flex", alignItems: "center" }}
-              >
-                <CallIcon fontSize="large" style={{ color: "#ffcc39", marginRight: "5px" }} />
-                +92-331-7766-777
-              </p>
+              <div className="contact-item">
+                <FmdGoodIcon fontSize="medium" style={{ color: "#ffcc39" }} />
+                <p className="footer-p1">
+                  Office no 12, Aries Tower Maryam Business Center, Murree Rd,
+                  Shamsabad, Rawalpindi
+                </p>
+              </div>
+              <div className="contact-item">
+                <EmailIcon fontSize="medium" style={{ color: "#ffcc39" }} />
+                <p className="footer-p1">info@therevolutiontechnologies.tech</p>
+              </div>
+              <div className="contact-item">
+                <CallIcon fontSize="medium" style={{ color: "#ffcc39" }} />
+                <p className="footer-p1">051-611-2452 & +92-331-7766-777</p>
+              </div>
             </div>
           </div>
 

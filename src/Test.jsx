@@ -56,7 +56,6 @@ const Test = () => {
     slidesToScroll: 1,
   };
 
-
   return (
     <div className="container-fluid test-count">
       <div className="row test-row1">

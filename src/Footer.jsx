@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="first col-sm-12 col-md-3 col-lg-3 col-xs-12 media">
               <h5>The Revolution Technology</h5>
               <p className="para1">
-                The Revolution Technology Infinity Group are one of the leading
+                The Revolution Technology Infinity Group is one of the leading
                 providers of IT support in Islamabad. Since 2015, we have
                 provided award winning IT support services to thousands of
                 businesses across the nation.

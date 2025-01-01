@@ -56,14 +56,6 @@ const Test = () => {
     slidesToScroll: 1,
   };
 
-  const handleNext = () => {
-    sliderRef.current.slickNext();
-  };
-
-  const handlePrev = () => {
-    sliderRef.current.slickPrev();
-  };
-
   return (
     <div className="container-fluid test-count">
       <div className="row test-row1">

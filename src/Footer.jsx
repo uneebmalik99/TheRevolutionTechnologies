@@ -17,7 +17,7 @@ const Footer = () => {
                 The Revolution Technology Infinity Group is one of the leading
                 providers of IT support in Islamabad. Since 2015, we have
                 provided award winning IT support services to thousands of
-                businesses across the nation.
+                businesses across nation.
               </p>
             </div>
 

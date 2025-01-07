@@ -15,7 +15,7 @@ const Header = () => {
             solutions that exceed client expectations
           </p>
           <div className={`row ${head.btnrow}`}>
-            <button className={head.btn}>LEARN MORE</button>
+            <button className={head.btn}>Get Started</button>
           </div>
         </div>
       </div>

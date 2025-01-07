@@ -7,7 +7,7 @@
 }
 
 .projects {
-  padding-top: 4%;
+  padding-top: 3%;
 }
 
 .projects-section {
@@ -15,6 +15,7 @@
 }
 
 .App {
+  margin-top: -5rem;
   padding-bottom: 40px;
 }
 

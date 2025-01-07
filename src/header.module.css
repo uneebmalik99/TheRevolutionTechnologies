@@ -64,8 +64,8 @@
   width: 100%;
   overflow: hidden;
   background: transparent;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: -10px;
 }
 
 .marqueeContent {

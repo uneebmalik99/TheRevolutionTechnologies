@@ -160,10 +160,9 @@ svg {
 }
 
 .N1:hover {
-  background-color: rgb(221, 221, 221);
-  /* background-color: rgba(248, 193, 246, 1); */
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;;
+  background-color: rgb(235, 235, 235);
+    box-shadow: rgba(245, 245, 245, 0.3) 0px 1px 2px 0px,
+      rgba(209, 209, 209, 0.15) 0px 2px 6px 2px;;
       transition: scale 0.3s linear;
     
       &:hover {
@@ -172,10 +171,9 @@ svg {
 }
 
 .N2:hover {
-  background-color: rgb(221, 221, 221);
-  /* background-color: rgba(171 196, 254, 1); */
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: rgb(235, 235, 235);
+    box-shadow: rgba(245, 245, 245, 0.3) 0px 1px 2px 0px,
+      rgba(209, 209, 209, 0.15) 0px 2px 6px 2px;
     ;
     transition: scale 0.3s linear;
   
@@ -185,10 +183,10 @@ svg {
 }
 
 .N3:hover {
-  background-color: rgb(221, 221, 221);
-  /* background-color: rgba(207, 143, 209, 1); */
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+background-color: rgb(235, 235, 235);
+  box-shadow: rgba(245, 245, 245, 0.3) 0px 1px 2px 0px,
+    rgba(209, 209, 209, 0.15) 0px 2px 6px 2px;
+  ;
     ;
     transition: scale 0.3s linear;
   
@@ -198,10 +196,10 @@ svg {
 }
 
 .N4:hover {
-  background-color: rgb(221, 221, 221);
-  /* background-color: rgba(244, 208, 97, 1); */
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+background-color: rgb(235, 235, 235);
+  box-shadow: rgba(245, 245, 245, 0.3) 0px 1px 2px 0px,
+    rgba(209, 209, 209, 0.15) 0px 2px 6px 2px;
+  ;
     ;
     transition: scale 0.3s linear;
   

@@ -4,7 +4,7 @@ const ServicesOffer = () => {
   return (
     <>
       <div className="container1">
-        <h4 className="text-center mt-4 mb-4">Services we Offer</h4>
+        <h4 className="text-center mt-4 mb-4">Our Services</h4>
         <div className="container">
           <div className="row">
             <div className="mainy col-md-6 col-lg-4 mb-4">

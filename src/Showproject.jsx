@@ -81,11 +81,11 @@ const Showproject = () => {
   return (
     <div className="container-fluid bg_img projects px-5">
       <div className="row projects-section">
-        <h1 className="h1-projects">Introduce Our Projects</h1>
+        <h1 className="h1-projects"> Our Projects</h1>
         <p className="p-projects">
           Software development outsourcing is an outstanding just a tool to
-          achieve business goals. But there is no wayto get worthwhile results
-          without cooperation and trust between a client company.
+          achieve business goals. <br></br> But there is no wayto get worthwhile
+          results without cooperation and trust between a client company.
         </p>
       </div>
 

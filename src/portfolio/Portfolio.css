@@ -99,8 +99,8 @@
   bottom: 0;
   left: 0;
   z-index: 1;
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
+  /* border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px; */
 }
 
 .port-p1 {
@@ -178,7 +178,8 @@
 .img-port11 {
   width: 100%;
   height: 100%;
-  border-radius: 25px;
+  border: 1px solid rgb(224, 224, 224);
+  /* border-radius: 25px; */
   object-fit: cover;
   z-index: 0;
 }

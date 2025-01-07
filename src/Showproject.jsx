@@ -83,9 +83,9 @@ const Showproject = () => {
       <div className="row projects-section">
         <h1 className="h1-projects">Introduce Our Projects</h1>
         <p className="p-projects">
-          Software development outsourcing is just a tool to achieve business
-          goals. But there is no wayto get worthwhile results without
-          cooperation and trust between a client company.
+          Software development outsourcing is an outstanding just a tool to
+          achieve business goals. But there is no wayto get worthwhile results
+          without cooperation and trust between a client company.
         </p>
       </div>
 

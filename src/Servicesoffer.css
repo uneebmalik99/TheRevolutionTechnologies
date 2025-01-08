@@ -1,21 +1,111 @@
-
- .service-card{
-    border:  3px grey;
-    border-radius: 10px;
-   height: 250px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
-    z-index: 4;
-    background-color: white;
-    text-align: center;
- }
- .mainy :hover{
-  background-color: whitesmoke;
- }
- .container1{
-    background-image: url(./../public/images/background.png);
-    background-size: cover;
+.container1 {
+   background-image: url(./../public/images/background.png);
+   background-size: cover;
    text-align: center;
- }
- 
- 
- 
+}
+
+.service-row {
+   display: flex;
+   align-items: center;
+   margin: 20px 0;
+   flex-wrap: wrap;
+}
+
+.service-left,
+.service-right {
+   flex: 1;
+   text-align: center;
+   padding: 10px;
+}
+
+.service-left {
+   text-align: center;
+}
+
+.service-right {
+   text-align: left;
+}
+
+.service-icon {
+   width: 50px;
+   height: 50px;
+   margin-bottom: -5rem;
+}
+
+.tilted-description {
+   transform: rotate(-2deg);
+   background: #8b8bc2;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+   font-size: 1rem;
+}
+
+h4 {
+   font-size: 1.5rem;
+   margin-top: 10px;
+}
+@media (max-width: 576px) {
+   .service-row {
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .service-left,
+   .service-right {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+   }
+
+   .service-icon {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+   }
+
+   .tilted-description {
+      font-size: 0.9rem;
+      padding: 15px;
+   }
+
+   h4 {
+      font-size: 1.2rem;
+   }
+}
+@media (max-width: 768px) {
+   .service-row {
+      flex-direction: column;
+   }
+
+   .service-icon {
+      width: 45px;
+      height: 45px;
+   }
+
+   .tilted-description {
+      font-size: 1rem;
+   }
+
+   h4 {
+      font-size: 1.4rem;
+   }
+}
+@media (min-width: 1200px) {
+   .service-row {
+      margin: 40px 0;
+   }
+
+   .service-icon {
+      width: 50px;
+      height: 50px;
+   }
+
+   .tilted-description {
+      font-size: 1.1rem;
+   }
+
+   h4 {
+      font-size: 1.6rem;
+   }
+}

@@ -32,5 +32,6 @@ jobs:
           protocol: ftps
           port: ${{ secrets.FTP_PORT }}
           local-dir: build/
-          server-dir: . # uploads directly into your FTP root (already /public_html)
+          server-dir: ./ # ✅ must end with slash
           log-level: standard
+          delete: true

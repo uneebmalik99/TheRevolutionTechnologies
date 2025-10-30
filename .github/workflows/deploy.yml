@@ -33,4 +33,4 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: build
           server-dir: . # uploads directly into your FTP root (already /public_html)
-          log-level: info
+          log-level: standard

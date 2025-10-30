@@ -32,6 +32,5 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./build/
-          server-dir: / # ✅ Changed to root - FTP user already starts in public_html
+          server-dir: ./
           log-level: standard
-          dangerous-clean-slate: true

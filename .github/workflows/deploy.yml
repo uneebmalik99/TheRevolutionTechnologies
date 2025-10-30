@@ -32,5 +32,5 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./build/
-          server-dir: public_html/
+          server-dir: domains/therevolutiontechnologies.io/public_html/
           log-level: standard

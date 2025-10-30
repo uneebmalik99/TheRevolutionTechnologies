@@ -1,4 +1,4 @@
-name: Deploy TRT to Hostinger via FTPS
+name: Deploy Trt to Hostinger via FTPS
 
 on:
   push:

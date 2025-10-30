@@ -23,6 +23,9 @@ jobs:
       - name: Build React app
         run: npm run build
 
+      - name: List build files (debug)
+        run: ls -la build/
+
       - name: Deploy to Hostinger via FTPS
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
@@ -32,5 +35,8 @@ jobs:
           protocol: ftps
           port: 21
           local-dir: ./build/
-          server-dir: /public_html/
-          log-level: standard
+          server-dir: public_html/
+          log-level: verbose
+          exclude: |
+            **/.git*
+            **/.git*/**

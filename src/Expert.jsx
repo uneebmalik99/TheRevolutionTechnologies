@@ -14,7 +14,7 @@ const Expert = () => {
         <div className="container-img">
           <div className="row rowlast" style={{ marginInline: "0px" }}>
             <div className=" col-sm-12 col-md-2 col-lg-2">
-              <div className=" card exp-card cardimg1 card-colr1 expertbox N1">
+              <div className="card exp-card cardimg1 card-colr1 expertbox N1 allcard">
                 <div className="imgcir">
                   <img
                     src="images/flexbility.png"
@@ -240,7 +240,7 @@ const Expert = () => {
         <div className="row">
           <p className="expert-p1">Why The Revolution Technologies Experts</p>
         </div>
-        <div className="row justify-content-center">
+        <div className="row justify-content-center industry">
           <div
             className={`f3 col-sm-12 col-md-4 col-lg-2 ${
               activeButton === "industries" ? "active" : ""
@@ -251,7 +251,7 @@ const Expert = () => {
             }}
           >
             <button
-              className="btn btn-block"
+              className="btn btn-block "
               onClick={() => handleButtonClick("industries")}
             >
               Industries

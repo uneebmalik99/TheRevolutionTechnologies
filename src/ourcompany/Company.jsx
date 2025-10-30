@@ -22,20 +22,21 @@ const Company = ({ title }) => {
     );
   };
 
-  const cardData = [
-    {
-      heading: "Reach",
-      text: "It was nice working with your team because no matter what ideas we come.",
-    },
-    {
-      heading: "Nice",
-      text: "It was nice working with your team because no matter what ideas we come",
-    },
-    {
-      heading: "Nice",
-      text: "It was nice working with your team because no matter what ideas we come",
-    },
-  ];
+const cardData = [
+  {
+    heading: "Expertise",
+    text: "Our experienced team combines creativity and technical skill to deliver solutions that exceed expectations.",
+  },
+  {
+    heading: "Innovation",
+    text: "We embrace fresh ideas and the latest technologies to keep your business ahead in a fast-changing digital world.",
+  },
+  {
+    heading: "Commitment",
+    text: "We’re dedicated to building long-term relationships through trust, transparency, and consistent results.",
+  },
+];
+
 
   return (
     <>
@@ -70,7 +71,7 @@ const Company = ({ title }) => {
       <div className="container-fluid aboutus" id="company-countainer22">
         <div className="row row1-heading">
           <h3 id="row1-h3">About Us</h3>
-          <div className="row">
+          <div className="row aboutus">
             <div className="abouthp col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <h class="company-p2">
                 Offering Sustainable Digital Solutions to Amazing People

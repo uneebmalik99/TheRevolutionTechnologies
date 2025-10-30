@@ -78,6 +78,7 @@
   }
   .serh3 {
     font-size: 27px;
+    margin-top: -10px;
   }
 }
 
@@ -171,6 +172,7 @@
   height: 265px;
   width: 50%;
 }
+
 .services-para {
   margin-top: 50px;
   text-align: center;

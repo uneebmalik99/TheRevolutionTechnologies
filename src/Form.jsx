@@ -15,10 +15,10 @@ const Form = () => {
         <div className="container">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-              <form action="">
+              <form action="" className="form">
                 <select
                   name="pets"
-                  className="form-control form-select mb-md-2"
+                  className="form-control form-select mb-md-2 howhelpu"
                 >
                   <option value="" disable-selected>
                     How Can We Help You
@@ -28,17 +28,17 @@ const Form = () => {
                   <option value="other">Other</option>
                 </select>
                 <input
-                  className="form-control mb-md-2"
+                  className="form-control mb-md-2 howhelpu"
                   type="text"
                   placeholder="Name"
                 />
                 <input
-                  className="form-control mb-md-2"
+                  className="form-control mb-md-2 howhelpu"
                   type="text"
                   placeholder="Email"
                 />
                 <input
-                  className="form-control mb-md-2"
+                  className="form-control mb-md-2 howhelpu"
                   type="text"
                   placeholder="Organization"
                 />

@@ -78,5 +78,12 @@ label {
 @media (max-width: 768px) {
   .msg {
     margin-left: 33%;
+    align-items: center;
+  }
+  .form{
+    margin-bottom: 15px;
+  }
+  .howhelpu{
+    margin-bottom: 15px;
   }
 }

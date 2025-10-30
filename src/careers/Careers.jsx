@@ -1,125 +1,177 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./career.css";
 
+const jobData = [
+  {
+    title: "Web Developer",
+    location: "Rawalpindi",
+    shortDesc: "We are looking for a skilled Full Stack Developer.",
+    fullDesc:
+      "We are looking for a Full Stack Developer skilled in React, Node.js, and modern frameworks. You will collaborate with designers and developers to build high-quality web applications.",
+  },
+  {
+    title: "Mobile App Developer",
+    location: "Rawalpindi",
+    shortDesc: "We are looking for talented Mobile App Developers.",
+    fullDesc:
+      "You should have experience in Flutter or React Native. You'll work on developing apps that deliver exceptional user experiences across Android and iOS.",
+  },
+  {
+    title: "UI/UX Designer",
+    location: "Rawalpindi",
+    shortDesc: "We are hiring creative UI/UX designers.",
+    fullDesc:
+      "Your role will focus on creating engaging, user-friendly interfaces. Experience with Figma, Adobe XD, and modern design trends is a plus.",
+  },
+];
+
 const Careers = ({ title }) => {
+  const [selectedJob, setSelectedJob] = useState(null);
+
   useEffect(() => {
     document.title = `${title} - The Revolution Technologies`;
   }, [title]);
+
   return (
     <>
-      <div className="container-fluid" id="career-container1">
+      {/* --- Header Section --- */}
+      <div className="container-fluid career-hero">
         <div className="row cpar">
-          <div className="col-sm-12 col-md-6 col-lg-6">
-            <div className="row" id="career-row1">
-              <p id="career-p1">Careers</p>
-              <p className="career-paragraph">
-                Discover your next career move with one of the leading Tech
-                Firms!
-              </p>
+          <div className="col-md-6 hero-content">
+            <h1 id="career-p1">Careers</h1>
+            <p className="career-subtitle">
+              Discover your next career move with one of the leading Tech Firms!
+            </p>
+            <div className="hero-cta">
+              <button
+                className="cta-button"
+                onClick={() =>
+                  document
+                    .getElementById("vacancies-section")
+                    .scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                View Open Positions
+              </button>
             </div>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-6 career-column">
+          <div className="col-md-6 career-column">
             <img src="images/career2.png" id="career-img1" alt="career" />
           </div>
         </div>
       </div>
 
-      <div className="container-fluid" id="career-container2">
-        <div className="row heading">
-          <p id="career-container2-p1">Why Join The Revolution Technologies?</p>
-        </div>
-        <div className="row" id="career-container2-row1">
-          <p id="career-container2-p2">
-            Techies, innovators, developers, and free-thinkers. You’ve come to
-            the right place. Funsol Technologies has been delivering premium
-            IT-enabled business solutions to a wide array of client
-            organizations for over four decades. We have remained at the cutting
-            edge of enterprise technology by making employee excellence our top
-            priority. We believe in cultivating a working environment that
-            supports innovation and creative thinking. We give you opportunities
-            to excel and achieve the global recognition that you deserve!
+      {/* --- Why Join Section --- */}
+      <div className="container-fluid why-join-section">
+        <div className="why-join-content">
+          <h2>Why Join The Revolution Technologies?</h2>
+          <p className="why-join-desc">
+            We believe in innovation, collaboration, and growth. Join a team
+            that values creativity and technical excellence while helping you
+            reach your full potential.
           </p>
-        </div>
-      </div>
-      <div className="" id="career-container3-row1">
-        <p className="container3-p"> OPEN VACANCIES </p>
-      </div>
-      <div className="container-fluid" id="career-container3">
-        <div className="row mainrw">
-          <div className="container-fluid" id=" container3-inner">
-            <div className=" career-container3-section1"></div>
-          </div>
-          <div className="row vacancies">
-            <div className="row inrow">
-              <div className="col-sm-12 col-md-2 col-lg-3 ">
-                <p className="text">WEB DEVELOPER</p>
-                <br></br>
-                <p className="scndtxt">Rawalpindi</p>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-6  ">
-                <p className="text">DESCRIPTION</p>
-                <br></br>
-                <p className="scndtxt">
-                  We are Looking for Full Stack develoer{" "}
-                  <a href="https://www.w3schools.com" className="link">
-                    Read more
-                  </a>
-                </p>
-              </div>
-              <div className="col-sm-12 col-md-3 col-lg-3 ">
-                <button className="btn-vacancies "> Apply</button>
-              </div>
+          <div className="benefits-grid">
+            <div className="benefit-card">
+              <div className="benefit-icon">💡</div>
+              <h4>Innovation</h4>
+              <p>Work with cutting-edge technologies and modern frameworks</p>
             </div>
-          </div>
-
-          <div className="row vacancies">
-            <div className="row inrow">
-              <div className="col-sm-12 col-md-2 col-lg-3 ">
-                <p className="text">Mobile App Developers</p>
-                <br></br>
-                <p className="scndtxt">Rawalpindi</p>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-6  ">
-                <p className="text">DESCRIPTION</p>
-                <br></br>
-                <p className="scndtxt">
-                  We are Looking for Full Stack develoer{" "}
-                  <a href="https://www.w3schools.com" className="link">
-                    Read more
-                  </a>
-                </p>
-              </div>
-              <div className="col-sm-12 col-md-3 col-lg-3 ">
-                <button className="btn-vacancies "> Apply</button>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">👥</div>
+              <h4>Collaboration</h4>
+              <p>
+                Join a supportive team that values teamwork and knowledge
+                sharing
+              </p>
             </div>
-          </div>
-
-          <div className="row vacancies doing">
-            <div className="row inrow">
-              <div className="col-sm-12 col-md-2 col-lg-3 ">
-                <p className="text">UI/UX</p>
-                <br></br>
-                <p className="scndtxt">Rawalpindi</p>
-              </div>
-              <div className="col-sm-12 col-md-6 col-lg-6  ">
-                <p className="text">DESCRIPTION</p>
-                <br></br>
-                <p className="scndtxt">
-                  We are Looking for Full Stack develoer{" "}
-                  <a href="https://www.w3schools.com" className="link">
-                    Read more
-                  </a>
-                </p>
-              </div>
-              <div className="col-sm-12 col-md-3 col-lg-3 ">
-                <button className="btn-vacancies "> Apply</button>
-              </div>
+            <div className="benefit-card">
+              <div className="benefit-icon">🚀</div>
+              <h4>Growth</h4>
+              <p>Continuous learning opportunities and career advancement</p>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* --- Open Vacancies --- */}
+      <div className="container-fluid vacancies-section" id="vacancies-section">
+        <h2 className="section-title">OPEN VACANCIES</h2>
+        <p className="section-subtitle">
+          Find your perfect role and join our innovative team
+        </p>
+
+        <div className="vacancies-container">
+          {jobData.map((job, index) => (
+            <div className="job-card" key={index}>
+              <div className="job-header">
+                <h3 className="job-title">{job.title}</h3>
+                <span className="job-location">📍 {job.location}</span>
+              </div>
+
+              <div className="job-description">
+                <p className="job-short-desc">{job.shortDesc}</p>
+                <button
+                  className="read-more-btn"
+                  onClick={() => setSelectedJob(job)}
+                >
+                  Read more →
+                </button>
+              </div>
+
+              <div className="job-actions">
+                <button
+                  className="apply-btn"
+                  onClick={() =>
+                    window.open(
+                      "mailto:info@therevolutiontechnologies.tech?subject=Application for " +
+                        job.title
+                    )
+                  }
+                >
+                  Apply Now
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* --- Modal --- */}
+        {selectedJob && (
+          <div className="job-modal">
+            <div className="job-modal-content">
+              <span className="close-btn" onClick={() => setSelectedJob(null)}>
+                ×
+              </span>
+              <h3>{selectedJob.title}</h3>
+              <div className="job-meta">
+                <span className="location-tag">📍 {selectedJob.location}</span>
+              </div>
+              <p className="job-full-desc">{selectedJob.fullDesc}</p>
+              <div className="modal-buttons">
+                <button
+                  className="btn-close"
+                  onClick={() => setSelectedJob(null)}
+                >
+                  Close
+                </button>
+                <button
+                  className="btn-apply"
+                  onClick={() =>
+                    window.open(
+                      "mailto:info@therevolutiontechnologies.tech?subject=Application for " +
+                        selectedJob.title
+                    )
+                  }
+                >
+                  Apply Now
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
 };
+
 export default Careers;

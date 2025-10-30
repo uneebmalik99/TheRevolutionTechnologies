@@ -176,7 +176,7 @@ const Contact = ({ title }) => {
                         backgroundColor: "#BA8D06",
                        
                         paddingInline: "2%",
-                        width: "24%",
+                        width: "40%",
                       }}
                       className="btn1"
                       type="submit"

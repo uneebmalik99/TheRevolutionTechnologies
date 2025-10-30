@@ -144,7 +144,7 @@ const Team = ({ title }) => {
                       </div>
                       <h3>{item.title}</h3>
                     </div>
-                    <div className="row team-row-web">
+                    <div className="row team-row-web icon">
                       <img
                         src={item.icon}
                         alt={item.alt}
@@ -152,7 +152,7 @@ const Team = ({ title }) => {
                       />
                     </div>
                     <div className="row">
-                      <h4>{item.designation}</h4>
+                      <h4 className="h4">{item.designation}</h4>
                     </div>
                   </div>
                 </div>

@@ -37,6 +37,7 @@
 .slick-next:before {
   color: #fece3c;
   font-size: 39px;
+  
 }
 
 .spacing-there {
@@ -100,4 +101,11 @@ text-align: center;
   height: 10%;
   width: 5%;
   margin-top: 10px;
+}
+@media (max-width: 767.98px) {
+.slick-prev:before,
+.slick-next:before {
+  
+  margin-left: -10px;
+}
 }

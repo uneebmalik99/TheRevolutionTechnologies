@@ -69,7 +69,7 @@ h3{
   text-align: center;
   margin-top: 10px;
 }
-h4{
+.h4{
   text-align: center;
   margin-bottom: 10px;
 }
@@ -86,7 +86,7 @@ h4{
 
 .teamwebimg {
   height: 50px;
-    width: 50px;
+    width: 60px;
     margin: 10px auto 0;
     display: block;
 }
@@ -119,4 +119,16 @@ h4{
   #team-para{
     width: 86%;
   }
+  .teamcard1{
+    height: 40%;
+  }
+ .h4{
+   
+    padding: 0px;
+     margin-top: -40px;
+  }
+  .teamwebimg {
+ margin-top: -40px;
+}
+  
 }

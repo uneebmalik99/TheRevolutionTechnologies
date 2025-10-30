@@ -19,8 +19,10 @@ const ServicesOffer = () => {
             </div>
             <div className="service-right">
               <p className="tilted-description">
-                We carry more than just good coding skills. Our experience makes
-                us stand out from other web development.
+                We design and develop responsive, high-quality websites that
+                combine functionality with creativity. Our solutions are built
+                to enhance user experience and help your business achieve
+                measurable results.
               </p>
             </div>
           </div>
@@ -37,8 +39,9 @@ const ServicesOffer = () => {
             </div>
             <div className="service-right">
               <p className="tilted-description">
-                We carry more than just good coding skills. Our experience makes
-                us stand out from other mobile app development.
+                We create feature-rich, user-friendly mobile applications that
+                deliver seamless performance across platforms. Our apps are
+                designed to engage users and drive lasting business growth.
               </p>
             </div>
           </div>
@@ -51,8 +54,10 @@ const ServicesOffer = () => {
             </div>
             <div className="service-right">
               <p className="tilted-description">
-                We carry more than just good coding skills. Our experience makes
-                us stand out from other UI/UX design.
+                We help your business stand out online with proven SEO
+                strategies that boost visibility, rankings, and organic traffic.
+                Our data-driven approach ensures sustainable growth and
+                measurable results.
               </p>
             </div>
           </div>
@@ -69,8 +74,9 @@ const ServicesOffer = () => {
             </div>
             <div className="service-right">
               <p className="tilted-description">
-                We carry more than just good coding skills. Our experience makes
-                us stand out from other web development.
+                We deliver targeted digital marketing campaigns that connect
+                your brand with the right audience. From content and social
+                media to paid ads, we turn engagement into conversions.
               </p>
             </div>
           </div>
@@ -87,8 +93,10 @@ const ServicesOffer = () => {
             </div>
             <div className="service-right">
               <p className="tilted-description">
-                We carry more than just good coding skills. Our experience makes
-                us stand out from other web development.
+                We help your brand grow with creative social media strategies
+                that inspire, engage, and convert. Our campaigns build
+                meaningful connections and strengthen your online presence
+                across all platforms.
               </p>
             </div>
           </div>

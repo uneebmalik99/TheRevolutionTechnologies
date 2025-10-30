@@ -1,4 +1,4 @@
-name: Deploy React App to Hostinger via FTPS
+name: Deploy TRT to Hostinger via FTPS
 
 on:
   push:

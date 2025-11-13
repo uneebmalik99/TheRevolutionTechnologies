@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# The Revolution Technologies - Next.js Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive company website built with Next.js 14, React, and Tailwind CSS.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- ✨ Modern, responsive design
+- 🚀 Built with Next.js 14 App Router
+- 🎨 Tailwind CSS for styling
+- 📱 Fully responsive across all devices
+- ⚡ Optimized performance
+- 🎭 Smooth animations with Framer Motion
+- 🎬 Lottie animations for interactive elements
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Next.js 14** - React framework with App Router
+- **React 18** - UI library
+- **Tailwind CSS** - Utility-first CSS framework
+- **Framer Motion** - Animation library
+- **Lottie React** - Animation library for JSON animations
+- **React Icons** - Icon library
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 18+ and npm/yarn/pnpm
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Run the development server:
 
-### `npm run eject`
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+├── src/
+│   ├── app/              # Next.js App Router pages
+│   │   ├── page.js      # Home page
+│   │   ├── services/    # Services page
+│   │   ├── portfolio/   # Portfolio page
+│   │   ├── team/        # Team page
+│   │   ├── company/     # Company page
+│   │   ├── careers/     # Careers page
+│   │   ├── contact/     # Contact page
+│   │   ├── layout.js    # Root layout
+│   │   └── globals.css  # Global styles
+│   ├── components/      # React components
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Services.jsx
+│   │   └── ...
+│   └── Animations/      # Lottie animation JSON files
+└── public/              # Static assets
+    └── images/          # Image files
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Pages
 
-## Learn More
+- **Home** (`/`) - Hero section, services overview, projects, testimonials
+- **Services** (`/services`) - Detailed service offerings
+- **Portfolio** (`/portfolio`) - Project showcase with filtering
+- **Team** (`/team`) - Team members
+- **Company** (`/company`) - About us, values, and testimonials
+- **Careers** (`/careers`) - Job openings and company benefits
+- **Contact** (`/contact`) - Contact form and location map
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Building for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+npm start
+```
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The site can be deployed on:
 
-### Analyzing the Bundle Size
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- **AWS Amplify**
+- Any platform that supports Node.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Customization
 
-### Making a Progressive Web App
+### Colors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Edit `tailwind.config.js` to customize the color scheme:
 
-### Advanced Configuration
+```javascript
+colors: {
+  primary: { ... },
+  accent: { ... },
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Content
 
-### Deployment
+Update component files in `src/components/` to modify content and styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+© 2024 The Revolution Technologies. All Rights Reserved.

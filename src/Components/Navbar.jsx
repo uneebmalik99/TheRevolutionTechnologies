@@ -1,84 +1,100 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
-import "./navbar.css";
+'use client'
 
-function Navbar() {
-  const [active, setActive] = useState("nav_menu");
-  const [toggleIcon, setToggleIcon] = useState("nav_toggler");
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+import { FiMenu, FiX } from 'react-icons/fi'
 
-  const navToggle = () => {
-    active === "nav_menu"
-      ? setActive("nav_menu nav_active")
-      : setActive("nav_menu");
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const pathname = usePathname()
 
-    toggleIcon === "nav_toggler"
-      ? setToggleIcon("nav_toggler toggle")
-      : setToggleIcon("nav_toggler");
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
-  const closeMenu = () => {
-    setActive("nav_menu");
-    setToggleIcon("nav_toggler");
-  };
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/services', label: 'Services' },
+    { href: '/portfolio', label: 'Portfolio' },
+    { href: '/team', label: 'Our Team' },
+    { href: '/company', label: 'Company' },
+    { href: '/careers', label: 'Careers' },
+    { href: '/contact', label: 'Contact Us' },
+  ]
 
   return (
-    <>
-      <nav
-        className="nav blur blur-rounded top-0 z-index-fixed shadow position-absolute start-0 end-0 mx-6"
-        style={{ borderRadius: "0px 0px 10px 10px" }}
-      >
-        <NavLink to="/" className="nav_brand" onClick={closeMenu}>
-          <img
-            src="images/logo12.png"
-            alt="company logo"
-            className="navbarlogo"
+    <nav
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/images/logo12.png"
+            alt="The Revolution Technologies"
+            width={280}
+            height={120}
+            className="h-20 md:h-24 lg:h-26 w-auto object-contain"
+            priority
           />
-        </NavLink>
-        <ul className={active}>
-          <li className="nav_item">
-            <NavLink to="/" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Home
-            </NavLink>
-          </li>
-          <li className="nav_item text-primary">
-            <NavLink to="/services" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Services
-            </NavLink>
-          </li>
-          <li className="nav_item">
-            <NavLink to="/portfolio" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Portfolio
-            </NavLink>
-          </li>
-          <li className="nav_item text-primary">
-            <NavLink to="/team" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Our Team
-            </NavLink>
-          </li>
-          <li className="nav_item">
-            <NavLink to="/company" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Company
-            </NavLink>
-          </li>
-          <li className="nav_item text-500">
-            <NavLink to="/careers" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Careers
-            </NavLink>
-          </li>
-          <li className="nav_item">
-            <NavLink to="/contact" className="nav-link" activeClassName="active" onClick={closeMenu}>
-              Contact us
-            </NavLink>
-          </li>
-        </ul>
-        <div onClick={navToggle} className={toggleIcon}>
-          <div className="line1"></div>
-          <div className="line2"></div>
-          <div className="line3"></div>
-        </div>
-      </nav>
-    </>
-  );
-}
+        </Link>
 
-export default Navbar;
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex space-x-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`text-base font-medium transition-all ${
+                pathname === link.href
+                  ? 'text-primary-800 font-semibold border-b-2 border-primary-800'
+                  : 'text-gray-700 hover:text-primary-700'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+          aria-label="Toggle menu"
+        >
+          {isOpen ? <FiX size={26} /> : <FiMenu size={26} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <div className="lg:hidden bg-white shadow-md rounded-b-2xl mx-4 mt-2 pb-3 transition-all">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className={`block px-4 py-3 rounded-xl text-base font-semibold transition-all ${
+                pathname === link.href
+                  ? 'bg-gradient-to-r from-primary-900 to-primary-800 text-white shadow-lg'
+                  : 'text-gray-700 hover:bg-primary-50 hover:text-primary-900'
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </nav>
+  )
+}

@@ -1,40 +1,42 @@
-// Fab.js
-import React, { useState } from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaPlus } from 'react-icons/fa';
-import './Fab.css';
+'use client'
 
-const Fab = () => {
-    const [isOpen, setIsOpen] = useState(false);
+import { useState, useEffect } from 'react'
+import { FaArrowUp } from 'react-icons/fa'
 
-    const handleHover = () => {
-        setIsOpen(true);
-    };
+export default function Fab() {
+  const [isVisible, setIsVisible] = useState(false)
 
-    const handleMouseLeave = () => {
-        setIsOpen(false);
-    };
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.pageYOffset > 300) {
+        setIsVisible(true)
+      } else {
+        setIsVisible(false)
+      }
+    }
 
-    return (
-        <div className="fab-container" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
-            <div className={`fab-icons ${isOpen ? 'open' : ''}`}>
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="fab-icon">
-                    <FaFacebookF />
-                </a>
-                <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className="fab-icon">
-                    <FaTwitter />
-                </a>
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="fab-icon">
-                    <FaInstagram />
-                </a>
-                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="fab-icon">
-                    <FaLinkedinIn />
-                </a>
-            </div>
-            <div className="fab-main">
-                <FaPlus />
-            </div>
-        </div>
-    );
-};
+    window.addEventListener('scroll', toggleVisibility)
+    return () => window.removeEventListener('scroll', toggleVisibility)
+  }, [])
 
-export default Fab;
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  return (
+    <>
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary-900 hover:bg-primary-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group hover:scale-110"
+          aria-label="Scroll to top"
+        >
+          <FaArrowUp className="w-5 h-5 group-hover:animate-bounce" />
+        </button>
+      )}
+    </>
+  )
+}

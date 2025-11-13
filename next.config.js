@@ -5,6 +5,8 @@ const nextConfig = {
     domains: [],
     unoptimized: true,
   },
+  output: 'export',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig

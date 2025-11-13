@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build React app
+      - name: Build Next.js app
         run: npm run build
 
       - name: Deploy to Hostinger via FTPS
@@ -31,6 +31,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           port: 21
-          local-dir: ./build/
+          local-dir: ./out/
           server-dir: ./
           log-level: standard

@@ -29,10 +29,15 @@ export default function Navbar() {
     { href: '/contact', label: 'Contact Us' },
   ]
 
+  // Check if current page has dark background (services page)
+  const isDarkPage = pathname === '/services' || pathname === '/services/'
+
   return (
     <nav
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md' : 'bg-transparent'
+        scrolled || isDarkPage
+          ? 'bg-white/95 backdrop-blur-md shadow-md'
+          : 'bg-white/95 backdrop-blur-md'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex justify-between items-center h-20">
@@ -56,9 +61,9 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               className={`text-base font-medium transition-all ${
-                pathname === link.href
-                  ? 'text-primary-800 font-semibold border-b-2 border-primary-800'
-                  : 'text-gray-700 hover:text-primary-700'
+                pathname === link.href || pathname === `${link.href}/`
+                  ? 'text-primary-900 font-semibold border-b-2 border-primary-900'
+                  : 'text-gray-800 hover:text-primary-800'
               }`}
             >
               {link.label}
@@ -69,7 +74,7 @@ export default function Navbar() {
         {/* Mobile menu button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+          className="lg:hidden p-2 rounded-lg text-gray-800 hover:bg-gray-100 transition-colors"
           aria-label="Toggle menu"
         >
           {isOpen ? <FiX size={26} /> : <FiMenu size={26} />}

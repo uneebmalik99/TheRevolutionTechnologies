@@ -13,7 +13,8 @@ import {
   FiArrowRight,
   FiZap,
   FiShield,
-  FiTrendingUp
+  FiTrendingUp,
+  FiCpu
 } from 'react-icons/fi'
 import Link from 'next/link'
 
@@ -65,28 +66,30 @@ const services = [
     stats: { projects: '150+', satisfaction: '97%' }
   },
   {
-    id: 'seo',
-    icon: FiSearch,
-    title: 'SEO & Digital Visibility',
-    tagline: 'Dominate search results',
-    description: 'Strategic SEO that drives organic traffic, improves rankings, and boosts your online presence.',
+    id: 'ai',
+    icon: FiCpu,
+    title: 'AI Development',
+    tagline: 'Intelligent automation & insights',
+    description: 'Leverage machine learning, NLP, and predictive analytics to automate workflows and uncover actionable insights.',
     features: [
-      'Technical SEO audits',
-      'Keyword research & strategy',
-      'Content optimization',
-      'Link building campaigns',
-      'Local SEO services',
-      'Analytics & reporting'
+      'Custom ML model development',
+      'AI-powered chatbots',
+      'Predictive analytics dashboards',
+      'Computer vision solutions',
+      'Natural language processing',
+      'Data engineering pipelines'
     ],
     benefits: [
-      'Higher rankings',
-      'More organic traffic',
-      'Better ROI'
+      'Faster decision making',
+      'Automated workflows',
+      'Data-driven strategies'
     ],
-    gradient: 'from-green-500 via-emerald-500 to-teal-500',
-    accent: 'bg-green-600',
-    stats: { projects: '300+', satisfaction: '96%' }
+    gradient: 'from-slate-900 via-indigo-700 to-blue-600',
+    accent: 'bg-slate-800',
+    stats: { projects: '60+', satisfaction: '96%' }
   },
+ 
+ 
   {
     id: 'uiux',
     icon: FiPenTool,
@@ -202,9 +205,9 @@ export default function ServicesOffer() {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="text-center max-w-4xl mx-auto"
           >
@@ -237,7 +240,7 @@ export default function ServicesOffer() {
               <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                 <FiTrendingUp className="w-5 h-5 text-accent-yellow" />
                 <span>Proven Track Record</span>
-              </div>
+                </div>
               <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
                 <FiCheckCircle className="w-5 h-5 text-accent-yellow" />
                 <span>100% Client Satisfaction</span>
@@ -322,8 +325,8 @@ export default function ServicesOffer() {
                       {/* Title & Tagline */}
                       <div className="mb-5">
                         <h3 className="text-2xl lg:text-3xl font-extrabold text-primary-900 mb-2 group-hover:text-primary-800 transition-colors">
-                          {service.title}
-                        </h3>
+                  {service.title}
+                </h3>
                         <div className="flex items-center gap-2 mb-3">
                           <div className={`h-1 w-8 bg-gradient-to-r ${service.gradient} rounded-full`}></div>
                           <p className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
@@ -335,8 +338,8 @@ export default function ServicesOffer() {
                       {/* Description */}
                       <div className="mb-6">
                         <p className="text-gray-700 leading-relaxed text-base font-medium">
-                          {service.description}
-                        </p>
+                  {service.description}
+                </p>
                       </div>
 
                       {/* Features List */}
@@ -459,16 +462,16 @@ export default function ServicesOffer() {
                     >
                       {phase.desc}
                     </motion.p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white relative overflow-hidden">
+      <section className="py-16 bg-[#1239b0] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)',
@@ -476,22 +479,24 @@ export default function ServicesOffer() {
           }}></div>
         </div>
         
-        {/* Animated gradient orbs */}
+        {/* Subtle floating glows */}
         <motion.div
           animate={{ 
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3]
+            scale: [1, 1.1, 1],
+            opacity: [0.2, 0.35, 0.2],
+            y: [0, -10, 0]
           }}
-          transition={{ duration: 4, repeat: Infinity }}
-          className="absolute top-0 left-1/4 w-64 h-64 bg-accent-yellow/20 rounded-full blur-3xl"
+          transition={{ duration: 5, repeat: Infinity }}
+          className="absolute top-6 left-1/4 w-48 h-48 bg-white/15 rounded-full blur-3xl"
         ></motion.div>
         <motion.div
           animate={{ 
-            scale: [1, 1.3, 1],
-            opacity: [0.2, 0.4, 0.2]
+            scale: [1, 1.15, 1],
+            opacity: [0.15, 0.3, 0.15],
+            y: [0, 12, 0]
           }}
-          transition={{ duration: 5, repeat: Infinity, delay: 1 }}
-          className="absolute bottom-0 right-1/4 w-64 h-64 bg-white/10 rounded-full blur-3xl"
+          transition={{ duration: 6, repeat: Infinity, delay: 1 }}
+          className="absolute bottom-6 right-1/5 w-52 h-52 bg-accent-yellow/20 rounded-full blur-3xl"
         ></motion.div>
         
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -532,11 +537,8 @@ export default function ServicesOffer() {
               >
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center justify-center px-8 py-4 bg-accent-yellow text-primary-900 font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:shadow-2xl hover:shadow-accent-yellow/50 relative overflow-hidden"
+                  className="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#1239b0] font-bold rounded-xl border border-white/40 hover:bg-gray-100 transition-all duration-300 hover:shadow-2xl hover:shadow-white/20 relative overflow-hidden"
                 >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  ></motion.div>
                   <motion.span
                     animate={{ x: [0, 5, 0] }}
                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
@@ -559,7 +561,7 @@ export default function ServicesOffer() {
               >
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 relative overflow-hidden group"
+                  className="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-white/50 text-white font-semibold rounded-xl hover:bg-white/10 transition-all duration-300 relative overflow-hidden group"
                 >
                   <motion.div
                     className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"

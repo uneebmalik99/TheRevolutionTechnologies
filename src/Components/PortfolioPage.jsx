@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 import { 
   FiCode, 
   FiSmartphone, 
@@ -16,6 +17,36 @@ import {
   FiUsers,
   FiAward
 } from 'react-icons/fi'
+import { FaAndroid, FaApple } from 'react-icons/fa'
+
+const AppStoreBadge = ({ className = 'w-6 h-6' }) => (
+  <svg viewBox="0 0 40 40" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="appstoreGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#4facfe" />
+        <stop offset="1" stopColor="#00f2fe" />
+      </linearGradient>
+    </defs>
+    <rect width="40" height="40" rx="12" fill="url(#appstoreGradient)" />
+    <path
+      d="M12 27h16M15 13l10 14M25 13l-10 14"
+      stroke="white"
+      strokeWidth="2.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+)
+
+const PlayStoreBadge = ({ className = 'w-6 h-6' }) => (
+  <svg viewBox="0 0 40 40" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="40" height="40" rx="12" fill="#0F172A" />
+    <path d="M12 9l16 11-16 11V9z" fill="#34A853" />
+    <path d="M12 9l10.5 14.5L12 31V9z" fill="#188038" />
+    <path d="M28 20L12 9l7.5 10.5L28 20z" fill="#FBBC04" />
+    <path d="M19.5 22.5L12 31l16-11-8.5 2.5z" fill="#EA4335" />
+  </svg>
+)
 
 const portfolioData = [
   {
@@ -25,7 +56,7 @@ const portfolioData = [
     category: 'IOS App',
     description: 'Enterprise mobile solution for logistics management with real-time tracking and automated workflows.',
     tech: ['Swift', 'iOS', 'Firebase'],
-    results: ['40% efficiency boost', '50K+ downloads', '4.8 rating']
+    platforms: ['ios']
   },
   {
     id: 2,
@@ -34,7 +65,7 @@ const portfolioData = [
     category: 'IOS App',
     description: 'Comprehensive shipping management platform with integrated payment processing and route optimization.',
     tech: ['Swift', 'Core Data', 'MapKit'],
-    results: ['35% cost reduction', '30K+ users', '4.9 rating']
+    platforms: ['ios']
   },
   {
     id: 3,
@@ -43,7 +74,7 @@ const portfolioData = [
     category: 'IOS App',
     description: 'Advanced logistics application with AI-powered route planning and customer engagement tools.',
     tech: ['Swift', 'Machine Learning', 'CloudKit'],
-    results: ['45% faster delivery', '25K+ active users', '4.7 rating']
+    platforms: ['ios']
   },
   {
     id: 4,
@@ -52,26 +83,9 @@ const portfolioData = [
     category: 'Web Development',
     description: 'Modern e-commerce platform with advanced inventory management and multi-vendor support.',
     tech: ['React', 'Node.js', 'MongoDB'],
-    results: ['300% sales increase', '100K+ products', '99.9% uptime']
+    platforms: []
   },
-  {
-    id: 5,
-    image: '/images/imgport33.png',
-    title: 'Galaxy World Wide Mobile',
-    category: 'Mobile App',
-    description: 'Cross-platform mobile application with seamless shopping experience and secure payments.',
-    tech: ['React Native', 'Redux', 'Stripe'],
-    results: ['200% mobile sales', '50K+ downloads', '4.8 rating']
-  },
-  {
-    id: 6,
-    image: '/images/imgport11.png',
-    title: 'Galaxy World Wide iOS',
-    category: 'IOS App',
-    description: 'Native iOS application with AR features and personalized shopping recommendations.',
-    tech: ['Swift', 'ARKit', 'Core ML'],
-    results: ['150% engagement', '30K+ users', '4.9 rating']
-  },
+ 
   {
     id: 7,
     image: '/images/Instagram post - 45.png',
@@ -79,7 +93,7 @@ const portfolioData = [
     category: 'Web Development',
     description: 'Healthcare management system with patient portals, appointment scheduling, and telemedicine capabilities.',
     tech: ['Next.js', 'PostgreSQL', 'WebRTC'],
-    results: ['60% patient satisfaction', '10K+ appointments', 'HIPAA compliant']
+    platforms: ['android', 'ios']
   },
   {
     id: 8,
@@ -88,7 +102,7 @@ const portfolioData = [
     category: 'UI/UX Graphics',
     description: 'Comprehensive design system with component library, style guide, and accessibility standards.',
     tech: ['Figma', 'Design Tokens', 'Prototyping'],
-    results: ['50% faster development', 'Consistent UX', 'WCAG AA']
+    platforms: []
   },
   {
     id: 9,
@@ -97,17 +111,9 @@ const portfolioData = [
     category: 'Automation',
     description: 'Enterprise automation platform streamlining workflows and reducing manual processes.',
     tech: ['Python', 'RPA', 'API Integration'],
-    results: ['70% time saved', 'Zero errors', '24/7 operation']
+    platforms: []
   },
-  {
-    id: 10,
-    image: '/images/Instagram post - 45.png',
-    title: 'SEO Optimization Campaign',
-    category: 'SEO',
-    description: 'Comprehensive SEO strategy driving organic traffic and improving search rankings.',
-    tech: ['Technical SEO', 'Content Strategy', 'Analytics'],
-    results: ['250% traffic increase', 'Top 3 rankings', 'ROI 400%']
-  },
+
 ]
 
 const categories = [
@@ -126,6 +132,16 @@ const stats = [
   { value: '50+', label: 'Industries Served', icon: FiTrendingUp },
   { value: '20+', label: 'Countries', icon: FiUsers },
 ]
+
+const platformIcons = {
+  ios: { icon: FaApple, label: 'iOS' },
+  android: { icon: FaAndroid, label: 'Android' },
+}
+
+const platformStoreBadges = {
+  ios: AppStoreBadge,
+  android: PlayStoreBadge,
+}
 
 export default function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
@@ -280,6 +296,21 @@ export default function PortfolioPage() {
                         </span>
                       </div>
 
+                      {/* Store Icons */}
+                      {Array.isArray(project.platforms) &&
+                        project.platforms.some((platform) => platformStoreBadges[platform?.toLowerCase()]) && (
+                          <div className="absolute top-4 right-4 z-10 flex gap-2">
+                            {project.platforms
+                              .filter((platform) => platformStoreBadges[platform?.toLowerCase()])
+                              .map((platform) => {
+                                const key = platform?.toLowerCase()
+                                const Badge = platformStoreBadges[key]
+                                if (!Badge) return null
+                               
+                              })}
+                          </div>
+                        )}
+
                       {/* View Button on Hover */}
                       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
                         <motion.button
@@ -315,20 +346,49 @@ export default function PortfolioPage() {
                       </div>
 
                       {/* Results */}
-                      <div className="pt-3 border-t border-gray-100">
-                        <div className="flex flex-wrap gap-2.5">
-                          {project.results.map((result, idx) => (
-                            <div key={idx} className="flex items-center gap-1.5">
-                              <FiCheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
-                              <span className="text-xs font-semibold text-gray-700">{result}</span>
-                            </div>
-                          ))}
+                      {Array.isArray(project.results) && project.results.length > 0 && (
+                        <div className="pt-3 border-t border-gray-100">
+                          <div className="flex flex-wrap gap-2.5">
+                            {project.results.map((result, idx) => (
+                              <div key={idx} className="flex items-center gap-1.5">
+                                <FiCheckCircle className="w-4 h-4 text-green-600 flex-shrink-0" />
+                                <span className="text-xs font-semibold text-gray-700">{result}</span>
+                              </div>
+                            ))}
+                          </div>
                         </div>
+                      )}
+
+                      <div className="mt-5">
+                        <Link
+                          href={project.caseStudy || '/contact'}
+                          className="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-primary-900 border border-primary-200 rounded-xl bg-primary-50 hover:bg-primary-100 hover:border-primary-300 transition-all duration-300"
+                        >
+                          <span>View Case Study</span>
+                          <FiExternalLink className="w-4 h-4" />
+                        </Link>
                       </div>
                     </div>
 
                     {/* Decorative Elements */}
-                    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-100/30 to-transparent rounded-bl-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
+                    {/* Platform Icons bottom-right */}
+                    {Array.isArray(project.platforms) && project.platforms.length > 0 && (
+                      <div className="absolute bottom-4 right-4 flex gap-2">
+                        {project.platforms.map((platform) => {
+                          const key = platform?.toLowerCase()
+                          const Badge = platformStoreBadges[key]
+                          if (!Badge) return null
+                          return (
+                            <div
+                              key={`${project.id}-${key}-corner`}
+                              className="w-9 h-9"
+                            >
+                              <Badge className="w-9 h-9" />
+                            </div>
+                          )
+                        })}
+                      </div>
+                    )}
                   </div>
                 </motion.div>
               ))}
@@ -349,7 +409,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white relative overflow-hidden">
+      <section className="py-16 bg-[#1239b0] text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0" style={{
             backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)',
@@ -363,7 +423,7 @@ export default function PortfolioPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-3">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-3 text-white">
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-white/90 mb-6 leading-relaxed">

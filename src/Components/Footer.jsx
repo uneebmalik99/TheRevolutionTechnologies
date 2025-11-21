@@ -27,8 +27,7 @@ export default function Footer() {
 
   const socialLinks = [
     { href: 'https://www.facebook.com/TheRevolutionTechnologies', icon: FaFacebook, label: 'Facebook' },
-    { href: 'https://www.instagram.com', icon: FaInstagram, label: 'Instagram' },
-    { href: 'https://www.twitter.com', icon: FaTwitter, label: 'Twitter' },
+   
     { href: 'https://www.linkedin.com/company/therevolutiontechnologies/', icon: FaLinkedin, label: 'LinkedIn' },
   ]
 
@@ -106,10 +105,10 @@ export default function Footer() {
                   <MdEmail className="w-5 h-5 text-accent-yellow" />
                 </div>
                 <a
-                  href="mailto:info@therevolutiontechnologies.tech"
+                  href="mailto:info@therevolutiontechnologies.io"
                   className="text-gray-300 hover:text-accent-yellow transition-colors text-sm font-medium"
                 >
-                  info@therevolutiontechnologies.tech
+                  info@therevolutiontechnologies.io
                 </a>
               </div>
               <div className="flex items-center space-x-4 group">
@@ -127,7 +126,7 @@ export default function Footer() {
                     href="tel:+923317766777"
                     className="block text-gray-300 hover:text-accent-yellow transition-colors text-sm font-medium"
                   >
-                    +92-331-7766-777
+                    0349-076-4229
                   </a>
                 </div>
               </div>

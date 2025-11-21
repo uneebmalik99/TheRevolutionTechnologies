@@ -41,7 +41,7 @@ const jobData = [
       'Excellent communication skills'
     ],
     icon: FiCode,
-    color: 'from-blue-500 to-cyan-500'
+    color: 'bg-[#1239b0]'
   },
   {
     id: 2,
@@ -59,7 +59,7 @@ const jobData = [
       'Portfolio of published apps'
     ],
     icon: FiCode,
-    color: 'from-purple-500 to-pink-500'
+    color: 'bg-[#1239b0]'
   },
   {
     id: 3,
@@ -77,7 +77,7 @@ const jobData = [
       'Experience with prototyping tools'
     ],
     icon: FiTarget,
-    color: 'from-orange-500 to-red-500'
+    color: 'bg-[#1239b0]'
   },
 ]
 
@@ -124,12 +124,7 @@ const benefits = [
     description: 'Invest in your professional development',
     gradient: 'from-teal-500 to-cyan-500'
   },
-  {
-    icon: FiGlobe,
-    title: 'Remote Options',
-    description: 'Work from anywhere flexibility',
-    gradient: 'from-violet-500 to-purple-500'
-  },
+
 ]
 
 export default function CareersPage() {
@@ -166,7 +161,7 @@ export default function CareersPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold uppercase tracking-wider mb-6"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold uppercase tracking-wider mb-6 mt-10"
               >
                 <FiBriefcase className="w-4 h-4 text-accent-yellow" />
                 Join Our Team
@@ -229,8 +224,8 @@ export default function CareersPage() {
                     className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center"
                   >
                     <Icon className="w-8 h-8 text-accent-yellow mx-auto mb-3" />
-                    <div className="text-3xl font-black mb-1">{stat.value}</div>
-                    <div className="text-xs uppercase tracking-wider text-white/70">{stat.label}</div>
+                    <div className="text-3xl font-black text-white mb-1">{stat.value}</div>
+                    <div className="text-xs uppercase tracking-wider text-white/80">{stat.label}</div>
                   </motion.div>
                 )
               })}
@@ -329,7 +324,7 @@ export default function CareersPage() {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="group relative"
                   >
-                    <div className={`bg-gradient-to-br ${job.color} rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500`}>
+                    <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                       <button
                         onClick={() => setSelectedJob(isOpen ? null : job.id)}
                         className="w-full p-8 text-left"
@@ -337,30 +332,30 @@ export default function CareersPage() {
                         <div className="flex items-start justify-between">
                           <div className="flex-1">
                             <div className="flex items-center gap-4 mb-4">
-                              <div className="p-4 bg-white/20 backdrop-blur-sm rounded-2xl">
-                                <Icon className="w-6 h-6 text-white" />
+                              <div className="p-4 bg-primary-50 rounded-2xl border border-primary-100">
+                                <Icon className="w-6 h-6 text-primary-900" />
                               </div>
                               <div>
-                                <h3 className="text-3xl font-black text-white mb-2">
+                                <h3 className="text-3xl font-black text-primary-900 mb-2">
                                   {job.title}
                                 </h3>
-                                <div className="flex flex-wrap items-center gap-4 text-white/90">
+                                <div className="flex flex-wrap items-center gap-4 text-gray-600">
                                   <div className="flex items-center gap-2">
-                                    <FiMapPin className="w-4 h-4" />
+                                    <FiMapPin className="w-4 h-4 text-primary-700" />
                                     <span className="font-semibold">{job.location}</span>
                                   </div>
                                   <div className="flex items-center gap-2">
-                                    <FiClock className="w-4 h-4" />
+                                    <FiClock className="w-4 h-4 text-primary-700" />
                                     <span className="font-semibold">{job.type}</span>
                                   </div>
                                   <div className="flex items-center gap-2">
-                                    <FiBriefcase className="w-4 h-4" />
+                                    <FiBriefcase className="w-4 h-4 text-primary-700" />
                                     <span className="font-semibold">{job.department}</span>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <p className="text-lg text-white/90 ml-20">
+                            <p className="text-lg text-gray-600 ml-20">
                               {job.shortDesc}
                             </p>
                           </div>
@@ -369,8 +364,8 @@ export default function CareersPage() {
                             transition={{ duration: 0.3 }}
                             className="flex-shrink-0 ml-4"
                           >
-                            <div className="p-3 bg-white/20 backdrop-blur-sm rounded-xl">
-                              <FiChevronDown className="w-6 h-6 text-white" />
+                            <div className="p-3 bg-primary-50 rounded-xl border border-primary-100">
+                              <FiChevronDown className="w-6 h-6 text-primary-900" />
                             </div>
                           </motion.div>
                         </div>

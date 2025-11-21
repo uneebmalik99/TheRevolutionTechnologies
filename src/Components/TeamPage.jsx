@@ -14,6 +14,15 @@ import {
 
 const teamMembers = [
   {
+    image: '/images/uneeb.png',
+    name: 'Uneeb Ghazanfer',
+    designation: 'Chief Executive Officer',
+    role: 'Leadership',
+    icon: '/images/ceo.png',
+    bio: 'Driving business growth and excellence',
+    email: 'uneebmalik99@gmail.com',
+  },
+  {
     image: '/images/haseeb.png',
     name: 'Haseeb Malik',
     designation: 'Managing Director',
@@ -21,102 +30,32 @@ const teamMembers = [
     icon: '/images/md.png',
     bio: 'Leading innovation and strategic vision',
   },
-  {
-    image: '/images/uneeb.png',
-    name: 'Uneeb Ghazanfer',
-    designation: 'Chief Executive Officer',
-    role: 'Leadership',
-    icon: '/images/ceo.png',
-    bio: 'Driving business growth and excellence',
-  },
+
   {
     image: "/images/shifa.jpeg",
     name: 'Shifa Masood',
     designation: "MERN Stack Developer",
-    role: 'Development',
+    role: 'Team',
     icon: "/images/web_developer.png",
     bio: 'Building scalable web solutions',
   },
   {
-    image: '/images/awais.png',
-    name: 'Awais',
-    designation: 'Business Developer',
-    role: 'Business',
-    icon: '/images/bd.png',
-    bio: 'Expanding business opportunities',
+    image: "/images/asif.png",
+    name: 'Muhammad Asif',
+    designation: "MERN Stack Developer",
+    role: 'Team',
+    icon: "/images/web_developer.png",
+    bio: 'Building scalable web solutions',
   },
   {
-    image: '/images/saqib.png',
-    name: 'Saqib',
-    designation: 'SEO Specialist',
-    role: 'Marketing',
-    icon: '/images/seo.png',
-    bio: 'Optimizing digital presence',
+    image: "/images/razik.jpeg",
+    name: 'Abdul Razik',
+    designation: "React Native Developer",
+    role: 'Team',
+    icon: "/images/web_developer.png",
+    bio: 'Building scalable Application solutions',
   },
-  {
-    image: '/images/rimsha.png',
-    name: 'Rimsha Javid',
-    designation: 'UX/UI & Graphic Designer',
-    role: 'Design',
-    icon: '/images/graphic.png',
-    bio: 'Creating beautiful user experiences',
-  },
-  {
-    image: '/images/jawad.png',
-    name: 'Jawad Khan',
-    designation: 'UX/UI & Graphic Designer',
-    role: 'Design',
-    icon: '/images/graphic.png',
-    bio: 'Designing intuitive interfaces',
-  },
-  {
-    image: '/images/falak.png',
-    name: 'Falak Maraj Mughal',
-    designation: 'Web Developer',
-    role: 'Development',
-    icon: '/images/web_developer.png',
-    bio: 'Crafting modern web applications',
-  },
-  {
-    image: '/images/umera.png',
-    name: 'Umme Umera',
-    designation: 'Content Writer',
-    role: 'Content',
-    icon: '/images/content_writer.png',
-    bio: 'Telling compelling stories',
-  },
-  {
-    image: '/images/aamir_yasin.png',
-    name: 'Aamir Yasin',
-    designation: 'Web Developer',
-    role: 'Development',
-    icon: '/images/web_developer.png',
-    bio: 'Developing robust solutions',
-  },
-  {
-    image: '/images/usama.png',
-    name: 'Muhammad Usama',
-    designation: 'Web Developer',
-    role: 'Development',
-    icon: '/images/web_developer.png',
-    bio: 'Building innovative platforms',
-  },
-  {
-    image: '/images/ayesha.png',
-    name: 'Ayesha Zia',
-    designation: 'Content Writer',
-    role: 'Content',
-    icon: '/images/content_writer.png',
-    bio: 'Creating engaging content',
-  },
-  {
-    image: '/images/hamid.png',
-    name: 'Hamid Nasir',
-    designation: 'Business Developer',
-    role: 'Business',
-    icon: '/images/bd.png',
-    bio: 'Forging strategic partnerships',
-  },
+  
 ]
 
 // Separate leadership
@@ -293,14 +232,19 @@ function LeaderCard({ member, index }) {
           </p>
           
           {/* Social Links */}
-          <div className="flex justify-center gap-3">
-            <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary-900 hover:text-white transition-colors">
-              <FiLinkedin className="w-4 h-4" />
-            </a>
-            <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary-900 hover:text-white transition-colors">
-              <FiMail className="w-4 h-4" />
-            </a>
-          </div>
+          {member.name === 'Uneeb Ghazanfer' && (
+            <div className="flex justify-center gap-3">
+              <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-primary-900 hover:text-white transition-colors">
+                <FiLinkedin className="w-4 h-4" />
+              </a>
+              <a
+                href={member.email ? `mailto:${member.email}` : '#'}
+                className="p-2 bg-gray-100 rounded-full hover:bg-primary-900 hover:text-white transition-colors"
+              >
+                <FiMail className="w-4 h-4" />
+              </a>
+            </div>
+          )}
         </div>
 
         {/* Badge */}
@@ -375,24 +319,26 @@ function TeamMemberCard({ member, index, onHover, onLeave, isHovered }) {
           </motion.p>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-2">
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              className="p-1.5 bg-gray-50 rounded-full hover:bg-primary-900 hover:text-white transition-colors opacity-0 group-hover:opacity-100"
-            >
-              <FiLinkedin className="w-3.5 h-3.5" />
-            </motion.a>
-            <motion.a
-              href="#"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.9 }}
-              className="p-1.5 bg-gray-50 rounded-full hover:bg-primary-900 hover:text-white transition-colors opacity-0 group-hover:opacity-100"
-            >
-              <FiMail className="w-3.5 h-3.5" />
-            </motion.a>
-          </div>
+          {member.name === 'Uneeb Ghazanfer' && (
+            <div className="flex justify-center gap-2">
+              <motion.a
+                href="#"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                className="p-1.5 bg-gray-50 rounded-full hover:bg-primary-900 hover:text-white transition-colors opacity-0 group-hover:opacity-100"
+              >
+                <FiLinkedin className="w-3.5 h-3.5" />
+              </motion.a>
+              <motion.a
+                href={member.email ? `mailto:${member.email}` : '#'}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                className="p-1.5 bg-gray-50 rounded-full hover:bg-primary-900 hover:text-white transition-colors opacity-0 group-hover:opacity-100"
+              >
+                <FiMail className="w-3.5 h-3.5" />
+              </motion.a>
+            </div>
+          )}
         </div>
 
         {/* Hover gradient overlay */}

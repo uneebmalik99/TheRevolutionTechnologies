@@ -10,8 +10,11 @@ import {
   FiClock,
   FiMessageCircle,
   FiArrowRight,
-  FiCheckCircle
+  FiCheckCircle,
+  FiUser,
+  FiShield
 } from 'react-icons/fi'
+import { FaWhatsapp } from 'react-icons/fa'
 import Map from './Map'
 
 export default function ContactPage() {
@@ -43,7 +46,11 @@ export default function ContactPage() {
     setIsSubmitting(true)
     const emailBody = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nSubject: ${formData.subject}\nMessage: ${formData.message}`
     const subject = formData.subject || 'Contact Form Submission'
-    const mailtoLink = `mailto:info@therevolutiontechnologies.tech?subject=${encodeURIComponent(
+    const recipients = [
+      'info@therevolutiontechnologies.io',
+      'uneebmalik99@gmail.com'
+    ].join(',')
+    const mailtoLink = `mailto:${recipients}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(emailBody)}`
 
@@ -71,21 +78,21 @@ export default function ContactPage() {
     {
       icon: FiMail,
       title: 'Email Us',
-      details: ['info@therevolutiontechnologies.tech'],
+      details: ['info@therevolutiontechnologies.io'],
       color: 'from-purple-500 to-pink-500',
-      link: 'mailto:info@therevolutiontechnologies.tech'
+      link: 'mailto:info@therevolutiontechnologies.io'
     },
     {
       icon: FiPhone,
       title: 'Call Us',
-      details: ['051-611-2452', '+92-331-7766-777'],
+      details: ['051-611-2452', '0349-076-4229'],
       color: 'from-green-500 to-emerald-500',
       link: 'tel:+92516112452'
     },
     {
       icon: FiClock,
       title: 'Business Hours',
-      details: ['Monday - Friday: 9:00 AM - 6:00 PM', 'Saturday: 10:00 AM - 4:00 PM'],
+      details: ['Monday - Friday: 11:00 AM - 12:30 AM'],
       color: 'from-orange-500 to-red-500',
       link: null
     },
@@ -106,7 +113,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-2xl text-gray-600 leading-relaxed">
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Share your project goals or questions and our team will get back to you right away.
             </p>
           </motion.div>
         </div>
@@ -159,7 +166,7 @@ export default function ContactPage() {
       {/* Form and Map Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -199,7 +206,7 @@ export default function ContactPage() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Enter your name"
                       required
                       className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-primary-900 focus:ring-4 focus:ring-primary-100 outline-none transition-all bg-gray-50 focus:bg-white"
                     />
@@ -213,7 +220,7 @@ export default function ContactPage() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@example.com"
+                      placeholder="Enter your email"
                       required
                       className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-primary-900 focus:ring-4 focus:ring-primary-100 outline-none transition-all bg-gray-50 focus:bg-white"
                     />
@@ -230,7 +237,7 @@ export default function ContactPage() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+92 300 1234567"
+                      placeholder=" Enter your phone number"
                       className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-primary-900 focus:ring-4 focus:ring-primary-100 outline-none transition-all bg-gray-50 focus:bg-white"
                     />
                   </div>
@@ -284,6 +291,48 @@ export default function ContactPage() {
                   )}
                 </motion.button>
               </form>
+
+              {/* Additional Info under Form */}
+              <div className="mt-10 grid gap-4 sm:grid-cols-2">
+                {[
+                  {
+                    title: 'Response Time',
+                    description: 'We reply within one business day with next steps.',
+                    icon: FiClock,
+                  },
+                  {
+                    title: 'Project Discovery Call',
+                    description: 'Schedule a 30-minute consultation after we review your message.',
+                    icon: FiMessageCircle,
+                  },
+                  {
+                    title: 'Dedicated Account Manager',
+                    description: 'A single point of contact guides you through the process.',
+                    icon: FiUser,
+                  },
+                  {
+                    title: 'Secure & Confidential',
+                    description: 'All shared information is kept private and secure.',
+                    icon: FiShield,
+                  },
+                ].map((item) => {
+                  const Icon = item.icon
+                  return (
+                    <div
+                      key={item.title}
+                      className="flex gap-3 p-4 rounded-2xl border border-gray-100 bg-gray-50"
+                    >
+                      <div className="p-3  ">
+                        <Icon className="w-5 h-5 text-primary-900" />
+                      </div>
+                      <div>
+                        <h4 className="text-sm font-bold text-primary-900">{item.title}</h4>
+                        <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
             </motion.div>
 
             {/* Map Section */}
@@ -328,11 +377,18 @@ export default function ContactPage() {
                     <span className="font-semibold">051-611-2452</span>
                   </a>
                   <a
-                    href="mailto:info@therevolutiontechnologies.tech"
+                    href="tel:+92490764229"
+                    className="flex items-center gap-3 p-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors"
+                  >
+                    <FiPhone className="w-5 h-5 text-accent-yellow" />
+                    <span className="font-semibold">0349-076-4229</span>
+                  </a>
+                  <a
+                    href="mailto:info@therevolutiontechnologies.io"
                     className="flex items-center gap-3 p-3 bg-white/10 backdrop-blur-sm rounded-xl hover:bg-white/20 transition-colors"
                   >
                     <FiMail className="w-5 h-5 text-accent-yellow" />
-                    <span className="font-semibold">info@therevolutiontechnologies.tech</span>
+                    <span className="font-semibold">info@therevolutiontechnologies.io</span>
                   </a>
                 </div>
               </div>
@@ -342,7 +398,19 @@ export default function ContactPage() {
       </section>
 
       {/* Additional Info Section */}
-      <section className="py-16 bg-white">
+      <section className="relative py-16 bg-white">
+        <motion.a
+          href="https://wa.me/923490764229"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          initial={{ y: 0 }}
+          animate={{ y: [0, -12, 0] }}
+          transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
+          className="flex items-center justify-center w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-105 hover:shadow-[#25D366]/60 transition-all duration-300 fixed right-4 bottom-12 lg:right-8 lg:bottom-12 z-40 border-4 border-white"
+        >
+          <FaWhatsapp className="w-6 h-6 lg:w-7 lg:h-7" />
+        </motion.a>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <motion.div

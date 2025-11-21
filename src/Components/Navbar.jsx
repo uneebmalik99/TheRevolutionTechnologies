@@ -24,7 +24,7 @@ export default function Navbar() {
     { href: '/services', label: 'Services' },
     { href: '/portfolio', label: 'Portfolio' },
     { href: '/team', label: 'Our Team' },
-    { href: '/company', label: 'Company' },
+  
     { href: '/careers', label: 'Careers' },
     { href: '/contact', label: 'Contact Us' },
   ]

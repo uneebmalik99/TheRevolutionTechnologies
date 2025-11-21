@@ -32,14 +32,7 @@ const services = [
     animation: mobileAppAnimation,
     color: 'from-purple-500 to-pink-500',
   },
-  {
-    id: 'seo',
-    title: 'SEO',
-    description: 'On-Page SEO, Off-Page SEO, Technical SEO',
-    features: ['On-Page SEO', 'Off-Page SEO', 'Technical SEO'],
-    animation: seoAnimation,
-    color: 'from-green-500 to-emerald-500',
-  },
+  
   {
     id: 'uiux',
     title: 'UI/UX Graphic Design',
@@ -63,6 +56,18 @@ const services = [
     features: ['Custom ERP Solutions', 'Enterprise Software', 'Tailored Applications'],
     animation: customSoftwareDevelopmentAnimation,
     color: 'from-teal-500 to-cyan-500',
+  },
+  {
+    id: 'ai',
+    title: 'AI Development',
+    description: 'Machine Learning, Generative AI, Intelligent Automation',
+    features: [
+      'Machine learning model development',
+      'Generative AI assistants and copilots',
+      'Predictive analytics & intelligent automation'
+    ],
+    animation: customSoftwareDevelopmentAnimation,
+    color: 'from-yellow-500 to-amber-500',
   },
 ]
 

@@ -134,7 +134,11 @@ const testimonials = [
   },
 ]
 
-const partners = ['Google', 'AWS', 'Meta', 'Adobe', 'Figma', 'Shopify']
+const partners = [
+  { name: 'Mesob Store', image: '/images/meso.jpg' },
+  { name: 'AFG Shipping', image: '/images/afg.webp' },
+  { name: '3Line Shipping', image: '/images/3line.webp' },
+]
 
 const whyChooseUs = [
   {
@@ -316,32 +320,34 @@ function HeroSection() {
 
 function PartnerBand() {
   return (
-    <section className="py-12 bg-gradient-to-b from-white to-gray-50 border-b border-gray-100 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-sm uppercase tracking-[0.4em] text-gray-500 text-center mb-8 font-semibold"
+    <section className="py-10 bg-gradient-to-b from-white to-gray-50 border-b border-gray-100 overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex-row ">
+        <marquee
+          behavior="scroll"
+          direction="left"
+          scrollamount="6"
+          className="flex gap-10 sm:gap-16 items-center flex-row "
         >
-          Trusted by Industry Leaders
-        </motion.div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center text-center">
-          {partners.map((name, index) => (
-            <motion.div
-              key={name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ scale: 1.15, y: -8 }}
-              className="text-xl font-bold text-gray-400 hover:text-primary-900 transition-all duration-300 cursor-default"
-            >
-              {name}
-            </motion.div>
+          <div className="flex-row flex">
+          {partners.map((partner) => (
+            <div key={partner.name} className="flex items-center gap-4 sm:gap-6 mr-10 sm:mr-16 flex-row">
+              <div className="relative w-10 h-10 sm:w-14 sm:h-14 rounded-2xl bg-white shadow-md border border-gray-100 overflow-hidden flex-shrink-0">
+                <Image
+                  src={partner.image}
+                  alt={partner.name}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                />
+              </div>
+              <div className="text-sm sm:text-base font-semibold text-primary-900 whitespace-nowrap">
+                {partner.name}
+              </div>
+            </div>
           ))}
-        </div>
+          </div>
+         
+        </marquee>
       </div>
     </section>
   )

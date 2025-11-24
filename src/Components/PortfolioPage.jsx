@@ -20,22 +20,15 @@ import {
 import { FaAndroid, FaApple } from 'react-icons/fa'
 
 const AppStoreBadge = ({ className = 'w-6 h-6' }) => (
-  <svg viewBox="0 0 40 40" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="appstoreGradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#4facfe" />
-        <stop offset="1" stopColor="#00f2fe" />
-      </linearGradient>
-    </defs>
-    <rect width="40" height="40" rx="12" fill="url(#appstoreGradient)" />
-    <path
-      d="M12 27h16M15 13l10 14M25 13l-10 14"
-      stroke="white"
-      strokeWidth="2.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+  <div className={`relative ${className}`}>
+    <Image
+      src="/images/ios.png"
+      alt="App Store"
+      fill
+      className="object-contain"
+      unoptimized
     />
-  </svg>
+  </div>
 )
 
 const PlayStoreBadge = ({ className = 'w-6 h-6' }) => (
@@ -143,6 +136,55 @@ const platformStoreBadges = {
   android: PlayStoreBadge,
 }
 
+const featuredProducts = [
+  {
+    id: 'a1-global',
+    badge: 'Featured Product',
+    title: 'A1 Global Logistics Suite',
+    description:
+      'A unified command center for international shipping teams. The platform synchronizes fleet tracking, warehouse inventory, and customer communication across iOS, Android, and web.',
+    highlights: [
+      '42% faster dispatch planning',
+      'Real-time visibility for 150+ routes',
+      'Integrated customer portal & billing',
+    ],
+    metrics: [
+      { label: 'Active Fleets', value: '85+' },
+      { label: 'Markets Served', value: '27' },
+      { label: 'Platform Uptime', value: '99.9%' },
+    ],
+    image: '/images/ios1.png',
+    cta: {
+      label: 'Explore Case Study',
+      href: '/contact',
+    },
+    theme: 'dark',
+  },
+  {
+    id: 'envoy',
+    badge: 'Newly Launched',
+    title: 'Envoy Hotel',
+    description:
+      'A comprehensive hotel management platform that unifies booking systems, guest services, and property operations. Guests enjoy seamless experiences while hotel staff receive AI-powered insights for personalized service.',
+    highlights: [
+      'Streamlined booking and check-in process',
+      'Real-time room availability and inventory management',
+      'Personalized guest experiences powered by AI insights',
+    ],
+    metrics: [
+      { label: 'Properties Live', value: '42' },
+      { label: 'Monthly Bookings', value: '120K' },
+      { label: 'Guest Satisfaction', value: '+67%' },
+    ],
+    images: ['/images/ennvoy.png', '/images/ennvoy1.png', '/images/ennvoy2.png'],
+    cta: {
+      label: 'View Envoy Demo',
+      href: 'https://www.envoyhotel.com/',
+    },
+    theme: 'light',
+  },
+]
+
 export default function PortfolioPage() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   const [mounted, setMounted] = useState(false)
@@ -217,6 +259,126 @@ export default function PortfolioPage() {
               })}
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Featured Products */}
+      <section className="py-12 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+          {featuredProducts.map((product, idx) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className={`grid lg:grid-cols-2 gap-10 items-center rounded-4xl p-6 md:p-10 shadow-2xl ${
+                product.theme === 'dark'
+                  ? 'bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white'
+                  : 'bg-gradient-to-br from-white to-primary-50 text-primary-900 border border-gray-100'
+              }`}
+            >
+              <div>
+                <span
+                  className={`inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest mb-4 ${
+                    product.theme === 'dark'
+                      ? 'bg-white/15 border border-white/30 text-white/90'
+                      : 'bg-primary-100 text-primary-900 border border-primary-200'
+                  }`}
+                >
+                  <FiAward className="w-4 h-4 text-accent-yellow" />
+                  {product.badge}
+                </span>
+                <h2 className="text-3xl md:text-4xl font-black mb-4">{product.title}</h2>
+                <p className={`${product.theme === 'dark' ? 'text-white/80' : 'text-gray-700'} leading-relaxed mb-6`}>
+                  {product.description}
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  {product.highlights.map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <div
+                        className={`w-2 h-2 rounded-full ${
+                          product.theme === 'dark' ? 'bg-accent-yellow' : 'bg-primary-900'
+                        } mt-2`}
+                      ></div>
+                      <p className={`${product.theme === 'dark' ? 'text-white/85' : 'text-gray-700'} text-sm md:text-base`}>
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="grid grid-cols-3 gap-4 mb-6">
+                  {product.metrics.map((metric) => (
+                    <div
+                      key={metric.label}
+                      className={`rounded-2xl text-center py-3 px-2 ${
+                        product.theme === 'dark'
+                          ? 'bg-white/10 border border-white/20 text-white'
+                          : 'bg-white border border-primary-100 text-primary-900'
+                      }`}
+                    >
+                      <div className="text-2xl font-black">{metric.value}</div>
+                      <div className="text-xs uppercase tracking-wider opacity-80">{metric.label}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <Link
+                  href={product.cta.href}
+                  className={`inline-flex items-center gap-3 font-semibold px-6 py-3 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ${
+                    product.theme === 'dark'
+                      ? 'bg-white text-primary-900'
+                      : 'bg-primary-900 text-white'
+                  }`}
+                >
+                  {product.cta.label}
+                  <FiArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: idx * 0.15 + 0.2 }}
+                className="relative w-full"
+              >
+                {product.theme === 'dark' && <div className="absolute inset-0 bg-accent-yellow/20 blur-3xl rounded-3xl"></div>}
+                <div
+                  className={`relative rounded-[30px] overflow-hidden shadow-2xl ${
+                    product.theme === 'dark' ? 'border border-white/10' : 'border border-gray-100 bg-white'
+                  }`}
+                >
+                  {product.images ? (
+                    <div className="grid grid-cols-3 gap-3 p-4 bg-white">
+                      {product.images.map((image, imageIdx) => (
+                        <div key={image} className="relative h-32 rounded-2xl overflow-hidden border border-gray-200">
+                          <Image
+                            src={image}
+                            alt={`${product.title} screen ${imageIdx + 1}`}
+                            fill
+                            className="object-cover"
+                            unoptimized
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <Image
+                      src={product.image}
+                      alt={product.title}
+                      width={900}
+                      height={700}
+                      className="object-cover"
+                      unoptimized
+                    />
+                  )}
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
         </div>
       </section>
 

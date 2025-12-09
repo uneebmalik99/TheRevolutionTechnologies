@@ -55,6 +55,14 @@ const teamMembers = [
     icon: "/images/web_developer.png",
     bio: 'Building scalable Application solutions',
   },
+  {
+    image: "/images/fa.jpeg",
+    name: 'Farhan',
+    designation: "React Native Developer",
+    role: 'Team',
+    icon: "/images/web_developer.png",
+    bio: 'Building scalable Application solutions',
+  },
   
 ]
 

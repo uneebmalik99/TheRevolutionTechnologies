@@ -31,10 +31,10 @@ export default function Fab() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-primary-900 hover:bg-primary-800 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group hover:scale-110"
+          className="fixed bottom-6 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full bg-primary-900 text-white shadow-lg transition-colors duration-300 hover:bg-primary-800 lg:right-8"
           aria-label="Scroll to top"
         >
-          <FaArrowUp className="w-5 h-5 group-hover:animate-bounce" />
+          <FaArrowUp className="h-4 w-4" />
         </button>
       )}
     </>

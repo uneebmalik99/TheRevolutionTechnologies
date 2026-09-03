@@ -1,16 +1,13 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { 
-  FiMapPin, 
-  FiBriefcase, 
+import {
+  FiMapPin,
+  FiBriefcase,
   FiChevronDown,
   FiCode,
   FiTarget,
-  FiSend,
-  FiMail,
-  FiArrowRight,
   FiCheckCircle,
   FiClock,
   FiTrendingUp,
@@ -19,10 +16,15 @@ import {
   FiHeart,
   FiZap,
   FiDollarSign,
-  FiCoffee,
   FiBookOpen,
-  FiGlobe
 } from 'react-icons/fi'
+import PageHeader from '@/components/ui/PageHeader'
+import Section from '@/components/ui/Section'
+import CtaBand from '@/components/ui/CtaBand'
+import Reveal from '@/components/ui/Reveal'
+import Button from '@/components/ui/Button'
+import FAQ from '@/components/FAQ'
+import { hiringFaqs } from '@/components/faqData'
 
 const jobData = [
   {
@@ -32,16 +34,16 @@ const jobData = [
     type: 'Full-time',
     department: 'Development',
     shortDesc: 'We are looking for a skilled Full Stack Developer.',
-    fullDesc: 'We are looking for a Full Stack Developer skilled in React, Node.js, and modern frameworks. You will collaborate with designers and developers to build high-quality web applications.',
+    fullDesc:
+      'We are looking for a Full Stack Developer skilled in React, Node.js, and modern frameworks. You will collaborate with designers and developers to build high-quality web applications.',
     requirements: [
       '3+ years of experience in web development',
       'Proficiency in React, Node.js, and modern JavaScript',
       'Experience with databases (MongoDB, PostgreSQL)',
       'Strong problem-solving skills',
-      'Excellent communication skills'
+      'Excellent communication skills',
     ],
     icon: FiCode,
-    color: 'bg-[#1239b0]'
   },
   {
     id: 2,
@@ -50,16 +52,16 @@ const jobData = [
     type: 'Full-time',
     department: 'Development',
     shortDesc: 'We are looking for talented Mobile App Developers.',
-    fullDesc: "You should have experience in Flutter or React Native. You'll work on developing apps that deliver exceptional user experiences across Android and iOS.",
+    fullDesc:
+      "You should have experience in Flutter or React Native. You'll work on developing apps that deliver exceptional user experiences across Android and iOS.",
     requirements: [
       '2+ years of mobile app development experience',
       'Proficiency in Flutter or React Native',
       'Experience with native iOS/Android development',
       'Understanding of mobile UI/UX principles',
-      'Portfolio of published apps'
+      'Portfolio of published apps',
     ],
     icon: FiCode,
-    color: 'bg-[#1239b0]'
   },
   {
     id: 3,
@@ -68,407 +70,180 @@ const jobData = [
     type: 'Full-time',
     department: 'Design',
     shortDesc: 'We are hiring creative UI/UX designers.',
-    fullDesc: 'Your role will focus on creating engaging, user-friendly interfaces. Experience with Figma, Adobe XD, and modern design trends is a plus.',
+    fullDesc:
+      'Your role will focus on creating engaging, user-friendly interfaces. Experience with Figma, Adobe XD, and modern design trends is a plus.',
     requirements: [
       '2+ years of UI/UX design experience',
       'Proficiency in Figma, Adobe XD, or Sketch',
       'Strong portfolio showcasing design skills',
       'Understanding of user-centered design principles',
-      'Experience with prototyping tools'
+      'Experience with prototyping tools',
     ],
     icon: FiTarget,
-    color: 'bg-[#1239b0]'
   },
 ]
 
 const benefits = [
-  {
-    icon: FiTrendingUp,
-    title: 'Career Growth',
-    description: 'Continuous learning and clear progression paths',
-    gradient: 'from-blue-500 to-cyan-500'
-  },
-  {
-    icon: FiZap,
-    title: 'Innovative Projects',
-    description: 'Work on cutting-edge technologies',
-    gradient: 'from-purple-500 to-pink-500'
-  },
-  {
-    icon: FiUsers,
-    title: 'Great Team',
-    description: 'Collaborate with talented professionals',
-    gradient: 'from-green-500 to-emerald-500'
-  },
-  {
-    icon: FiAward,
-    title: 'Recognition',
-    description: 'Your contributions are valued',
-    gradient: 'from-yellow-500 to-orange-500'
-  },
-  {
-    icon: FiHeart,
-    title: 'Work-Life Balance',
-    description: 'Flexible hours and supportive environment',
-    gradient: 'from-pink-500 to-rose-500'
-  },
-  {
-    icon: FiDollarSign,
-    title: 'Competitive Salary',
-    description: 'Attractive compensation packages',
-    gradient: 'from-indigo-500 to-blue-500'
-  },
-  {
-    icon: FiBookOpen,
-    title: 'Learning Budget',
-    description: 'Invest in your professional development',
-    gradient: 'from-teal-500 to-cyan-500'
-  },
-
+  { icon: FiTrendingUp, title: 'Career Growth', description: 'Continuous learning and clear progression paths.' },
+  { icon: FiZap, title: 'Innovative Projects', description: 'Work on cutting-edge technologies.' },
+  { icon: FiUsers, title: 'Great Team', description: 'Collaborate with talented professionals.' },
+  { icon: FiAward, title: 'Recognition', description: 'Your contributions are valued.' },
+  { icon: FiHeart, title: 'Work-Life Balance', description: 'Flexible hours and a supportive environment.' },
+  { icon: FiDollarSign, title: 'Competitive Salary', description: 'Attractive compensation packages.' },
+  { icon: FiBookOpen, title: 'Learning Budget', description: 'Invest in your professional development.' },
+  { icon: FiClock, title: 'Modern Tooling', description: 'The equipment and software you need to do great work.' },
 ]
 
 export default function CareersPage() {
   const [selectedJob, setSelectedJob] = useState(null)
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) return null
 
   return (
-    <div className="min-h-screen bg-white">
-      {/* Hero Section with Split Design */}
-      <section className="relative min-h-[600px] flex items-center overflow-hidden bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)',
-            backgroundSize: '60px 60px'
-          }}></div>
+    <div className="bg-white">
+      <PageHeader
+        eyebrow="Join our team"
+        title="Build your dream career"
+        description="Join a team of innovators, creators, and problem-solvers. Work on exciting projects, grow your skills, and make a real impact."
+      >
+        <div className="flex flex-wrap justify-center gap-3">
+          <Button href="#jobs" variant="light" icon={false}>
+            View openings
+          </Button>
+          <Button href="/contact" variant="outlineLight" icon={false}>
+            Send resume
+          </Button>
         </div>
-        
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Text */}
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-white"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-sm font-semibold uppercase tracking-wider mb-6 mt-10"
-              >
-                <FiBriefcase className="w-4 h-4 text-accent-yellow" />
-                Join Our Team
-              </motion.div>
-              
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
-                Build Your
-                <span className="block bg-gradient-to-r from-accent-yellow via-yellow-200 to-accent-yellow bg-clip-text text-transparent">
-                  Dream Career
-                </span>
-              </h1>
-              
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed mb-8">
-                Join a team of innovators, creators, and problem-solvers. Work on exciting projects, grow your skills, and make a real impact.
-              </p>
+      </PageHeader>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex flex-wrap gap-4"
-              >
-                <a
-                  href="#jobs"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-accent-yellow text-primary-900 font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:shadow-2xl hover:shadow-accent-yellow/50"
-                >
-                  <span>View Openings</span>
-                  <FiArrowRight className="w-5 h-5" />
-                </a>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300"
-                >
-                  <FiMail className="w-5 h-5" />
-                  <span>Send Resume</span>
-                </a>
-              </motion.div>
-            </motion.div>
+      {/* Benefits */}
+      <Section
+        bg="gray"
+        align="center"
+        eyebrow="Why choose us"
+        title="Perks & benefits"
+        description="We invest in our team's success with real benefits and room to grow."
+      >
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {benefits.map((benefit, index) => {
+            const Icon = benefit.icon
+            return (
+              <Reveal key={benefit.title} delay={index * 0.04}>
+                <div className="flex h-full flex-col rounded-xl border border-gray-200 bg-white p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+                  <span className="mb-4 inline-flex w-fit rounded-lg bg-primary-50 p-3 text-primary-900">
+                    <Icon className="h-5 w-5" />
+                  </span>
+                  <h3 className="mb-1.5 text-base font-bold text-gray-900">{benefit.title}</h3>
+                  <p className="text-sm leading-relaxed text-gray-600">{benefit.description}</p>
+                </div>
+              </Reveal>
+            )
+          })}
+        </div>
+      </Section>
 
-            {/* Right Side - Stats Cards */}
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="grid grid-cols-2 gap-4"
-            >
-              {[
-                { value: '35+', label: 'Team Members', icon: FiUsers },
-                { value: '150+', label: 'Projects', icon: FiAward },
-                { value: '8+', label: 'Years', icon: FiTrendingUp },
-                { value: '98%', label: 'Satisfaction', icon: FiHeart },
-              ].map((stat, index) => {
-                const Icon = stat.icon
-                return (
-                  <motion.div
-                    key={stat.label}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center"
+      {/* Openings */}
+      <Section
+        id="jobs"
+        align="center"
+        eyebrow="Open positions"
+        title="Current opportunities"
+        description="Explore our open positions and find the role to advance your career."
+      >
+        <div className="mx-auto max-w-3xl space-y-4">
+          {jobData.map((job, index) => {
+            const Icon = job.icon
+            const isOpen = selectedJob === job.id
+            return (
+              <Reveal key={job.id} delay={index * 0.05}>
+                <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-card">
+                  <button
+                    onClick={() => setSelectedJob(isOpen ? null : job.id)}
+                    aria-expanded={isOpen}
+                    className="flex w-full items-start justify-between gap-4 p-6 text-left transition-colors hover:bg-gray-50"
                   >
-                    <Icon className="w-8 h-8 text-accent-yellow mx-auto mb-3" />
-                    <div className="text-3xl font-black text-white mb-1">{stat.value}</div>
-                    <div className="text-xs uppercase tracking-wider text-white/80">{stat.label}</div>
-                  </motion.div>
-                )
-              })}
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-900 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
-              Why Choose Us
-            </span>
-            <h2 className="text-4xl md:text-5xl font-black text-primary-900 mb-4">
-              Perks & Benefits
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We invest in our team's success with comprehensive benefits and growth opportunities.
-            </p>
-          </motion.div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {benefits.map((benefit, index) => {
-              const Icon = benefit.icon
-              return (
-                <motion.div
-                  key={benefit.title}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -10, scale: 1.02 }}
-                  className="group relative"
-                >
-                  <div className="h-full bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100">
-                    <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${benefit.gradient} mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                      <Icon className="w-6 h-6 text-white" />
-                    </div>
-                    <h3 className="text-lg font-black text-primary-900 mb-2">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {benefit.description}
-                    </p>
-                    {/* Hover gradient overlay */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient} opacity-0 group-hover:opacity-5 rounded-3xl transition-opacity duration-500 pointer-events-none`}></div>
-                  </div>
-                </motion.div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Job Openings Section */}
-      <section id="jobs" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <span className="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-900 rounded-full text-sm font-semibold uppercase tracking-wider mb-4">
-              Open Positions
-            </span>
-            <h2 className="text-4xl md:text-5xl font-black text-primary-900 mb-4">
-              Current Opportunities
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Explore our open positions and find the perfect role to advance your career.
-            </p>
-          </motion.div>
-
-          <div className="space-y-6">
-            <AnimatePresence>
-              {jobData.map((job, index) => {
-                const Icon = job.icon
-                const isOpen = selectedJob === job.id
-                
-                return (
-                  <motion.div
-                    key={job.id}
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="group relative"
-                  >
-                    <div className="bg-white rounded-3xl border border-gray-200 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                      <button
-                        onClick={() => setSelectedJob(isOpen ? null : job.id)}
-                        className="w-full p-8 text-left"
-                      >
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <div className="flex items-center gap-4 mb-4">
-                              <div className="p-4 bg-primary-50 rounded-2xl border border-primary-100">
-                                <Icon className="w-6 h-6 text-primary-900" />
-                              </div>
-                              <div>
-                                <h3 className="text-3xl font-black text-primary-900 mb-2">
-                                  {job.title}
-                                </h3>
-                                <div className="flex flex-wrap items-center gap-4 text-gray-600">
-                                  <div className="flex items-center gap-2">
-                                    <FiMapPin className="w-4 h-4 text-primary-700" />
-                                    <span className="font-semibold">{job.location}</span>
-                                  </div>
-                                  <div className="flex items-center gap-2">
-                                    <FiClock className="w-4 h-4 text-primary-700" />
-                                    <span className="font-semibold">{job.type}</span>
-                                  </div>
-                                  <div className="flex items-center gap-2">
-                                    <FiBriefcase className="w-4 h-4 text-primary-700" />
-                                    <span className="font-semibold">{job.department}</span>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <p className="text-lg text-gray-600 ml-20">
-                              {job.shortDesc}
-                            </p>
-                          </div>
-                          <motion.div
-                            animate={{ rotate: isOpen ? 180 : 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="flex-shrink-0 ml-4"
-                          >
-                            <div className="p-3 bg-primary-50 rounded-xl border border-primary-100">
-                              <FiChevronDown className="w-6 h-6 text-primary-900" />
-                            </div>
-                          </motion.div>
+                    <div className="flex gap-4">
+                      <span className="hidden h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-primary-50 text-primary-900 sm:inline-flex">
+                        <Icon className="h-5 w-5" />
+                      </span>
+                      <div>
+                        <h3 className="text-lg font-bold text-gray-900">{job.title}</h3>
+                        <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-500">
+                          <span className="inline-flex items-center gap-1.5">
+                            <FiMapPin className="h-3.5 w-3.5" />
+                            {job.location}
+                          </span>
+                          <span className="inline-flex items-center gap-1.5">
+                            <FiClock className="h-3.5 w-3.5" />
+                            {job.type}
+                          </span>
+                          <span className="inline-flex items-center gap-1.5">
+                            <FiBriefcase className="h-3.5 w-3.5" />
+                            {job.department}
+                          </span>
                         </div>
-                      </button>
-                      
-                      <AnimatePresence>
-                        {isOpen && (
-                          <motion.div
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.3 }}
-                            className="overflow-hidden"
-                          >
-                            <div className="px-8 pb-8 bg-white/95 backdrop-blur-sm">
-                              <div className="pt-6 space-y-6">
-                                <div>
-                                  <h4 className="text-xl font-black text-primary-900 mb-3">Job Description</h4>
-                                  <p className="text-gray-700 leading-relaxed">{job.fullDesc}</p>
-                                </div>
-                                
-                                <div>
-                                  <h4 className="text-xl font-black text-primary-900 mb-3">Requirements</h4>
-                                  <ul className="space-y-2">
-                                    {job.requirements.map((req, idx) => (
-                                      <li key={idx} className="flex items-start gap-3">
-                                        <FiCheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                                        <span className="text-gray-700">{req}</span>
-                                      </li>
-                                    ))}
-                                  </ul>
-                                </div>
-                                
-                                <motion.div
-                                  whileHover={{ scale: 1.05 }}
-                                  whileTap={{ scale: 0.95 }}
-                                >
-                                  <a
-                                    href="/contact"
-                                    className="inline-flex items-center gap-2 px-8 py-4 bg-primary-900 text-white font-bold rounded-xl hover:bg-primary-800 transition-all duration-300 hover:shadow-xl"
-                                  >
-                                    <FiSend className="w-5 h-5" />
-                                    <span>Apply Now</span>
-                                  </a>
-                                </motion.div>
-                              </div>
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
+                        <p className="mt-2 text-sm text-gray-600">{job.shortDesc}</p>
+                      </div>
                     </div>
-                  </motion.div>
-                )
-              })}
-            </AnimatePresence>
-          </div>
-        </div>
-      </section>
+                    <FiChevronDown
+                      className={`mt-1 h-5 w-5 flex-shrink-0 text-gray-400 transition-transform duration-300 ${
+                        isOpen ? 'rotate-180' : ''
+                      }`}
+                    />
+                  </button>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-900 via-primary-800 to-primary-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }}></div>
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+                        className="overflow-hidden"
+                      >
+                        <div className="border-t border-gray-100 px-6 py-6">
+                          <h4 className="text-sm font-bold text-gray-900">Job description</h4>
+                          <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                            {job.fullDesc}
+                          </p>
+                          <h4 className="mt-5 text-sm font-bold text-gray-900">Requirements</h4>
+                          <ul className="mt-2 space-y-2">
+                            {job.requirements.map((req) => (
+                              <li key={req} className="flex items-start gap-2.5 text-sm text-gray-600">
+                                <FiCheckCircle className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary-700" />
+                                {req}
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="mt-6">
+                            <Button href="/contact" icon>
+                              Apply now
+                            </Button>
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </Reveal>
+            )
+          })}
         </div>
-        
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-black mb-4">
-              Don't See Your Role?
-            </h2>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.a
-                href="/contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-yellow text-primary-900 font-bold rounded-xl hover:bg-yellow-400 transition-all duration-300 hover:shadow-2xl hover:shadow-accent-yellow/50"
-              >
-                <FiMail className="w-5 h-5" />
-                <span>Send Your Resume</span>
-              </motion.a>
-              <motion.a
-                href="/team"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white/30 text-white font-bold rounded-xl hover:bg-white/20 transition-all duration-300"
-              >
-                <FiUsers className="w-5 h-5" />
-                <span>Meet The Team</span>
-              </motion.a>
-            </div>
-          </motion.div>
+      </Section>
+
+      {/* FAQ */}
+      <Section bg="gray" eyebrow="FAQ" title="Hiring questions">
+        <div className="mx-auto max-w-3xl">
+          <FAQ items={hiringFaqs} />
         </div>
-      </section>
+      </Section>
+
+      <CtaBand
+        title="Don't see your role?"
+        description="We're always looking for talented individuals. Send your resume and we'll keep you in mind."
+        primaryHref="/contact"
+        primaryLabel="Send your resume"
+        secondaryHref="/team"
+        secondaryLabel="Meet the team"
+      />
     </div>
   )
 }

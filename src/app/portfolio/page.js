@@ -1,8 +1,9 @@
 import PortfolioPage from '@/components/PortfolioPage'
 
 export const metadata = {
-  title: 'Portfolio - The Revolution Technologies',
-  description: 'View our portfolio of successful projects including web development, mobile apps, and UI/UX design',
+  title: 'Portfolio',
+  description:
+    'A portfolio of successful projects across web development, mobile apps, AI, and UI/UX design.',
 }
 
 export default function Portfolio() {

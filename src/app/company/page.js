@@ -1,8 +1,9 @@
 import CompanyPage from '@/components/CompanyPage'
 
 export const metadata = {
-  title: 'Company - The Revolution Technologies',
-  description: 'Learn about The Revolution Technologies - Experience, Execution, Excellence',
+  title: 'About Us',
+  description:
+    'Learn about The Revolution Technologies — our mission, values, journey, and the team delivering digital solutions since 2015.',
 }
 
 export default function Company() {

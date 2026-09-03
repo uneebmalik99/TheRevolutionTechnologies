@@ -1,8 +1,9 @@
 import ServicesOffer from '@/components/ServicesOffer'
 
 export const metadata = {
-  title: 'Services - The Revolution Technologies',
-  description: 'Comprehensive IT services including web development, mobile apps, SEO, UI/UX design, and digital marketing',
+  title: 'Services',
+  description:
+    'Web development, mobile app development, AI development, UI/UX design, social media marketing, and custom software development.',
 }
 
 export default function ServicesPage() {

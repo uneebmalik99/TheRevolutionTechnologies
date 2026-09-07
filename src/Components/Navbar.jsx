@@ -1,89 +1,92 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { usePathname } from 'next/navigation'
-import { FiMenu, FiX, FiChevronDown, FiPhone } from 'react-icons/fi'
-import Button from '@/components/ui/Button'
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { FiMenu, FiX, FiChevronDown, FiPhone } from "react-icons/fi";
+import Button from "@/components/ui/Button";
 
 const servicesMenu = [
-  { href: '/services#web', label: 'Web Development' },
-  { href: '/services#mobile', label: 'Mobile App Development' },
-  { href: '/services#ai', label: 'AI Development' },
-  { href: '/services#uiux', label: 'UI/UX Design' },
-  { href: '/services#marketing', label: 'Social Media Marketing' },
-  { href: '/services#custom', label: 'Custom Software Development' },
-]
+  { href: "/services#web", label: "Web Development" },
+  { href: "/services#mobile", label: "Mobile App Development" },
+  { href: "/services#ai", label: "AI Development" },
+  { href: "/services#uiux", label: "UI/UX Design" },
+  { href: "/services#marketing", label: "Social Media Marketing" },
+  { href: "/services#custom", label: "Custom Software Development" },
+];
 
 const companyMenu = [
-  { href: '/company', label: 'About Us' },
-  { href: '/team', label: 'Our Team' },
-  { href: '/careers', label: 'Careers' },
-]
+  { href: "/company", label: "About Us" },
+  { href: "/team", label: "Our Team" },
+  { href: "/careers", label: "Careers" },
+];
 
 const flatLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/portfolio', label: 'Portfolio' },
-]
+  { href: "/", label: "Home" },
+  { href: "/portfolio", label: "Portfolio" },
+];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const [mobileGroup, setMobileGroup] = useState(null)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileGroup, setMobileGroup] = useState(null);
+  const pathname = usePathname();
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 12)
-    handleScroll()
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    const handleScroll = () => setScrolled(window.scrollY > 12);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Close the mobile menu on navigation
   useEffect(() => {
-    setIsOpen(false)
-    setMobileGroup(null)
-  }, [pathname])
+    setIsOpen(false);
+    setMobileGroup(null);
+  }, [pathname]);
 
   useEffect(() => {
-    document.body.style.overflow = isOpen ? 'hidden' : ''
+    document.body.style.overflow = isOpen ? "hidden" : "";
     return () => {
-      document.body.style.overflow = ''
-    }
-  }, [isOpen])
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   const isActive = (href) => {
-    const path = href.split('#')[0]
-    if (path === '/') return pathname === '/'
-    return pathname === path || pathname === `${path}/`
-  }
+    const path = href.split("#")[0];
+    if (path === "/") return pathname === "/";
+    return pathname === path || pathname === `${path}/`;
+  };
 
-  const linkBase =
-    'text-sm font-medium transition-colors duration-200'
+  const linkBase = "text-sm font-medium transition-colors duration-200";
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? 'border-gray-200 bg-white/95 backdrop-blur-md shadow-sm'
-          : 'border-transparent bg-white'
+          ? "border-gray-200 bg-white/95 backdrop-blur-md shadow-sm"
+          : "border-transparent bg-white"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div
           className={`flex items-center transition-all duration-300 ${
-            scrolled ? 'h-16' : 'h-20'
+            scrolled ? "h-[76px]" : "h-20"
           }`}
         >
-          <Link href="/" className="flex items-center" aria-label="The Revolution Technologies home">
+          <Link
+            href="/"
+            className="flex items-center"
+            aria-label="The Revolution Technologies home"
+          >
             <Image
               src="/images/logo12.png"
               alt="The Revolution Technologies"
-              width={220}
-              height={80}
+              width={2060}
+              height={1096}
               priority
-              className="h-10 w-auto object-contain md:h-12"
+              className="h-12 w-auto object-contain md:h-14"
             />
           </Link>
         </div>
@@ -93,20 +96,27 @@ export default function Navbar() {
           <Link
             href="/"
             className={`${linkBase} ${
-              isActive('/') ? 'text-primary-900' : 'text-gray-700 hover:text-primary-900'
+              isActive("/")
+                ? "text-primary-900"
+                : "text-gray-700 hover:text-primary-900"
             }`}
           >
             Home
           </Link>
 
-          <Dropdown label="Services" items={servicesMenu} pathname={pathname} rootHref="/services" />
+          <Dropdown
+            label="Services"
+            items={servicesMenu}
+            pathname={pathname}
+            rootHref="/services"
+          />
 
           <Link
             href="/portfolio"
             className={`${linkBase} ${
-              isActive('/portfolio')
-                ? 'text-primary-900'
-                : 'text-gray-700 hover:text-primary-900'
+              isActive("/portfolio")
+                ? "text-primary-900"
+                : "text-gray-700 hover:text-primary-900"
             }`}
           >
             Portfolio
@@ -117,7 +127,9 @@ export default function Navbar() {
           <Link
             href="/faq"
             className={`${linkBase} ${
-              isActive('/faq') ? 'text-primary-900' : 'text-gray-700 hover:text-primary-900'
+              isActive("/faq")
+                ? "text-primary-900"
+                : "text-gray-700 hover:text-primary-900"
             }`}
           >
             FAQ
@@ -141,7 +153,7 @@ export default function Navbar() {
         <button
           onClick={() => setIsOpen((v) => !v)}
           className="rounded-lg p-2 text-gray-800 transition-colors hover:bg-gray-100 lg:hidden"
-          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
           {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -155,10 +167,13 @@ export default function Navbar() {
 
           <MobileGroup
             label="Services"
-            items={[{ href: '/services', label: 'All Services' }, ...servicesMenu]}
-            open={mobileGroup === 'services'}
+            items={[
+              { href: "/services", label: "All Services" },
+              ...servicesMenu,
+            ]}
+            open={mobileGroup === "services"}
             onToggle={() =>
-              setMobileGroup((g) => (g === 'services' ? null : 'services'))
+              setMobileGroup((g) => (g === "services" ? null : "services"))
             }
           />
 
@@ -167,9 +182,9 @@ export default function Navbar() {
           <MobileGroup
             label="Company"
             items={companyMenu}
-            open={mobileGroup === 'company'}
+            open={mobileGroup === "company"}
             onToggle={() =>
-              setMobileGroup((g) => (g === 'company' ? null : 'company'))
+              setMobileGroup((g) => (g === "company" ? null : "company"))
             }
           />
 
@@ -190,24 +205,26 @@ export default function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }
 
 function Dropdown({ label, items, pathname, rootHref }) {
   const groupActive = items.some((i) => {
-    const path = i.href.split('#')[0]
-    return pathname === path || pathname === `${path}/`
-  })
+    const path = i.href.split("#")[0];
+    return pathname === path || pathname === `${path}/`;
+  });
 
   return (
     <div className="group relative">
       <button
         className={`flex items-center gap-1 text-sm font-medium transition-colors duration-200 ${
-          groupActive ? 'text-primary-900' : 'text-gray-700 group-hover:text-primary-900'
+          groupActive
+            ? "text-primary-900"
+            : "text-gray-700 group-hover:text-primary-900"
         }`}
       >
         {label}
-        <FiChevronDown className="h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+        <FiChevronDown className="h-4 w-4 transition-all duration-200 group-hover:rotate-180 group-hover:text-primary-900" />
       </button>
       <div className="invisible absolute left-1/2 top-full z-50 w-60 -translate-x-1/2 translate-y-2 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100">
         <div className="mt-2 overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-lg">
@@ -231,21 +248,23 @@ function Dropdown({ label, items, pathname, rootHref }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function MobileLink({ href, label, pathname }) {
-  const active = href === '/' ? pathname === '/' : pathname.startsWith(href)
+  const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
   return (
     <Link
       href={href}
       className={`block rounded-lg px-3 py-3 text-base font-semibold transition-colors ${
-        active ? 'bg-primary-50 text-primary-900' : 'text-gray-800 hover:bg-gray-50'
+        active
+          ? "bg-primary-50 text-primary-900"
+          : "text-gray-800 hover:bg-gray-50"
       }`}
     >
       {label}
     </Link>
-  )
+  );
 }
 
 function MobileGroup({ label, items, open, onToggle }) {
@@ -259,7 +278,7 @@ function MobileGroup({ label, items, open, onToggle }) {
         {label}
         <FiChevronDown
           className={`h-5 w-5 transition-transform duration-200 ${
-            open ? 'rotate-180' : ''
+            open ? "rotate-180" : ""
           }`}
         />
       </button>
@@ -277,5 +296,5 @@ function MobileGroup({ label, items, open, onToggle }) {
         </div>
       )}
     </div>
-  )
+  );
 }

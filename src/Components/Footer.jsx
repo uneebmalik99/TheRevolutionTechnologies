@@ -33,10 +33,14 @@ const socialLinks = [
     icon: FaLinkedin,
     label: 'LinkedIn',
   },
-  { href: 'https://wa.me/923490764229', icon: FaWhatsapp, label: 'WhatsApp' },
+  {
+    href: 'https://wa.me/923490764229',
+    icon: FaWhatsapp,
+    label: 'Chat on WhatsApp',
+  },
 ]
 
-function LinkList({ title, links }) {
+function LinkList({ title, links, children }) {
   return (
     <div>
       <h3 className="mb-5 text-sm font-semibold uppercase tracking-wider text-white">
@@ -54,6 +58,35 @@ function LinkList({ title, links }) {
           </li>
         ))}
       </ul>
+      {children}
+    </div>
+  )
+}
+
+function SocialLinks() {
+  return (
+    <div className="mt-8">
+      <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
+        Follow us on social
+      </h3>
+      <div className="flex gap-4">
+        {socialLinks.map((social) => {
+          const Icon = social.icon
+          return (
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.label}
+              title={social.label}
+              className="text-white/70 transition-colors hover:text-accent-yellow"
+            >
+              <Icon className="h-5 w-5" />
+            </a>
+          )
+        })}
+      </div>
     </div>
   )
 }
@@ -73,27 +106,12 @@ export default function Footer() {
               A software and digital solutions company delivering web, mobile, AI, and custom
               product engineering for businesses since 2015.
             </p>
-            <div className="mt-6 flex gap-3">
-              {socialLinks.map((social) => {
-                const Icon = social.icon
-                return (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-white/5 text-white/80 transition-colors hover:border-accent-yellow hover:bg-accent-yellow hover:text-primary-900"
-                  >
-                    <Icon className="h-4 w-4" />
-                  </a>
-                )
-              })}
-            </div>
           </div>
 
           <LinkList title="Company" links={companyLinks} />
-          <LinkList title="Services" links={serviceLinks} />
+          <LinkList title="Services" links={serviceLinks}>
+            <SocialLinks />
+          </LinkList>
 
           {/* Contact */}
           <div>

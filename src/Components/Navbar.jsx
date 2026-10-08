@@ -62,19 +62,14 @@ export default function Navbar() {
   const linkBase = "text-sm font-medium transition-colors duration-200";
 
   return (
-    <header
-      className={`fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 ${
-        scrolled
-          ? "border-gray-200 bg-white/95 backdrop-blur-md shadow-sm"
-          : "border-transparent bg-white"
-      }`}
-    >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <div
-          className={`flex items-center transition-all duration-300 ${
-            scrolled ? "h-[76px]" : "h-20"
-          }`}
-        >
+    <header className="fixed inset-x-0 top-4 z-50 px-4 sm:px-6 lg:px-8">
+      <div
+        className={`mx-auto max-w-7xl rounded-2xl border border-slate-100 bg-white/95 backdrop-blur-md transition-shadow duration-300 ${
+          scrolled ? "shadow-lg" : "shadow-md"
+        }`}
+      >
+      <nav className="flex items-center justify-between px-6 py-2">
+        <div className="flex items-center">
           <Link
             href="/"
             className="flex items-center"
@@ -86,7 +81,7 @@ export default function Navbar() {
               width={2060}
               height={1096}
               priority
-              className="h-12 w-auto object-contain md:h-14"
+              className="h-14 w-auto object-contain md:h-16"
             />
           </Link>
         </div>
@@ -162,7 +157,7 @@ export default function Navbar() {
 
       {/* Mobile drawer */}
       {isOpen && (
-        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-gray-200 bg-white px-4 pb-8 pt-3 lg:hidden">
+        <div className="max-h-[calc(100vh-7rem)] overflow-y-auto rounded-b-2xl border-t border-gray-200 bg-white px-4 pb-8 pt-3 lg:hidden">
           <MobileLink href="/" label="Home" pathname={pathname} />
 
           <MobileGroup
@@ -204,6 +199,7 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      </div>
     </header>
   );
 }

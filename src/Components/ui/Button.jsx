@@ -14,6 +14,8 @@ const VARIANTS = {
     'bg-white text-primary-900 border border-transparent hover:bg-gray-100 shadow-sm',
   outlineLight:
     'bg-transparent text-white border border-white/40 hover:bg-white/10',
+  blue:
+    'bg-[#2563eb] text-white border border-transparent hover:bg-[#1d4ed8] shadow-md',
 }
 
 const SIZES = {

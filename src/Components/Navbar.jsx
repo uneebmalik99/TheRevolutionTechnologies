@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/ui/SiteImage";
 import { usePathname } from "next/navigation";
 import { FiMenu, FiX, FiChevronDown, FiPhone } from "react-icons/fi";
 import Button from "@/components/ui/Button";

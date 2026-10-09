@@ -1,8 +1,13 @@
-name: Deploy React App to Hostinger via FTPS
+name: Deploy Next.js App to InterServer via FTPS
 
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: interserver-deployment
+  cancel-in-progress: false
 
 jobs:
   build-and-deploy:
@@ -15,22 +20,31 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "22"
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Next.js app
-        run: npm run build
+      - name: Validate InterServer destination
+        env:
+          SERVER_DIR: ${{ secrets.INTERSERVER_FTP_SERVER_DIR }}
+        run: |
+          if [[ "$SERVER_DIR" != */trt/ || "$SERVER_DIR" == *..* ]]; then
+            echo "Set INTERSERVER_FTP_SERVER_DIR to the FTP path of the TRT directory, ending in /trt/."
+            exit 1
+          fi
 
-      - name: Deploy to Hostinger via FTPS
+      - name: Build Next.js app for InterServer
+        run: npm run build:interserver
+
+      - name: Deploy to InterServer via FTPS
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ${{ secrets.FTP_IP }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.INTERSERVER_FTP_HOST }}
+          username: ${{ secrets.INTERSERVER_FTP_USERNAME }}
+          password: ${{ secrets.INTERSERVER_FTP_PASSWORD }}
           protocol: ftps
           port: 21
           local-dir: ./out/
-          server-dir: ./
+          server-dir: ${{ secrets.INTERSERVER_FTP_SERVER_DIR }}
           log-level: standard

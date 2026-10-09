@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:interserver": "NEXT_PUBLIC_BASE_PATH=/trt NEXT_PUBLIC_SITE_URL=http://162.35.161.125 next build",
     "start": "next start",
     "lint": "next lint"
   },

@@ -1,6 +1,6 @@
 'use client'
 
-import Image from 'next/image'
+import Image from '@/components/ui/SiteImage'
 import { FiLinkedin, FiMail } from 'react-icons/fi'
 import PageHeader from '@/components/ui/PageHeader'
 import Section from '@/components/ui/Section'

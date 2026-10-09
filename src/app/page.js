@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { useInView, motion, AnimatePresence } from 'framer-motion'
-import Image from 'next/image'
+import Image from '@/components/ui/SiteImage'
 import Link from 'next/link'
 import {
   FiArrowRight,

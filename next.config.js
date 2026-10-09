@@ -1,7 +1,9 @@
 const path = require('path')
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath,
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
